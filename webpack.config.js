@@ -19,10 +19,7 @@ module.exports = {
   },
   devServer: {
     contentBase: [
-      path.join(__dirname, "./src/"),
-      path.join(__dirname, "./src/navbar"),
-      path.join(__dirname, "./src/framework"),
-      path.join(__dirname, "./src/services"),
+      path.join(__dirname, "./src/")
     ],
     port: 8080,
     historyApiFallback: {
