@@ -1,6 +1,6 @@
 import { Component } from '../../../framework/component';
 
-export class TestComponent extends Component {
+export class MarketComponent extends Component {
     test = "hahaha";
 
     constructor(){        

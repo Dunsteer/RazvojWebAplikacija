@@ -2,20 +2,35 @@ import { components } from '../index';
 import { from, of } from 'rxjs';
 import { tap, map, merge, mergeMap, finalize, combineAll, last, buffer } from 'rxjs/operators';
 import { Component } from './component';
-import { resolve } from 'dns';
-import { rejects } from 'assert';
 
 export class Utility {
     domParser: DOMParser;
 
     componentObjects: Component[] = [];
 
-    constructor(private components: any[], private bootstrap: any) {
+    routerOutlet = null;
+
+    routeObjects: any[];
+
+    constructor(private components: any[], private bootstrap: any, private routes: any[]) {
         this.domParser = new DOMParser();
         this.components.forEach(x => {
             x.fileName = this.parseComponentName(x.name);
         });
         this.bootstrap.fileName = this.parseComponentName(this.bootstrap.name);
+
+        this.loadComponents().then(() => {
+            this.renderBootstrap();
+            this.loadRoutes();
+            this.navigateTo(document.location.pathname,true);
+
+            window.onpopstate = (ev) => {
+                if (ev.state)
+                    this.navigateTo(ev.state['path'],true);
+                else
+                    this.navigateTo('/',true);
+            }
+        });
     }
 
     private parseComponentName(name: string): string {
@@ -38,24 +53,17 @@ export class Utility {
     loadComponents() {
         const pro = [];
 
-        pro.push(new Promise((resolve, reject) => {
-            from(this.components).subscribe(x => {
-                fetch(`./app/components/${x.fileName}/${x.fileName}.html`).then(res => res.text()).then(html => {
-                    x.template = this.domParser.parseFromString(html, 'text/html').body.firstChild;
-                    resolve();
-                })
-            });
-        }))
+        this.components.map(x => {
+            pro.push(fetch(`./app/components/${x.fileName}/${x.fileName}.html`).then(res => res.text()).then(html => {
+                x.template = this.domParser.parseFromString(html, 'text/html').body.firstChild;
+            }))
+        })
 
-        pro.push(new Promise((resolve, reject) => {
-            fetch(`./app/${this.bootstrap.fileName}.html`).then(res => res.text()).then(html => {
-                const dom = this.domParser.parseFromString(html, 'text/html');
-                this.bootstrap.template = dom.body.firstChild;
-
-                console.log(this.bootstrap.template);
-                resolve();
-            })
-        }))
+        pro.push(fetch(`./app/${this.bootstrap.fileName}.html`).then(res => res.text()).then(html => {
+            this.bootstrap.template = this.domParser.parseFromString(html, 'text/html').body.firstChild;
+            //console.log(this.bootstrap.template);
+        })
+        )
 
         return Promise.all(pro);
     }
@@ -67,6 +75,9 @@ export class Utility {
         appComponent.dom = this.bootstrap.template.cloneNode(true);
         //console.log(appComponent.dom);
         app.appendChild(appComponent.dom);
+
+        this.routerOutlet = appComponent.dom.querySelector('RouterOutlet');
+
         this.parseChildren(app);
     }
 
@@ -90,5 +101,38 @@ export class Utility {
                 console.log(y);
             })
         })
+    }
+
+    loadRoutes() {
+        this.routeObjects = [];
+
+        this.routes.map(({ path, component }) => {
+            const comp = new component();
+            this.routeObjects[path] = comp;
+            comp.dom = component.template.cloneNode(true);
+            this.parseChildren(comp.dom);
+        })
+
+        const routerLinks = document.querySelectorAll('[navigate-to]');
+
+        routerLinks.forEach(element => {
+            const link = element.getAttribute('navigate-to');
+            element.addEventListener('click', () => {
+                this.navigateTo(link);
+            })
+        })
+    }
+
+    navigateTo(link: string, back: boolean = false) {
+        console.log(link);
+
+        this.routerOutlet.innerHTML = '';
+
+        this.routerOutlet.appendChild(this.routeObjects[link].dom);
+
+        if (!back)
+            window.history.pushState({
+                "path": link
+            }, "", link);
     }
 }

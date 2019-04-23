@@ -4,17 +4,21 @@ import { Component } from './framework/component';
 import { AppComponent } from './app/app';
 import { async } from 'rxjs/internal/scheduler/async';
 import { TestComponent } from './app/components/test/test';
+import { MarketComponent } from './app/components/market/market';
 
 export const components = [
     NavbarComponent,
-    TestComponent
+    TestComponent,
+    MarketComponent
 ];
 
 const bootstrap = AppComponent;
+const routes = [
+    { path: "/", component: TestComponent },
+    { path: "/asd", component: MarketComponent }
+];
 
 (async function () {
-    let utility = new Utility(components, bootstrap);
-    await utility.loadComponents();
-    utility.renderBootstrap();
+    let utility = new Utility(components, bootstrap, routes);
 })();
 

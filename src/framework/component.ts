@@ -3,10 +3,14 @@ const saferEval = require('safer-eval');
 
 export class Component {
     _dom = null;
+
+    static template:HTMLElement;
+
     private _variables: HTMLElement[];
-    test = "hahaha";
+
 
     constructor() {
+        
     }
 
     get dom() {
@@ -14,26 +18,52 @@ export class Component {
     }
 
     set dom(value: HTMLElement) {
-        this._dom = this.loadBinds(value);
+        this._dom = value;
+
+        this.loadBinds();
+        this.loadEvents();
+        this.loadChildren();
     }
 
-    private loadBinds(value: HTMLElement): HTMLElement {
+    private loadBinds() {
+        let inner = this._dom.innerHTML;
         let regEx = new RegExp('{{{?(#[a-z]+ )?[a-z]+.[a-z]*}?}}', 'g');
 
-        let html = value.innerHTML.replace(regEx, (variable) => {
+        inner = inner.replace(regEx, (variable) => {
             variable = variable.replace(/{/g, '').replace(/}/g, '');
 
-            return `<app-variable name="${variable}">${this[variable]}</app-variable>`;
+            return `<app-variable variable-name="${variable}">${this[variable]}</app-variable>`;
         });
 
-        let inner = new DOMParser().parseFromString(html, 'text/html').body;
+        this._dom.innerHTML = inner;
 
-        value.innerHTML = '';
+        this._variables = this._dom.querySelectorAll('app-variable');
+        console.log(this._variables);
+    }
 
-        inner.childNodes.forEach(x => {
-            value.appendChild(x);
-        })
+    private loadChildren(){
+        
+    }
 
-        return value;
+    protected reloadBinds() {
+        if(this._variables){
+            this._variables.forEach(x=>{
+                const variable = x.attributes.getNamedItem('variable-name').value;
+                x.innerHTML = this[variable];
+            })
+        }
+    }
+
+    private loadEvents() {
+
+    }
+
+    private parseString(value: string): HTMLElement {
+        const html = new DOMParser().parseFromString(value, 'text/html').body;
+        html.childNodes.forEach(element => {
+
+        });
+
+        return html;
     }
 }
