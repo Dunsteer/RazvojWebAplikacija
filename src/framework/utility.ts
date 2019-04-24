@@ -22,13 +22,13 @@ export class Utility {
         this.loadComponents().then(() => {
             this.renderBootstrap();
             this.loadRoutes();
-            this.navigateTo(document.location.pathname,true);
+            this.navigateTo(document.location.pathname, true);
 
             window.onpopstate = (ev) => {
                 if (ev.state)
-                    this.navigateTo(ev.state['path'],true);
+                    this.navigateTo(ev.state['path'], true);
                 else
-                    this.navigateTo('/',true);
+                    this.navigateTo('/', true);
             }
         });
     }
@@ -55,7 +55,9 @@ export class Utility {
 
         this.components.map(x => {
             pro.push(fetch(`./app/components/${x.fileName}/${x.fileName}.html`).then(res => res.text()).then(html => {
+                if(!x.template)
                 x.template = this.domParser.parseFromString(html, 'text/html').body.firstChild;
+                //console.log(x.template);
             }))
         })
 
@@ -81,13 +83,14 @@ export class Utility {
         this.parseChildren(app);
     }
 
-    private parseChildren(dom) {
+    public parseChildren(dom) {
         this.components.forEach(x => {
 
             const children = dom.querySelectorAll(x.name);
 
             children.forEach(y => {
-
+                //console.log("parse", y);
+                //if (y.innerHTML != "") return;
                 const component = new x();
 
                 component.dom = x.template.cloneNode(true);
@@ -98,7 +101,6 @@ export class Utility {
                 this.componentObjects.push(component);
 
                 this.parseChildren(y);
-                console.log(y);
             })
         })
     }
@@ -107,10 +109,12 @@ export class Utility {
         this.routeObjects = [];
 
         this.routes.map(({ path, component }) => {
+            //debugger;
             const comp = new component();
             this.routeObjects[path] = comp;
             comp.dom = component.template.cloneNode(true);
             this.parseChildren(comp.dom);
+            //console.log(comp.dom);
         })
 
         const routerLinks = document.querySelectorAll('[navigate-to]');
@@ -124,11 +128,13 @@ export class Utility {
     }
 
     navigateTo(link: string, back: boolean = false) {
-        console.log(link);
+        //console.log(link);
 
         this.routerOutlet.innerHTML = '';
 
         this.routerOutlet.appendChild(this.routeObjects[link].dom);
+        //debugger;
+        this.parseChildren(this.routeObjects[link].dom);
 
         if (!back)
             window.history.pushState({

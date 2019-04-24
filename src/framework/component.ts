@@ -9,6 +9,9 @@ export class Component {
     private _variables: HTMLElement[];
 
 
+    protected children =[];
+
+
     constructor() {
         
     }
@@ -27,18 +30,20 @@ export class Component {
 
     private loadBinds() {
         let inner = this._dom.innerHTML;
-        let regEx = new RegExp('{{{?(#[a-z]+ )?[a-z]+.[a-z]*}?}}', 'g');
+        let regEx = new RegExp('{{{?(#[A-Za-z]+ )?[A-Za-z]+.[A-Za-z]*}?}}', 'g');
 
         inner = inner.replace(regEx, (variable) => {
+            if(variable){
             variable = variable.replace(/{/g, '').replace(/}/g, '');
 
-            return `<app-variable variable-name="${variable}">${this[variable]}</app-variable>`;
+            return `<app-variable variable-name="${variable}">${saferEval(variable, this)}</app-variable>`;
+            }
         });
 
         this._dom.innerHTML = inner;
 
         this._variables = this._dom.querySelectorAll('app-variable');
-        console.log(this._variables);
+        //console.log(this._variables);
     }
 
     private loadChildren(){
@@ -49,7 +54,7 @@ export class Component {
         if(this._variables){
             this._variables.forEach(x=>{
                 const variable = x.attributes.getNamedItem('variable-name').value;
-                x.innerHTML = this[variable];
+                x.innerHTML = saferEval(variable,this);
             })
         }
     }

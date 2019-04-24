@@ -5,11 +5,14 @@ import { AppComponent } from './app/app';
 import { async } from 'rxjs/internal/scheduler/async';
 import { TestComponent } from './app/components/test/test';
 import { MarketComponent } from './app/components/market/market';
+import { MarketLineComponent } from './app/components/marketLine/marketLine';
+import {MarketService} from './app/services/marketService';
 
 export const components = [
     NavbarComponent,
     TestComponent,
-    MarketComponent
+    MarketComponent,
+    MarketLineComponent
 ];
 
 const bootstrap = AppComponent;
@@ -21,4 +24,8 @@ const routes = [
 (async function () {
     let utility = new Utility(components, bootstrap, routes);
 })();
+
+let service = new MarketService();
+
+service.get().subscribe(x=>console.log(x));
 

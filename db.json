@@ -1,0 +1,84 @@
+{
+    "currencies": [
+        {
+            "id": 1,
+            "code": "BTC",
+            "name": "Bitcoin Core",
+            "price": 5451.01,
+            "marketPrice": "96.28 B",
+            "volume": "17.04 B",
+            "d": -2.88,
+            "w": 3.99
+        },
+        {
+            "id": 2,
+            "code": "ETH",
+            "name": "Ethereum",
+            "price": 163.83,
+            "marketPrice": "17.33 B",
+            "volume": "7.34 B",
+            "d": -5.69,
+            "w": -1.78
+        },
+        {
+            "id": 3,
+            "code": "XRP",
+            "name": "XRP",
+            "price": 0.2988,
+            "marketPrice": "12.55 B",
+            "volume": "1.51 B",
+            "d": -7.84,
+            "w": -11.28
+        },
+        {
+            "id": 4,
+            "code": "BCH",
+            "name": "Bitcoin Cash",
+            "price": 274.53,
+            "marketPrice": "4.87 B",
+            "volume": "3.31 B",
+            "d": -7.95,
+            "w": -11.38
+        },
+        {
+            "id": 5,
+            "code": "LTC",
+            "name": "Litecoin",
+            "price": 72.21,
+            "marketPrice": "4.44 B",
+            "volume": "3.32 B",
+            "d": -6.97,
+            "w": -9.29
+        },
+        {
+            "id": 6,
+            "code": "EOS",
+            "name": "EOS",
+            "price": 4.76,
+            "marketPrice": "4.50 B",
+            "volume": "2.82 B",
+            "d": -9.29,
+            "w": -12.61
+        },
+        {
+            "id": 7,
+            "code": "BNB",
+            "name": "Binace Coin",
+            "price": 22.14,
+            "marketPrice": "3.13 B",
+            "volume": "265.14 M",
+            "d": -4.45,
+            "w": 13.12
+        },
+        {
+            "id": 8,
+            "code": "USDT",
+            "name": "Tether",
+            "price": 1.0057,
+            "marketPrice": "2.69 B",
+            "volume": "16.55 B",
+            "d": -0.12,
+            "w": -0.08
+        }        
+    ]
+}
