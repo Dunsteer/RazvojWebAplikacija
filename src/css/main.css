@@ -1,0 +1,11 @@
+.pointer{
+    cursor: pointer;
+}
+
+tr.pointer:hover{
+    border: solid gray 1px !important;
+}
+
+table{
+    margin-top:10px;
+}

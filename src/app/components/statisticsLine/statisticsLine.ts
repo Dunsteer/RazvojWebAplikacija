@@ -2,17 +2,10 @@ import { Component } from '../../../framework/component';
 import { MarketService } from '../../services/marketService';
 import { SocketModel } from '../../models/socketModel';
 import { CurrencyModel } from '../../models/currencyModel';
-import { utility } from '../../../index';
-import { StatisticsComponent } from '../statistics/statistics';
-import { StatisticsModel } from '../../models/statisticsModel';
 
-
-export class MarketLineComponent extends Component {
+export class StatisticsLineComponent extends Component {
     static createTr() {
         const tr = document.createElement('tr');
-        tr.className += 'pointer '
-        tr.setAttribute('f-event', '');
-        tr.setAttribute('f-event-click', 'onClick');
 
         let td = document.createElement('td');
         td.innerHTML = `{{currency.id}}`;
@@ -50,52 +43,43 @@ export class MarketLineComponent extends Component {
         return tr;
     }
 
-    static template = MarketLineComponent.createTr();
+    static template = StatisticsLineComponent.createTr();
     private _marketService: MarketService;
 
-    constructor(public currency: CurrencyModel, parentDom) {
+    constructor(public currency, parentDom) {
         super();
-        //debugger;
         this.dom = parentDom;
-        this._marketService = new MarketService();
-        this._marketService.connect().subscribe((model) => this.onSocketReceive(model));
+        //this._marketService = new MarketService();
+        //this._marketService.connect().subscribe((model) => this.onSocketReceive(model));
     }
 
     onSocketReceive(model: SocketModel) {
 
         if (model && this.currency) {
-            if (this.currency.price + model.price > 0)
-                this.currency.price += model.price;
+            if(this.currency.price + model.price>0)
+            this.currency.price += model.price;
             this.currency.d += model.d;
             this.currency.w += model.w;
             this.normaliezeCurrency();
-
+            
             this.reloadBinds();
-            const stat = new StatisticsModel();
-            stat.currencyId= this.currency.id;
-            stat.currency = this.currency;
-            //console.log(stat);
-            //this._marketService.postStatistics(stat).subscribe(x=>console.log(x));
         }
 
     }
 
-    private normalizeNumber(number) {
+    private normalizeNumber(number){
         return Math.round(number * 100) / 100;
     }
 
-    private normaliezeCurrency() {
-        for (let key in this.currency) {
-            if (this.currency[key] instanceof Number) {
-                this.currency[key] = this.normalizeNumber(this.currency[key]);
+    private normaliezeCurrency(){
+        for(let key in this.currency){
+            if(this.currency[key] instanceof Number){
+                this.currency[key] =this.normalizeNumber(this.currency[key]);
             }
         }
     }
 
-    onClick() {
-        let dom = StatisticsComponent.template.cloneNode(true);
-
-        let stat = new StatisticsComponent(this.currency, dom);
-        utility.navigateTo('/statistics', false, stat);
+    onClick(){
+        console.log('clicked',this.currency.id);
     }
 }

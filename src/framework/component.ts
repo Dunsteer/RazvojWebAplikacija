@@ -1,19 +1,19 @@
 const saferEval = require('safer-eval');
-
+const numeral = require('numeral');
 
 export class Component {
-    _dom = null;
+    _dom: HTMLElement = null;
 
-    static template:HTMLElement;
+    static template: HTMLElement;
 
-    private _variables: HTMLElement[];
+    private _variables: NodeListOf<Element>;
 
 
-    protected children =[];
+    protected children = [];
 
 
     constructor() {
-        
+
     }
 
     get dom() {
@@ -24,19 +24,48 @@ export class Component {
         this._dom = value;
 
         this.loadBinds();
+        // setTimeout(()=>{
+        //     this.loadEvents();
+        // },100);
         this.loadEvents();
         this.loadChildren();
     }
 
     private loadBinds() {
         let inner = this._dom.innerHTML;
-        let regEx = new RegExp('{{{?(#[A-Za-z]+ )?[A-Za-z]+.[A-Za-z]*}?}}', 'g');
+        let regEx = new RegExp('{{{?(#[A-Za-z]+ )?[A-Za-z]+.[A-Za-z]*}}}', 'g');
 
         inner = inner.replace(regEx, (variable) => {
-            if(variable){
-            variable = variable.replace(/{/g, '').replace(/}/g, '');
+            if (variable) {
+                variable = variable.replace(/{/g, '').replace(/}/g, '');
+                let valstr = '';
+                let val;
+                try {
+                    valstr = saferEval(variable, this);
+                    val = parseFloat(valstr);
+                    if (!isNaN(val)) {
+                        val = numeral(val).format('0,0.00 a');
+                        //console.log(val);
+                    }
+                    else {
+                        val = valstr;
+                    }
+                }
+                catch (err) {
+                    val = err;
+                }
 
-            return `<app-variable variable-name="${variable}">${saferEval(variable, this)}</app-variable>`;
+                return `<app-variable variable-name="${variable}">${val}</app-variable>`;
+            }
+        });
+
+        regEx = new RegExp('{{?(#[A-Za-z]+ )?[A-Za-z]+.[A-Za-z]*}}', 'g');
+
+        inner = inner.replace(regEx, (variable) => {
+            if (variable) {
+                variable = variable.replace(/{/g, '').replace(/}/g, '');
+                //debugger;
+                return `${saferEval(variable, this)}`;
             }
         });
 
@@ -46,21 +75,55 @@ export class Component {
         //console.log(this._variables);
     }
 
-    private loadChildren(){
-        
+    private loadChildren() {
+
     }
 
     protected reloadBinds() {
-        if(this._variables){
-            this._variables.forEach(x=>{
+        if (this._variables) {
+            this._variables.forEach(x => {
                 const variable = x.attributes.getNamedItem('variable-name').value;
-                x.innerHTML = saferEval(variable,this);
+                const valstr = saferEval(variable, this);
+                let val = parseFloat(valstr);
+                //debugger;
+                if (!isNaN(val)) {
+                    val = numeral(val).format('0,0.00 a');
+                    //console.log(val);
+                    x.innerHTML = val + "";
+                }
+                else {
+                    x.innerHTML = valstr;
+                }
+                //x.innerHTML = val+"";
             })
         }
     }
 
     private loadEvents() {
+        const events: string[] = [
+            'click'
+        ];
+        if (this._dom) {
+            events.forEach((ev) => {
+                const events = this._dom.querySelectorAll('[f-event]');
 
+                events.forEach(elem => {
+                    let event = elem.getAttribute(`f-event-${ev}`);
+                    if (event) {
+                        elem.addEventListener(ev, (e) => {
+                            this[event]();
+                        })
+                    }
+                })
+
+                let event = this._dom.getAttribute(`f-event-${ev}`);
+                if (event) {
+                    this._dom.addEventListener(ev, (e) => {
+                        this[event]();
+                    });
+                }
+            })
+        }
     }
 
     private parseString(value: string): HTMLElement {

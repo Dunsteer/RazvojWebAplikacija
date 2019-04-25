@@ -55,8 +55,8 @@ export class Utility {
 
         this.components.map(x => {
             pro.push(fetch(`./app/components/${x.fileName}/${x.fileName}.html`).then(res => res.text()).then(html => {
-                if(!x.template)
-                x.template = this.domParser.parseFromString(html, 'text/html').body.firstChild;
+                if (!x.template)
+                    x.template = this.domParser.parseFromString(html, 'text/html').body.firstChild;
                 //console.log(x.template);
             }))
         })
@@ -122,19 +122,26 @@ export class Utility {
         routerLinks.forEach(element => {
             const link = element.getAttribute('navigate-to');
             element.addEventListener('click', () => {
-                this.navigateTo(link);
+                this.navigateTo(link, false);
             })
         })
     }
 
-    navigateTo(link: string, back: boolean = false) {
+    navigateTo(link: string, back: boolean = false, component: Component = null) {
         //console.log(link);
-
         this.routerOutlet.innerHTML = '';
+        if (!component) {           
+            if (!this.routeObjects[link]) link = '/';
 
-        this.routerOutlet.appendChild(this.routeObjects[link].dom);
-        //debugger;
-        this.parseChildren(this.routeObjects[link].dom);
+            this.routerOutlet.appendChild(this.routeObjects[link].dom);
+
+            this.parseChildren(this.routeObjects[link].dom);
+        }
+        else{
+            this.routerOutlet.appendChild(component.dom);
+
+            //this.parseChildren(component.dom);
+        }
 
         if (!back)
             window.history.pushState({
