@@ -57,13 +57,11 @@ export class Utility {
             pro.push(fetch(`./app/components/${x.fileName}/${x.fileName}.html`).then(res => res.text()).then(html => {
                 if (!x.template)
                     x.template = this.domParser.parseFromString(html, 'text/html').body.firstChild;
-                //console.log(x.template);
             }))
         })
 
         pro.push(fetch(`./app/${this.bootstrap.fileName}.html`).then(res => res.text()).then(html => {
             this.bootstrap.template = this.domParser.parseFromString(html, 'text/html').body.firstChild;
-            //console.log(this.bootstrap.template);
         })
         )
 
@@ -73,9 +71,9 @@ export class Utility {
     renderBootstrap(): void {
         const app = document.querySelector(this.bootstrap.name);
         const appComponent = new this.bootstrap();
-        //console.log(this.bootstrap.template);
+
         appComponent.dom = this.bootstrap.template.cloneNode(true);
-        //console.log(appComponent.dom);
+
         app.appendChild(appComponent.dom);
 
         this.routerOutlet = appComponent.dom.querySelector('RouterOutlet');
@@ -89,8 +87,7 @@ export class Utility {
             const children = dom.querySelectorAll(x.name);
 
             children.forEach(y => {
-                //console.log("parse", y);
-                //if (y.innerHTML != "") return;
+
                 const component = new x();
 
                 component.dom = x.template.cloneNode(true);
@@ -109,12 +106,10 @@ export class Utility {
         this.routeObjects = [];
 
         this.routes.map(({ path, component }) => {
-            //debugger;
             const comp = new component();
             this.routeObjects[path] = comp;
             comp.dom = component.template.cloneNode(true);
             this.parseChildren(comp.dom);
-            //console.log(comp.dom);
         })
 
         const routerLinks = document.querySelectorAll('[navigate-to]');
@@ -128,7 +123,6 @@ export class Utility {
     }
 
     navigateTo(link: string, back: boolean = false, component: Component = null) {
-        //console.log(link);
         this.routerOutlet.innerHTML = '';
         if (!component) {           
             if (!this.routeObjects[link]) link = '/';
@@ -139,8 +133,7 @@ export class Utility {
         }
         else{
             this.routerOutlet.appendChild(component.dom);
-
-            //this.parseChildren(component.dom);
+            this.routeObjects[link] = component;
         }
 
         if (!back)

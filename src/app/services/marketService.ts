@@ -76,8 +76,7 @@ export class MarketService {
         return new Observable(sub => {
             let timeout = null;
             let that = this;
-            // recursively send a random number to the subscriber
-            // after a random delay
+
             (function push() {
                 timeout = setTimeout(
                     () => {
@@ -87,8 +86,6 @@ export class MarketService {
                     that.getRandomDelay()
                 );
             })();
-
-            // clear any pending timeout on teardown
             return () => clearTimeout(timeout);
         });
     }

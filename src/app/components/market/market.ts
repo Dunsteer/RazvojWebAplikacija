@@ -15,8 +15,7 @@ export class MarketComponent extends Component {
 
             let dom = MarketLineComponent.template.cloneNode(true);
             doc.appendChild(dom);
-
-            console.log(currency);
+            
             const line = new MarketLineComponent(currency, dom);
             this.children.push(line);
         })

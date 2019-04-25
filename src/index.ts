@@ -29,6 +29,3 @@ export const utility = new Utility(components, bootstrap, routes);
 
 
 let service = new MarketService();
-
-//service.connect().subscribe(x=>console.log(x));
-

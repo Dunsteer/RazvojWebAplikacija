@@ -55,7 +55,7 @@ export class MarketLineComponent extends Component {
 
     constructor(public currency: CurrencyModel, parentDom) {
         super();
-        //debugger;
+
         this.dom = parentDom;
         this._marketService = new MarketService();
         this._marketService.connect().subscribe((model) => this.onSocketReceive(model));
@@ -74,7 +74,7 @@ export class MarketLineComponent extends Component {
             const stat = new StatisticsModel();
             stat.currencyId= this.currency.id;
             stat.currency = this.currency;
-            //console.log(stat);
+
             //this._marketService.postStatistics(stat).subscribe(x=>console.log(x));
         }
 
@@ -96,6 +96,6 @@ export class MarketLineComponent extends Component {
         let dom = StatisticsComponent.template.cloneNode(true);
 
         let stat = new StatisticsComponent(this.currency, dom);
-        utility.navigateTo('/statistics', false, stat);
+        utility.navigateTo(`/statistics?id=${this.currency.id}`, false, stat);
     }
 }

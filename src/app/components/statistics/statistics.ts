@@ -6,7 +6,7 @@ export class StatisticsComponent extends Component {
     _service: MarketService;
     constructor(public currency, dom) {
         super();
-        //debugger;
+
         this.dom = dom;
 
         this._service = new MarketService();

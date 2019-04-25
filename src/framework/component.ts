@@ -24,9 +24,6 @@ export class Component {
         this._dom = value;
 
         this.loadBinds();
-        // setTimeout(()=>{
-        //     this.loadEvents();
-        // },100);
         this.loadEvents();
         this.loadChildren();
     }
@@ -45,7 +42,6 @@ export class Component {
                     val = parseFloat(valstr);
                     if (!isNaN(val)) {
                         val = numeral(val).format('0,0.00 a');
-                        //console.log(val);
                     }
                     else {
                         val = valstr;
@@ -64,7 +60,7 @@ export class Component {
         inner = inner.replace(regEx, (variable) => {
             if (variable) {
                 variable = variable.replace(/{/g, '').replace(/}/g, '');
-                //debugger;
+
                 return `${saferEval(variable, this)}`;
             }
         });
@@ -72,7 +68,6 @@ export class Component {
         this._dom.innerHTML = inner;
 
         this._variables = this._dom.querySelectorAll('app-variable');
-        //console.log(this._variables);
     }
 
     private loadChildren() {
@@ -85,16 +80,15 @@ export class Component {
                 const variable = x.attributes.getNamedItem('variable-name').value;
                 const valstr = saferEval(variable, this);
                 let val = parseFloat(valstr);
-                //debugger;
+
                 if (!isNaN(val)) {
                     val = numeral(val).format('0,0.00 a');
-                    //console.log(val);
+
                     x.innerHTML = val + "";
                 }
                 else {
                     x.innerHTML = valstr;
                 }
-                //x.innerHTML = val+"";
             })
         }
     }

@@ -111,204 +111,6 @@
       }
     },
     {
-      "id": 3
-    },
-    {
-      "id": 4
-    },
-    {
-      "id": 5
-    },
-    {
-      "id": 6
-    },
-    {
-      "id": 7
-    },
-    {
-      "id": 8
-    },
-    {
-      "id": 9
-    },
-    {
-      "id": 10
-    },
-    {
-      "id": 11
-    },
-    {
-      "id": 12
-    },
-    {
-      "id": 13
-    },
-    {
-      "id": 14
-    },
-    {
-      "id": 15
-    },
-    {
-      "id": 16
-    },
-    {
-      "id": 17
-    },
-    {
-      "id": 18
-    },
-    {
-      "id": 19
-    },
-    {
-      "id": 20
-    },
-    {
-      "id": 21
-    },
-    {
-      "id": 22
-    },
-    {
-      "id": 23
-    },
-    {
-      "id": 24
-    },
-    {
-      "id": 25
-    },
-    {
-      "id": 26
-    },
-    {
-      "id": 27
-    },
-    {
-      "id": 28
-    },
-    {
-      "id": 29
-    },
-    {
-      "id": 30
-    },
-    {
-      "id": 31
-    },
-    {
-      "id": 32
-    },
-    {
-      "id": 33
-    },
-    {
-      "id": 34
-    },
-    {
-      "id": 35
-    },
-    {
-      "id": 36
-    },
-    {
-      "id": 37
-    },
-    {
-      "id": 38
-    },
-    {
-      "id": 39
-    },
-    {
-      "id": 40
-    },
-    {
-      "id": 41
-    },
-    {
-      "id": 42
-    },
-    {
-      "id": 43
-    },
-    {
-      "id": 44
-    },
-    {
-      "id": 45
-    },
-    {
-      "id": 46
-    },
-    {
-      "id": 47
-    },
-    {
-      "id": 48
-    },
-    {
-      "id": 49
-    },
-    {
-      "id": 50
-    },
-    {
-      "id": 51
-    },
-    {
-      "id": 52
-    },
-    {
-      "id": 53
-    },
-    {
-      "id": 54
-    },
-    {
-      "id": 55
-    },
-    {
-      "id": 56
-    },
-    {
-      "id": 57
-    },
-    {
-      "id": 58
-    },
-    {
-      "id": 59
-    },
-    {
-      "id": 60
-    },
-    {
-      "id": 61
-    },
-    {
-      "id": 62
-    },
-    {
-      "id": 63
-    },
-    {
-      "id": 64
-    },
-    {
-      "id": 65
-    },
-    {
-      "id": 66
-    },
-    {
-      "id": 67
-    },
-    {
-      "id": 68
-    },
-    {
       "currencyId": 5,
       "currency": {
         "id": 5,
@@ -657,6 +459,5186 @@
         "w": -0.11999999999999997
       },
       "id": 93
+    },
+    {
+      "currencyId": 1,
+      "currency": {
+        "id": 1,
+        "code": "BTC",
+        "name": "Bitcoin Core",
+        "price": 5453.01,
+        "marketPrice": 96996068595.9,
+        "volume": 14421089501.2,
+        "d": -2.83,
+        "w": 4.01
+      },
+      "id": 94
+    },
+    {
+      "currencyId": 1,
+      "currency": {
+        "id": 1,
+        "code": "BTC",
+        "name": "Bitcoin Core",
+        "price": 5489.01,
+        "marketPrice": 96996068595.9,
+        "volume": 14421089501.2,
+        "d": -2.83,
+        "w": 4.01
+      },
+      "id": 95
+    },
+    {
+      "currencyId": 4,
+      "currency": {
+        "id": 4,
+        "code": "BCH",
+        "name": "Bitcoin Cash",
+        "price": 230.52999999999997,
+        "marketPrice": 5014337183.98,
+        "volume": 1259757360.49,
+        "d": -8,
+        "w": -11.3
+      },
+      "id": 96
+    },
+    {
+      "currencyId": 4,
+      "currency": {
+        "id": 4,
+        "code": "BCH",
+        "name": "Bitcoin Cash",
+        "price": 192.52999999999997,
+        "marketPrice": 5014337183.98,
+        "volume": 1259757360.49,
+        "d": -8.05,
+        "w": -11.22
+      },
+      "id": 97
+    },
+    {
+      "currencyId": 6,
+      "currency": {
+        "id": 6,
+        "code": "EOS",
+        "name": "EOS",
+        "price": 4.76,
+        "marketPrice": 4527848157,
+        "volume": 2473059315.05,
+        "d": -9.299999999999999,
+        "w": -12.66
+      },
+      "id": 98
+    },
+    {
+      "currencyId": 5,
+      "currency": {
+        "id": 5,
+        "code": "LTC",
+        "name": "Litecoin",
+        "price": 47.209999999999994,
+        "marketPrice": 4555467064.73,
+        "volume": 2672604644.57,
+        "d": -7.02,
+        "w": -9.319999999999999
+      },
+      "id": 99
+    },
+    {
+      "currencyId": 1,
+      "currency": {
+        "id": 1,
+        "code": "BTC",
+        "name": "Bitcoin Core",
+        "price": 5509.01,
+        "marketPrice": 96996068595.9,
+        "volume": 14421089501.2,
+        "d": -2.8000000000000003,
+        "w": 4.08
+      },
+      "id": 100
+    },
+    {
+      "currencyId": 7,
+      "currency": {
+        "id": 7,
+        "code": "BNB",
+        "name": "Binace Coin",
+        "price": 32.14,
+        "marketPrice": 3233796201.45,
+        "volume": 220517101.522,
+        "d": -4.54,
+        "w": 13.049999999999999
+      },
+      "id": 101
+    },
+    {
+      "currencyId": 2,
+      "currency": {
+        "id": 2,
+        "code": "ETH",
+        "name": "Ethereum",
+        "price": 186.83,
+        "marketPrice": 17420554092.7,
+        "volume": 6331540961.12,
+        "d": -5.62,
+        "w": -1.86
+      },
+      "id": 102
+    },
+    {
+      "currencyId": 4,
+      "currency": {
+        "id": 4,
+        "code": "BCH",
+        "name": "Bitcoin Cash",
+        "price": 144.52999999999997,
+        "marketPrice": 5014337183.98,
+        "volume": 1259757360.49,
+        "d": -8.020000000000001,
+        "w": -11.21
+      },
+      "id": 103
+    },
+    {
+      "currencyId": 3,
+      "currency": {
+        "id": 3,
+        "code": "XRP",
+        "name": "XRP",
+        "price": 0.2988,
+        "marketPrice": 12726548712.1,
+        "volume": 1110116996.26,
+        "d": -7.78,
+        "w": -11.36
+      },
+      "id": 104
+    },
+    {
+      "currencyId": 4,
+      "currency": {
+        "id": 4,
+        "code": "BCH",
+        "name": "Bitcoin Cash",
+        "price": 121.52999999999997,
+        "marketPrice": 5014337183.98,
+        "volume": 1259757360.49,
+        "d": -8.090000000000002,
+        "w": -11.290000000000001
+      },
+      "id": 105
+    },
+    {
+      "currencyId": 7,
+      "currency": {
+        "id": 7,
+        "code": "BNB",
+        "name": "Binace Coin",
+        "price": 76.14,
+        "marketPrice": 3233796201.45,
+        "volume": 220517101.522,
+        "d": -4.5,
+        "w": 13.11
+      },
+      "id": 106
+    },
+    {
+      "currencyId": 8,
+      "currency": {
+        "id": 8,
+        "code": "USDT",
+        "name": "Tether",
+        "price": 1.0057,
+        "marketPrice": 2847160380.78,
+        "volume": 12978173572.2,
+        "d": -0.09999999999999999,
+        "w": -0.08
+      },
+      "id": 107
+    },
+    {
+      "currencyId": 5,
+      "currency": {
+        "id": 5,
+        "code": "LTC",
+        "name": "Litecoin",
+        "price": 20.209999999999994,
+        "marketPrice": 4555467064.73,
+        "volume": 2672604644.57,
+        "d": -6.989999999999999,
+        "w": -9.359999999999998
+      },
+      "id": 108
+    },
+    {
+      "currencyId": 7,
+      "currency": {
+        "id": 7,
+        "code": "BNB",
+        "name": "Binace Coin",
+        "price": 102.14,
+        "marketPrice": 3233796201.45,
+        "volume": 220517101.522,
+        "d": -4.53,
+        "w": 13.2
+      },
+      "id": 109
+    },
+    {
+      "currencyId": 5,
+      "currency": {
+        "id": 5,
+        "code": "LTC",
+        "name": "Litecoin",
+        "price": 62.209999999999994,
+        "marketPrice": 4555467064.73,
+        "volume": 2672604644.57,
+        "d": -7.029999999999999,
+        "w": -9.269999999999998
+      },
+      "id": 110
+    },
+    {
+      "currencyId": 1,
+      "currency": {
+        "id": 1,
+        "code": "BTC",
+        "name": "Bitcoin Core",
+        "price": 5496.01,
+        "marketPrice": 96996068595.9,
+        "volume": 14421089501.2,
+        "d": -2.85,
+        "w": 4.16
+      },
+      "id": 111
+    },
+    {
+      "currencyId": 3,
+      "currency": {
+        "id": 3,
+        "code": "XRP",
+        "name": "XRP",
+        "price": 0.2988,
+        "marketPrice": 12726548712.1,
+        "volume": 1110116996.26,
+        "d": -7.83,
+        "w": -11.35
+      },
+      "id": 112
+    },
+    {
+      "currencyId": 2,
+      "currency": {
+        "id": 2,
+        "code": "ETH",
+        "name": "Ethereum",
+        "price": 187.83,
+        "marketPrice": 17420554092.7,
+        "volume": 6331540961.12,
+        "d": -5.59,
+        "w": -1.8800000000000001
+      },
+      "id": 113
+    },
+    {
+      "currencyId": 8,
+      "currency": {
+        "id": 8,
+        "code": "USDT",
+        "name": "Tether",
+        "price": 1.0057,
+        "marketPrice": 2847160380.78,
+        "volume": 12978173572.2,
+        "d": -0.06999999999999999,
+        "w": -0.13
+      },
+      "id": 114
+    },
+    {
+      "currencyId": 4,
+      "currency": {
+        "id": 4,
+        "code": "BCH",
+        "name": "Bitcoin Cash",
+        "price": 167.52999999999997,
+        "marketPrice": 5014337183.98,
+        "volume": 1259757360.49,
+        "d": -8.020000000000001,
+        "w": -11.250000000000002
+      },
+      "id": 115
+    },
+    {
+      "currencyId": 7,
+      "currency": {
+        "id": 7,
+        "code": "BNB",
+        "name": "Binace Coin",
+        "price": 133.14,
+        "marketPrice": 3233796201.45,
+        "volume": 220517101.522,
+        "d": -4.5600000000000005,
+        "w": 13.229999999999999
+      },
+      "id": 116
+    },
+    {
+      "currencyId": 2,
+      "currency": {
+        "id": 2,
+        "code": "ETH",
+        "name": "Ethereum",
+        "price": 209.83,
+        "marketPrice": 17420554092.7,
+        "volume": 6331540961.12,
+        "d": -5.64,
+        "w": -1.8800000000000001
+      },
+      "id": 117
+    },
+    {
+      "currencyId": 4,
+      "currency": {
+        "id": 4,
+        "code": "BCH",
+        "name": "Bitcoin Cash",
+        "price": 196.52999999999997,
+        "marketPrice": 5014337183.98,
+        "volume": 1259757360.49,
+        "d": -7.980000000000001,
+        "w": -11.310000000000002
+      },
+      "id": 118
+    },
+    {
+      "currencyId": 8,
+      "currency": {
+        "id": 8,
+        "code": "USDT",
+        "name": "Tether",
+        "price": 1.0057,
+        "marketPrice": 2847160380.78,
+        "volume": 12978173572.2,
+        "d": -0.10999999999999999,
+        "w": -0.07
+      },
+      "id": 119
+    },
+    {
+      "currencyId": 1,
+      "currency": {
+        "id": 1,
+        "code": "BTC",
+        "name": "Bitcoin Core",
+        "price": 5462.01,
+        "marketPrice": 96996068595.9,
+        "volume": 14421089501.2,
+        "d": -2.87,
+        "w": 4.22
+      },
+      "id": 120
+    },
+    {
+      "currencyId": 8,
+      "currency": {
+        "id": 8,
+        "code": "USDT",
+        "name": "Tether",
+        "price": 12.005700000000001,
+        "marketPrice": 2847160380.78,
+        "volume": 12978173572.2,
+        "d": -0.15,
+        "w": 0.01999999999999999
+      },
+      "id": 121
+    },
+    {
+      "currencyId": 3,
+      "currency": {
+        "id": 3,
+        "code": "XRP",
+        "name": "XRP",
+        "price": 34.2988,
+        "marketPrice": 12726548712.1,
+        "volume": 1110116996.26,
+        "d": -7.9,
+        "w": -11.389999999999999
+      },
+      "id": 122
+    },
+    {
+      "currencyId": 6,
+      "currency": {
+        "id": 6,
+        "code": "EOS",
+        "name": "EOS",
+        "price": 4.76,
+        "marketPrice": 4527848157,
+        "volume": 2473059315.05,
+        "d": -9.219999999999999,
+        "w": -12.66
+      },
+      "id": 123
+    },
+    {
+      "currencyId": 2,
+      "currency": {
+        "id": 2,
+        "code": "ETH",
+        "name": "Ethereum",
+        "price": 193.83,
+        "marketPrice": 17420554092.7,
+        "volume": 6331540961.12,
+        "d": -5.67,
+        "w": -1.81
+      },
+      "id": 124
+    },
+    {
+      "currencyId": 4,
+      "currency": {
+        "id": 4,
+        "code": "BCH",
+        "name": "Bitcoin Cash",
+        "price": 220.52999999999997,
+        "marketPrice": 5014337183.98,
+        "volume": 1259757360.49,
+        "d": -8.030000000000001,
+        "w": -11.250000000000002
+      },
+      "id": 125
+    },
+    {
+      "currencyId": 2,
+      "currency": {
+        "id": 2,
+        "code": "ETH",
+        "name": "Ethereum",
+        "price": 160.83,
+        "marketPrice": 17420554092.7,
+        "volume": 6331540961.12,
+        "d": -5.67,
+        "w": -1.76
+      },
+      "id": 126
+    },
+    {
+      "currencyId": 7,
+      "currency": {
+        "id": 7,
+        "code": "BNB",
+        "name": "Binace Coin",
+        "price": 171.14,
+        "marketPrice": 3233796201.45,
+        "volume": 220517101.522,
+        "d": -4.500000000000001,
+        "w": 13.179999999999998
+      },
+      "id": 127
+    },
+    {
+      "currencyId": 3,
+      "currency": {
+        "id": 3,
+        "code": "XRP",
+        "name": "XRP",
+        "price": 34.2988,
+        "marketPrice": 12726548712.1,
+        "volume": 1110116996.26,
+        "d": -7.970000000000001,
+        "w": -11.389999999999999
+      },
+      "id": 128
+    },
+    {
+      "currencyId": 6,
+      "currency": {
+        "id": 6,
+        "code": "EOS",
+        "name": "EOS",
+        "price": 4.76,
+        "marketPrice": 4527848157,
+        "volume": 2473059315.05,
+        "d": -9.28,
+        "w": -12.57
+      },
+      "id": 129
+    },
+    {
+      "currencyId": 8,
+      "currency": {
+        "id": 8,
+        "code": "USDT",
+        "name": "Tether",
+        "price": 12.005700000000001,
+        "marketPrice": 2847160380.78,
+        "volume": 12978173572.2,
+        "d": -0.10999999999999999,
+        "w": 0.05999999999999999
+      },
+      "id": 130
+    },
+    {
+      "currencyId": 4,
+      "currency": {
+        "id": 4,
+        "code": "BCH",
+        "name": "Bitcoin Cash",
+        "price": 200.52999999999997,
+        "marketPrice": 5014337183.98,
+        "volume": 1259757360.49,
+        "d": -8.120000000000001,
+        "w": -11.170000000000002
+      },
+      "id": 131
+    },
+    {
+      "currencyId": 7,
+      "currency": {
+        "id": 7,
+        "code": "BNB",
+        "name": "Binace Coin",
+        "price": 205.14,
+        "marketPrice": 3233796201.45,
+        "volume": 220517101.522,
+        "d": -4.5600000000000005,
+        "w": 13.169999999999998
+      },
+      "id": 132
+    },
+    {
+      "currencyId": 1,
+      "currency": {
+        "id": 1,
+        "code": "BTC",
+        "name": "Bitcoin Core",
+        "price": 5466.01,
+        "marketPrice": 96996068595.9,
+        "volume": 14421089501.2,
+        "d": -2.8000000000000003,
+        "w": 4.3
+      },
+      "id": 133
+    },
+    {
+      "currencyId": 5,
+      "currency": {
+        "id": 5,
+        "code": "LTC",
+        "name": "Litecoin",
+        "price": 62.209999999999994,
+        "marketPrice": 4555467064.73,
+        "volume": 2672604644.57,
+        "d": -6.989999999999999,
+        "w": -9.239999999999998
+      },
+      "id": 134
+    },
+    {
+      "currencyId": 7,
+      "currency": {
+        "id": 7,
+        "code": "BNB",
+        "name": "Binace Coin",
+        "price": 183.14,
+        "marketPrice": 3233796201.45,
+        "volume": 220517101.522,
+        "d": -4.5600000000000005,
+        "w": 13.219999999999999
+      },
+      "id": 135
+    },
+    {
+      "currencyId": 6,
+      "currency": {
+        "id": 6,
+        "code": "EOS",
+        "name": "EOS",
+        "price": 4.76,
+        "marketPrice": 4527848157,
+        "volume": 2473059315.05,
+        "d": -9.219999999999999,
+        "w": -12.56
+      },
+      "id": 136
+    },
+    {
+      "currencyId": 2,
+      "currency": {
+        "id": 2,
+        "code": "ETH",
+        "name": "Ethereum",
+        "price": 124.83000000000001,
+        "marketPrice": 17420554092.7,
+        "volume": 6331540961.12,
+        "d": -5.63,
+        "w": -1.71
+      },
+      "id": 137
+    },
+    {
+      "currencyId": 5,
+      "currency": {
+        "id": 5,
+        "code": "LTC",
+        "name": "Litecoin",
+        "price": 60.209999999999994,
+        "marketPrice": 4555467064.73,
+        "volume": 2672604644.57,
+        "d": -7.049999999999999,
+        "w": -9.249999999999998
+      },
+      "id": 138
+    },
+    {
+      "currencyId": 8,
+      "currency": {
+        "id": 8,
+        "code": "USDT",
+        "name": "Tether",
+        "price": 27.0057,
+        "marketPrice": 2847160380.78,
+        "volume": 12978173572.2,
+        "d": -0.059999999999999984,
+        "w": 0.05999999999999999
+      },
+      "id": 139
+    },
+    {
+      "currencyId": 1,
+      "currency": {
+        "id": 1,
+        "code": "BTC",
+        "name": "Bitcoin Core",
+        "price": 5495.01,
+        "marketPrice": 96996068595.9,
+        "volume": 14421089501.2,
+        "d": -2.7900000000000005,
+        "w": 4.38
+      },
+      "id": 140
+    },
+    {
+      "currencyId": 4,
+      "currency": {
+        "id": 4,
+        "code": "BCH",
+        "name": "Bitcoin Cash",
+        "price": 152.52999999999997,
+        "marketPrice": 5014337183.98,
+        "volume": 1259757360.49,
+        "d": -8.16,
+        "w": -11.120000000000001
+      },
+      "id": 141
+    },
+    {
+      "currencyId": 3,
+      "currency": {
+        "id": 3,
+        "code": "XRP",
+        "name": "XRP",
+        "price": 76.2988,
+        "marketPrice": 12726548712.1,
+        "volume": 1110116996.26,
+        "d": -7.970000000000001,
+        "w": -11.409999999999998
+      },
+      "id": 142
+    },
+    {
+      "currencyId": 8,
+      "currency": {
+        "id": 8,
+        "code": "USDT",
+        "name": "Tether",
+        "price": 58.005700000000004,
+        "marketPrice": 2847160380.78,
+        "volume": 12978173572.2,
+        "d": -0.14999999999999997,
+        "w": -6.938893903907228e-18
+      },
+      "id": 143
+    },
+    {
+      "currencyId": 5,
+      "currency": {
+        "id": 5,
+        "code": "LTC",
+        "name": "Litecoin",
+        "price": 75.21,
+        "marketPrice": 4555467064.73,
+        "volume": 2672604644.57,
+        "d": -7.089999999999999,
+        "w": -9.269999999999998
+      },
+      "id": 144
+    },
+    {
+      "currencyId": 2,
+      "currency": {
+        "id": 2,
+        "code": "ETH",
+        "name": "Ethereum",
+        "price": 118.83000000000001,
+        "marketPrice": 17420554092.7,
+        "volume": 6331540961.12,
+        "d": -5.64,
+        "w": -1.66
+      },
+      "id": 145
+    },
+    {
+      "currencyId": 6,
+      "currency": {
+        "id": 6,
+        "code": "EOS",
+        "name": "EOS",
+        "price": 23.759999999999998,
+        "marketPrice": 4527848157,
+        "volume": 2473059315.05,
+        "d": -9.29,
+        "w": -12.63
+      },
+      "id": 146
+    },
+    {
+      "currencyId": 4,
+      "currency": {
+        "id": 4,
+        "code": "BCH",
+        "name": "Bitcoin Cash",
+        "price": 171.52999999999997,
+        "marketPrice": 5014337183.98,
+        "volume": 1259757360.49,
+        "d": -8.14,
+        "w": -11.120000000000001
+      },
+      "id": 147
+    },
+    {
+      "currencyId": 3,
+      "currency": {
+        "id": 3,
+        "code": "XRP",
+        "name": "XRP",
+        "price": 62.2988,
+        "marketPrice": 12726548712.1,
+        "volume": 1110116996.26,
+        "d": -7.950000000000001,
+        "w": -11.479999999999999
+      },
+      "id": 148
+    },
+    {
+      "currencyId": 1,
+      "currency": {
+        "id": 1,
+        "code": "BTC",
+        "name": "Bitcoin Core",
+        "price": 5512.01,
+        "marketPrice": 96996068595.9,
+        "volume": 14421089501.2,
+        "d": -2.8700000000000006,
+        "w": 4.41
+      },
+      "id": 149
+    },
+    {
+      "currencyId": 7,
+      "currency": {
+        "id": 7,
+        "code": "BNB",
+        "name": "Binace Coin",
+        "price": 152.14,
+        "marketPrice": 3233796201.45,
+        "volume": 220517101.522,
+        "d": -4.500000000000001,
+        "w": 13.259999999999998
+      },
+      "id": 150
+    },
+    {
+      "currencyId": 4,
+      "currency": {
+        "id": 4,
+        "code": "BCH",
+        "name": "Bitcoin Cash",
+        "price": 169.52999999999997,
+        "marketPrice": 5014337183.98,
+        "volume": 1259757360.49,
+        "d": -8.16,
+        "w": -11.040000000000001
+      },
+      "id": 151
+    },
+    {
+      "currencyId": 5,
+      "currency": {
+        "id": 5,
+        "code": "LTC",
+        "name": "Litecoin",
+        "price": 63.209999999999994,
+        "marketPrice": 4555467064.73,
+        "volume": 2672604644.57,
+        "d": -7.169999999999999,
+        "w": -9.329999999999998
+      },
+      "id": 152
+    },
+    {
+      "currencyId": 6,
+      "currency": {
+        "id": 6,
+        "code": "EOS",
+        "name": "EOS",
+        "price": 47.76,
+        "marketPrice": 4527848157,
+        "volume": 2473059315.05,
+        "d": -9.209999999999999,
+        "w": -12.690000000000001
+      },
+      "id": 153
+    },
+    {
+      "currencyId": 6,
+      "currency": {
+        "id": 6,
+        "code": "EOS",
+        "name": "EOS",
+        "price": 1.759999999999998,
+        "marketPrice": 4527848157,
+        "volume": 2473059315.05,
+        "d": -9.209999999999999,
+        "w": -12.73
+      },
+      "id": 154
+    },
+    {
+      "currencyId": 5,
+      "currency": {
+        "id": 5,
+        "code": "LTC",
+        "name": "Litecoin",
+        "price": 58.209999999999994,
+        "marketPrice": 4555467064.73,
+        "volume": 2672604644.57,
+        "d": -7.239999999999999,
+        "w": -9.409999999999998
+      },
+      "id": 155
+    },
+    {
+      "currencyId": 4,
+      "currency": {
+        "id": 4,
+        "code": "BCH",
+        "name": "Bitcoin Cash",
+        "price": 168.52999999999997,
+        "marketPrice": 5014337183.98,
+        "volume": 1259757360.49,
+        "d": -8.13,
+        "w": -10.950000000000001
+      },
+      "id": 156
+    },
+    {
+      "currencyId": 6,
+      "currency": {
+        "id": 6,
+        "code": "EOS",
+        "name": "EOS",
+        "price": 1.759999999999998,
+        "marketPrice": 4527848157,
+        "volume": 2473059315.05,
+        "d": -9.209999999999999,
+        "w": -12.64
+      },
+      "id": 157
+    },
+    {
+      "currencyId": 3,
+      "currency": {
+        "id": 3,
+        "code": "XRP",
+        "name": "XRP",
+        "price": 25.2988,
+        "marketPrice": 12726548712.1,
+        "volume": 1110116996.26,
+        "d": -7.920000000000001,
+        "w": -11.44
+      },
+      "id": 158
+    },
+    {
+      "currencyId": 5,
+      "currency": {
+        "id": 5,
+        "code": "LTC",
+        "name": "Litecoin",
+        "price": 48.209999999999994,
+        "marketPrice": 4555467064.73,
+        "volume": 2672604644.57,
+        "d": -7.22,
+        "w": -9.419999999999998
+      },
+      "id": 159
+    },
+    {
+      "currencyId": 1,
+      "currency": {
+        "id": 1,
+        "code": "BTC",
+        "name": "Bitcoin Core",
+        "price": 5498.01,
+        "marketPrice": 96996068595.9,
+        "volume": 14421089501.2,
+        "d": -2.9000000000000004,
+        "w": 4.37
+      },
+      "id": 160
+    },
+    {
+      "currencyId": 6,
+      "currency": {
+        "id": 6,
+        "code": "EOS",
+        "name": "EOS",
+        "price": 11.759999999999998,
+        "marketPrice": 4527848157,
+        "volume": 2473059315.05,
+        "d": -9.299999999999999,
+        "w": -12.600000000000001
+      },
+      "id": 161
+    },
+    {
+      "currencyId": 7,
+      "currency": {
+        "id": 7,
+        "code": "BNB",
+        "name": "Binace Coin",
+        "price": 128.14,
+        "marketPrice": 3233796201.45,
+        "volume": 220517101.522,
+        "d": -4.420000000000001,
+        "w": 13.339999999999998
+      },
+      "id": 162
+    },
+    {
+      "currencyId": 3,
+      "currency": {
+        "id": 3,
+        "code": "XRP",
+        "name": "XRP",
+        "price": 48.2988,
+        "marketPrice": 12726548712.1,
+        "volume": 1110116996.26,
+        "d": -7.920000000000001,
+        "w": -11.43
+      },
+      "id": 163
+    },
+    {
+      "currencyId": 3,
+      "currency": {
+        "id": 3,
+        "code": "XRP",
+        "name": "XRP",
+        "price": 29.2988,
+        "marketPrice": 12726548712.1,
+        "volume": 1110116996.26,
+        "d": -7.950000000000001,
+        "w": -11.469999999999999
+      },
+      "id": 164
+    },
+    {
+      "currencyId": 7,
+      "currency": {
+        "id": 7,
+        "code": "BNB",
+        "name": "Binace Coin",
+        "price": 97.13999999999999,
+        "marketPrice": 3233796201.45,
+        "volume": 220517101.522,
+        "d": -4.470000000000001,
+        "w": 13.419999999999998
+      },
+      "id": 165
+    },
+    {
+      "currencyId": 1,
+      "currency": {
+        "id": 1,
+        "code": "BTC",
+        "name": "Bitcoin Core",
+        "price": 5536.01,
+        "marketPrice": 96996068595.9,
+        "volume": 14421089501.2,
+        "d": -2.8900000000000006,
+        "w": 4.34
+      },
+      "id": 166
+    },
+    {
+      "currencyId": 5,
+      "currency": {
+        "id": 5,
+        "code": "LTC",
+        "name": "Litecoin",
+        "price": 4.209999999999994,
+        "marketPrice": 4555467064.73,
+        "volume": 2672604644.57,
+        "d": -7.279999999999999,
+        "w": -9.399999999999999
+      },
+      "id": 167
+    },
+    {
+      "currencyId": 3,
+      "currency": {
+        "id": 3,
+        "code": "XRP",
+        "name": "XRP",
+        "price": 77.2988,
+        "marketPrice": 12726548712.1,
+        "volume": 1110116996.26,
+        "d": -7.990000000000001,
+        "w": -11.559999999999999
+      },
+      "id": 168
+    },
+    {
+      "currencyId": 7,
+      "currency": {
+        "id": 7,
+        "code": "BNB",
+        "name": "Binace Coin",
+        "price": 62.139999999999986,
+        "marketPrice": 3233796201.45,
+        "volume": 220517101.522,
+        "d": -4.49,
+        "w": 13.359999999999998
+      },
+      "id": 169
+    },
+    {
+      "currencyId": 6,
+      "currency": {
+        "id": 6,
+        "code": "EOS",
+        "name": "EOS",
+        "price": 17.759999999999998,
+        "marketPrice": 4527848157,
+        "volume": 2473059315.05,
+        "d": -9.299999999999999,
+        "w": -12.610000000000001
+      },
+      "id": 170
+    },
+    {
+      "currencyId": 7,
+      "currency": {
+        "id": 7,
+        "code": "BNB",
+        "name": "Binace Coin",
+        "price": 21.139999999999986,
+        "marketPrice": 3233796201.45,
+        "volume": 220517101.522,
+        "d": -4.51,
+        "w": 13.439999999999998
+      },
+      "id": 171
+    },
+    {
+      "currencyId": 8,
+      "currency": {
+        "id": 8,
+        "code": "USDT",
+        "name": "Tether",
+        "price": 82.0057,
+        "marketPrice": 2847160380.78,
+        "volume": 12978173572.2,
+        "d": -0.12999999999999998,
+        "w": -0.04000000000000001
+      },
+      "id": 172
+    },
+    {
+      "currencyId": 4,
+      "currency": {
+        "id": 4,
+        "code": "BCH",
+        "name": "Bitcoin Cash",
+        "price": 201.52999999999997,
+        "marketPrice": 5014337183.98,
+        "volume": 1259757360.49,
+        "d": -8.08,
+        "w": -11.040000000000001
+      },
+      "id": 173
+    },
+    {
+      "currencyId": 2,
+      "currency": {
+        "id": 2,
+        "code": "ETH",
+        "name": "Ethereum",
+        "price": 79.83000000000001,
+        "marketPrice": 17420554092.7,
+        "volume": 6331540961.12,
+        "d": -5.6499999999999995,
+        "w": -1.68
+      },
+      "id": 174
+    },
+    {
+      "currencyId": 2,
+      "currency": {
+        "id": 2,
+        "code": "ETH",
+        "name": "Ethereum",
+        "price": 30.830000000000013,
+        "marketPrice": 17420554092.7,
+        "volume": 6331540961.12,
+        "d": -5.64,
+        "w": -1.68
+      },
+      "id": 175
+    },
+    {
+      "currencyId": 6,
+      "currency": {
+        "id": 6,
+        "code": "EOS",
+        "name": "EOS",
+        "price": 3.759999999999998,
+        "marketPrice": 4527848157,
+        "volume": 2473059315.05,
+        "d": -9.209999999999999,
+        "w": -12.570000000000002
+      },
+      "id": 176
+    },
+    {
+      "currencyId": 7,
+      "currency": {
+        "id": 7,
+        "code": "BNB",
+        "name": "Binace Coin",
+        "price": 51.139999999999986,
+        "marketPrice": 3233796201.45,
+        "volume": 220517101.522,
+        "d": -4.46,
+        "w": 13.419999999999998
+      },
+      "id": 177
+    },
+    {
+      "currencyId": 4,
+      "currency": {
+        "id": 4,
+        "code": "BCH",
+        "name": "Bitcoin Cash",
+        "price": 175.52999999999997,
+        "marketPrice": 5014337183.98,
+        "volume": 1259757360.49,
+        "d": -7.99,
+        "w": -11.000000000000002
+      },
+      "id": 178
+    },
+    {
+      "currencyId": 3,
+      "currency": {
+        "id": 3,
+        "code": "XRP",
+        "name": "XRP",
+        "price": 99.2988,
+        "marketPrice": 12726548712.1,
+        "volume": 1110116996.26,
+        "d": -7.9700000000000015,
+        "w": -11.549999999999999
+      },
+      "id": 179
+    },
+    {
+      "currencyId": 2,
+      "currency": {
+        "id": 2,
+        "code": "ETH",
+        "name": "Ethereum",
+        "price": 69.83000000000001,
+        "marketPrice": 17420554092.7,
+        "volume": 6331540961.12,
+        "d": -5.6,
+        "w": -1.72
+      },
+      "id": 180
+    },
+    {
+      "currencyId": 1,
+      "currency": {
+        "id": 1,
+        "code": "BTC",
+        "name": "Bitcoin Core",
+        "price": 5511.01,
+        "marketPrice": 96996068595.9,
+        "volume": 14421089501.2,
+        "d": -2.8600000000000008,
+        "w": 4.3
+      },
+      "id": 181
+    },
+    {
+      "currencyId": 1,
+      "currency": {
+        "id": 1,
+        "code": "BTC",
+        "name": "Bitcoin Core",
+        "price": 5541.01,
+        "marketPrice": 96996068595.9,
+        "volume": 14421089501.2,
+        "d": -2.770000000000001,
+        "w": 4.29
+      },
+      "id": 182
+    },
+    {
+      "currencyId": 6,
+      "currency": {
+        "id": 6,
+        "code": "EOS",
+        "name": "EOS",
+        "price": 18.759999999999998,
+        "marketPrice": 4527848157,
+        "volume": 2473059315.05,
+        "d": -9.129999999999999,
+        "w": -12.480000000000002
+      },
+      "id": 183
+    },
+    {
+      "currencyId": 1,
+      "currency": {
+        "id": 1,
+        "code": "BTC",
+        "name": "Bitcoin Core",
+        "price": 5587.01,
+        "marketPrice": 96996068595.9,
+        "volume": 14421089501.2,
+        "d": -2.710000000000001,
+        "w": 4.21
+      },
+      "id": 184
+    },
+    {
+      "currencyId": 8,
+      "currency": {
+        "id": 8,
+        "code": "USDT",
+        "name": "Tether",
+        "price": 59.005700000000004,
+        "marketPrice": 2847160380.78,
+        "volume": 12978173572.2,
+        "d": -0.07999999999999997,
+        "w": -0.07
+      },
+      "id": 185
+    },
+    {
+      "currencyId": 4,
+      "currency": {
+        "id": 4,
+        "code": "BCH",
+        "name": "Bitcoin Cash",
+        "price": 210.52999999999997,
+        "marketPrice": 5014337183.98,
+        "volume": 1259757360.49,
+        "d": -7.92,
+        "w": -11.080000000000002
+      },
+      "id": 186
+    },
+    {
+      "currencyId": 5,
+      "currency": {
+        "id": 5,
+        "code": "LTC",
+        "name": "Litecoin",
+        "price": 53.209999999999994,
+        "marketPrice": 4555467064.73,
+        "volume": 2672604644.57,
+        "d": -7.249999999999999,
+        "w": -9.409999999999998
+      },
+      "id": 187
+    },
+    {
+      "currencyId": 1,
+      "currency": {
+        "id": 1,
+        "code": "BTC",
+        "name": "Bitcoin Core",
+        "price": 5623.01,
+        "marketPrice": 96996068595.9,
+        "volume": 14421089501.2,
+        "d": -2.7600000000000007,
+        "w": 4.21
+      },
+      "id": 188
+    },
+    {
+      "currencyId": 8,
+      "currency": {
+        "id": 8,
+        "code": "USDT",
+        "name": "Tether",
+        "price": 52.005700000000004,
+        "marketPrice": 2847160380.78,
+        "volume": 12978173572.2,
+        "d": -0.019999999999999976,
+        "w": -0.11000000000000001
+      },
+      "id": 189
+    },
+    {
+      "currencyId": 4,
+      "currency": {
+        "id": 4,
+        "code": "BCH",
+        "name": "Bitcoin Cash",
+        "price": 164.52999999999997,
+        "marketPrice": 5014337183.98,
+        "volume": 1259757360.49,
+        "d": -7.84,
+        "w": -11.080000000000002
+      },
+      "id": 190
+    },
+    {
+      "currencyId": 2,
+      "currency": {
+        "id": 2,
+        "code": "ETH",
+        "name": "Ethereum",
+        "price": 106.83000000000001,
+        "marketPrice": 17420554092.7,
+        "volume": 6331540961.12,
+        "d": -5.6499999999999995,
+        "w": -1.74
+      },
+      "id": 191
+    },
+    {
+      "currencyId": 3,
+      "currency": {
+        "id": 3,
+        "code": "XRP",
+        "name": "XRP",
+        "price": 99.2988,
+        "marketPrice": 12726548712.1,
+        "volume": 1110116996.26,
+        "d": -7.960000000000002,
+        "w": -11.549999999999999
+      },
+      "id": 192
+    },
+    {
+      "currencyId": 3,
+      "currency": {
+        "id": 3,
+        "code": "XRP",
+        "name": "XRP",
+        "price": 64.2988,
+        "marketPrice": 12726548712.1,
+        "volume": 1110116996.26,
+        "d": -7.960000000000002,
+        "w": -11.639999999999999
+      },
+      "id": 193
+    },
+    {
+      "currencyId": 5,
+      "currency": {
+        "id": 5,
+        "code": "LTC",
+        "name": "Litecoin",
+        "price": 71.21,
+        "marketPrice": 4555467064.73,
+        "volume": 2672604644.57,
+        "d": -7.199999999999999,
+        "w": -9.349999999999998
+      },
+      "id": 194
+    },
+    {
+      "currencyId": 4,
+      "currency": {
+        "id": 4,
+        "code": "BCH",
+        "name": "Bitcoin Cash",
+        "price": 202.52999999999997,
+        "marketPrice": 5014337183.98,
+        "volume": 1259757360.49,
+        "d": -7.8,
+        "w": -11.030000000000001
+      },
+      "id": 195
+    },
+    {
+      "currencyId": 3,
+      "currency": {
+        "id": 3,
+        "code": "XRP",
+        "name": "XRP",
+        "price": 40.2988,
+        "marketPrice": 12726548712.1,
+        "volume": 1110116996.26,
+        "d": -7.900000000000002,
+        "w": -11.719999999999999
+      },
+      "id": 196
+    },
+    {
+      "currencyId": 4,
+      "currency": {
+        "id": 4,
+        "code": "BCH",
+        "name": "Bitcoin Cash",
+        "price": 173.52999999999997,
+        "marketPrice": 5014337183.98,
+        "volume": 1259757360.49,
+        "d": -7.7299999999999995,
+        "w": -11.06
+      },
+      "id": 197
+    },
+    {
+      "currencyId": 3,
+      "currency": {
+        "id": 3,
+        "code": "XRP",
+        "name": "XRP",
+        "price": 20.2988,
+        "marketPrice": 12726548712.1,
+        "volume": 1110116996.26,
+        "d": -7.830000000000002,
+        "w": -11.629999999999999
+      },
+      "id": 198
+    },
+    {
+      "currencyId": 6,
+      "currency": {
+        "id": 6,
+        "code": "EOS",
+        "name": "EOS",
+        "price": 43.76,
+        "marketPrice": 4527848157,
+        "volume": 2473059315.05,
+        "d": -9.129999999999999,
+        "w": -12.470000000000002
+      },
+      "id": 199
+    },
+    {
+      "currencyId": 2,
+      "currency": {
+        "id": 2,
+        "code": "ETH",
+        "name": "Ethereum",
+        "price": 133.83,
+        "marketPrice": 17420554092.7,
+        "volume": 6331540961.12,
+        "d": -5.68,
+        "w": -1.83
+      },
+      "id": 200
+    },
+    {
+      "currencyId": 5,
+      "currency": {
+        "id": 5,
+        "code": "LTC",
+        "name": "Litecoin",
+        "price": 66.21,
+        "marketPrice": 4555467064.73,
+        "volume": 2672604644.57,
+        "d": -7.159999999999999,
+        "w": -9.259999999999998
+      },
+      "id": 201
+    },
+    {
+      "currencyId": 4,
+      "currency": {
+        "id": 4,
+        "code": "BCH",
+        "name": "Bitcoin Cash",
+        "price": 139.52999999999997,
+        "marketPrice": 5014337183.98,
+        "volume": 1259757360.49,
+        "d": -7.6899999999999995,
+        "w": -11.15
+      },
+      "id": 202
+    },
+    {
+      "currencyId": 3,
+      "currency": {
+        "id": 3,
+        "code": "XRP",
+        "name": "XRP",
+        "price": 37.2988,
+        "marketPrice": 12726548712.1,
+        "volume": 1110116996.26,
+        "d": -7.740000000000002,
+        "w": -11.659999999999998
+      },
+      "id": 203
+    },
+    {
+      "currencyId": 7,
+      "currency": {
+        "id": 7,
+        "code": "BNB",
+        "name": "Binace Coin",
+        "price": 63.139999999999986,
+        "marketPrice": 3233796201.45,
+        "volume": 220517101.522,
+        "d": -4.54,
+        "w": 13.469999999999999
+      },
+      "id": 204
+    },
+    {
+      "currencyId": 5,
+      "currency": {
+        "id": 5,
+        "code": "LTC",
+        "name": "Litecoin",
+        "price": 21.209999999999994,
+        "marketPrice": 4555467064.73,
+        "volume": 2672604644.57,
+        "d": -7.239999999999999,
+        "w": -9.249999999999998
+      },
+      "id": 205
+    },
+    {
+      "currencyId": 2,
+      "currency": {
+        "id": 2,
+        "code": "ETH",
+        "name": "Ethereum",
+        "price": 113.83000000000001,
+        "marketPrice": 17420554092.7,
+        "volume": 6331540961.12,
+        "d": -5.739999999999999,
+        "w": -1.76
+      },
+      "id": 206
+    },
+    {
+      "currencyId": 3,
+      "currency": {
+        "id": 3,
+        "code": "XRP",
+        "name": "XRP",
+        "price": 38.2988,
+        "marketPrice": 12726548712.1,
+        "volume": 1110116996.26,
+        "d": -7.730000000000002,
+        "w": -11.729999999999999
+      },
+      "id": 207
+    },
+    {
+      "currencyId": 1,
+      "currency": {
+        "id": 1,
+        "code": "BTC",
+        "name": "Bitcoin Core",
+        "price": 5668.01,
+        "marketPrice": 96996068595.9,
+        "volume": 14421089501.2,
+        "d": -2.670000000000001,
+        "w": 4.24
+      },
+      "id": 208
+    },
+    {
+      "currencyId": 6,
+      "currency": {
+        "id": 6,
+        "code": "EOS",
+        "name": "EOS",
+        "price": 6.759999999999998,
+        "marketPrice": 4527848157,
+        "volume": 2473059315.05,
+        "d": -9.129999999999999,
+        "w": -12.520000000000003
+      },
+      "id": 209
+    },
+    {
+      "currencyId": 3,
+      "currency": {
+        "id": 3,
+        "code": "XRP",
+        "name": "XRP",
+        "price": 49.2988,
+        "marketPrice": 12726548712.1,
+        "volume": 1110116996.26,
+        "d": -7.8000000000000025,
+        "w": -11.679999999999998
+      },
+      "id": 210
+    },
+    {
+      "currencyId": 8,
+      "currency": {
+        "id": 8,
+        "code": "USDT",
+        "name": "Tether",
+        "price": 36.005700000000004,
+        "marketPrice": 2847160380.78,
+        "volume": 12978173572.2,
+        "d": 0.020000000000000025,
+        "w": -0.10000000000000002
+      },
+      "id": 211
+    },
+    {
+      "currencyId": 4,
+      "currency": {
+        "id": 4,
+        "code": "BCH",
+        "name": "Bitcoin Cash",
+        "price": 108.52999999999997,
+        "marketPrice": 5014337183.98,
+        "volume": 1259757360.49,
+        "d": -7.739999999999999,
+        "w": -11.22
+      },
+      "id": 212
+    },
+    {
+      "currencyId": 1,
+      "currency": {
+        "id": 1,
+        "code": "BTC",
+        "name": "Bitcoin Core",
+        "price": 5657.01,
+        "marketPrice": 96996068595.9,
+        "volume": 14421089501.2,
+        "d": -2.640000000000001,
+        "w": 4.24
+      },
+      "id": 213
+    },
+    {
+      "currencyId": 2,
+      "currency": {
+        "id": 2,
+        "code": "ETH",
+        "name": "Ethereum",
+        "price": 99.83000000000001,
+        "marketPrice": 17420554092.7,
+        "volume": 6331540961.12,
+        "d": -5.7299999999999995,
+        "w": -1.73
+      },
+      "id": 214
+    },
+    {
+      "currencyId": 4,
+      "currency": {
+        "id": 4,
+        "code": "BCH",
+        "name": "Bitcoin Cash",
+        "price": 155.52999999999997,
+        "marketPrice": 5014337183.98,
+        "volume": 1259757360.49,
+        "d": -7.739999999999999,
+        "w": -11.26
+      },
+      "id": 215
+    },
+    {
+      "currencyId": 5,
+      "currency": {
+        "id": 5,
+        "code": "LTC",
+        "name": "Litecoin",
+        "price": 21.209999999999994,
+        "marketPrice": 4555467064.73,
+        "volume": 2672604644.57,
+        "d": -7.169999999999999,
+        "w": -9.229999999999999
+      },
+      "id": 216
+    },
+    {
+      "currencyId": 8,
+      "currency": {
+        "id": 8,
+        "code": "USDT",
+        "name": "Tether",
+        "price": 82.0057,
+        "marketPrice": 2847160380.78,
+        "volume": 12978173572.2,
+        "d": 0.020000000000000025,
+        "w": -0.030000000000000013
+      },
+      "id": 217
+    },
+    {
+      "currencyId": 8,
+      "currency": {
+        "id": 8,
+        "code": "USDT",
+        "name": "Tether",
+        "price": 96.0057,
+        "marketPrice": 2847160380.78,
+        "volume": 12978173572.2,
+        "d": 0.010000000000000024,
+        "w": -0.030000000000000013
+      },
+      "id": 218
+    },
+    {
+      "currencyId": 7,
+      "currency": {
+        "id": 7,
+        "code": "BNB",
+        "name": "Binace Coin",
+        "price": 85.13999999999999,
+        "marketPrice": 3233796201.45,
+        "volume": 220517101.522,
+        "d": -4.61,
+        "w": 13.499999999999998
+      },
+      "id": 219
+    },
+    {
+      "currencyId": 2,
+      "currency": {
+        "id": 2,
+        "code": "ETH",
+        "name": "Ethereum",
+        "price": 132.83,
+        "marketPrice": 17420554092.7,
+        "volume": 6331540961.12,
+        "d": -5.76,
+        "w": -1.73
+      },
+      "id": 220
+    },
+    {
+      "currencyId": 7,
+      "currency": {
+        "id": 7,
+        "code": "BNB",
+        "name": "Binace Coin",
+        "price": 93.13999999999999,
+        "marketPrice": 3233796201.45,
+        "volume": 220517101.522,
+        "d": -4.54,
+        "w": 13.489999999999998
+      },
+      "id": 221
+    },
+    {
+      "currencyId": 3,
+      "currency": {
+        "id": 3,
+        "code": "XRP",
+        "name": "XRP",
+        "price": 91.2988,
+        "marketPrice": 12726548712.1,
+        "volume": 1110116996.26,
+        "d": -7.830000000000003,
+        "w": -11.749999999999998
+      },
+      "id": 222
+    },
+    {
+      "currencyId": 5,
+      "currency": {
+        "id": 5,
+        "code": "LTC",
+        "name": "Litecoin",
+        "price": 21.209999999999994,
+        "marketPrice": 4555467064.73,
+        "volume": 2672604644.57,
+        "d": -7.239999999999999,
+        "w": -9.219999999999999
+      },
+      "id": 223
+    },
+    {
+      "currencyId": 3,
+      "currency": {
+        "id": 3,
+        "code": "XRP",
+        "name": "XRP",
+        "price": 111.2988,
+        "marketPrice": 12726548712.1,
+        "volume": 1110116996.26,
+        "d": -7.790000000000003,
+        "w": -11.769999999999998
+      },
+      "id": 224
+    },
+    {
+      "currencyId": 1,
+      "currency": {
+        "id": 1,
+        "code": "BTC",
+        "name": "Bitcoin Core",
+        "price": 5698.01,
+        "marketPrice": 96996068595.9,
+        "volume": 14421089501.2,
+        "d": -2.620000000000001,
+        "w": 4.28
+      },
+      "id": 225
+    },
+    {
+      "currencyId": 7,
+      "currency": {
+        "id": 7,
+        "code": "BNB",
+        "name": "Binace Coin",
+        "price": 68.13999999999999,
+        "marketPrice": 3233796201.45,
+        "volume": 220517101.522,
+        "d": -4.51,
+        "w": 13.419999999999998
+      },
+      "id": 226
+    },
+    {
+      "currencyId": 4,
+      "currency": {
+        "id": 4,
+        "code": "BCH",
+        "name": "Bitcoin Cash",
+        "price": 144.52999999999997,
+        "marketPrice": 5014337183.98,
+        "volume": 1259757360.49,
+        "d": -7.6499999999999995,
+        "w": -11.34
+      },
+      "id": 227
+    },
+    {
+      "currencyId": 2,
+      "currency": {
+        "id": 2,
+        "code": "ETH",
+        "name": "Ethereum",
+        "price": 180.83,
+        "marketPrice": 17420554092.7,
+        "volume": 6331540961.12,
+        "d": -5.72,
+        "w": -1.64
+      },
+      "id": 228
+    },
+    {
+      "currencyId": 5,
+      "currency": {
+        "id": 5,
+        "code": "LTC",
+        "name": "Litecoin",
+        "price": 21.209999999999994,
+        "marketPrice": 4555467064.73,
+        "volume": 2672604644.57,
+        "d": -7.199999999999999,
+        "w": -9.129999999999999
+      },
+      "id": 229
+    },
+    {
+      "currencyId": 1,
+      "currency": {
+        "id": 1,
+        "code": "BTC",
+        "name": "Bitcoin Core",
+        "price": 5721.01,
+        "marketPrice": 96996068595.9,
+        "volume": 14421089501.2,
+        "d": -2.630000000000001,
+        "w": 4.24
+      },
+      "id": 230
+    },
+    {
+      "currencyId": 2,
+      "currency": {
+        "id": 2,
+        "code": "ETH",
+        "name": "Ethereum",
+        "price": 197.83,
+        "marketPrice": 17420554092.7,
+        "volume": 6331540961.12,
+        "d": -5.68,
+        "w": -1.64
+      },
+      "id": 231
+    },
+    {
+      "currencyId": 3,
+      "currency": {
+        "id": 3,
+        "code": "XRP",
+        "name": "XRP",
+        "price": 77.2988,
+        "marketPrice": 12726548712.1,
+        "volume": 1110116996.26,
+        "d": -7.700000000000003,
+        "w": -11.719999999999997
+      },
+      "id": 232
+    },
+    {
+      "currencyId": 7,
+      "currency": {
+        "id": 7,
+        "code": "BNB",
+        "name": "Binace Coin",
+        "price": 50.139999999999986,
+        "marketPrice": 3233796201.45,
+        "volume": 220517101.522,
+        "d": -4.52,
+        "w": 13.339999999999998
+      },
+      "id": 233
+    },
+    {
+      "currencyId": 8,
+      "currency": {
+        "id": 8,
+        "code": "USDT",
+        "name": "Tether",
+        "price": 84.0057,
+        "marketPrice": 2847160380.78,
+        "volume": 12978173572.2,
+        "d": 0.030000000000000027,
+        "w": 0.01999999999999999
+      },
+      "id": 234
+    },
+    {
+      "currencyId": 4,
+      "currency": {
+        "id": 4,
+        "code": "BCH",
+        "name": "Bitcoin Cash",
+        "price": 155.52999999999997,
+        "marketPrice": 5014337183.98,
+        "volume": 1259757360.49,
+        "d": -7.619999999999999,
+        "w": -11.32
+      },
+      "id": 235
+    },
+    {
+      "currencyId": 2,
+      "currency": {
+        "id": 2,
+        "code": "ETH",
+        "name": "Ethereum",
+        "price": 203.83,
+        "marketPrice": 17420554092.7,
+        "volume": 6331540961.12,
+        "d": -5.62,
+        "w": -1.67
+      },
+      "id": 236
+    },
+    {
+      "currencyId": 3,
+      "currency": {
+        "id": 3,
+        "code": "XRP",
+        "name": "XRP",
+        "price": 85.2988,
+        "marketPrice": 12726548712.1,
+        "volume": 1110116996.26,
+        "d": -7.670000000000003,
+        "w": -11.719999999999997
+      },
+      "id": 237
+    },
+    {
+      "currencyId": 2,
+      "currency": {
+        "id": 2,
+        "code": "ETH",
+        "name": "Ethereum",
+        "price": 200.83,
+        "marketPrice": 17420554092.7,
+        "volume": 6331540961.12,
+        "d": -5.54,
+        "w": -1.67
+      },
+      "id": 238
+    },
+    {
+      "currencyId": 5,
+      "currency": {
+        "id": 5,
+        "code": "LTC",
+        "name": "Litecoin",
+        "price": 21.209999999999994,
+        "marketPrice": 4555467064.73,
+        "volume": 2672604644.57,
+        "d": -7.239999999999999,
+        "w": -9.04
+      },
+      "id": 239
+    },
+    {
+      "currencyId": 8,
+      "currency": {
+        "id": 8,
+        "code": "USDT",
+        "name": "Tether",
+        "price": 66.0057,
+        "marketPrice": 2847160380.78,
+        "volume": 12978173572.2,
+        "d": 0.10000000000000003,
+        "w": -0.06000000000000001
+      },
+      "id": 240
+    },
+    {
+      "currencyId": 3,
+      "currency": {
+        "id": 3,
+        "code": "XRP",
+        "name": "XRP",
+        "price": 57.2988,
+        "marketPrice": 12726548712.1,
+        "volume": 1110116996.26,
+        "d": -7.700000000000003,
+        "w": -11.639999999999997
+      },
+      "id": 241
+    },
+    {
+      "currencyId": 4,
+      "currency": {
+        "id": 4,
+        "code": "BCH",
+        "name": "Bitcoin Cash",
+        "price": 185.52999999999997,
+        "marketPrice": 5014337183.98,
+        "volume": 1259757360.49,
+        "d": -7.619999999999999,
+        "w": -11.32
+      },
+      "id": 242
+    },
+    {
+      "currencyId": 7,
+      "currency": {
+        "id": 7,
+        "code": "BNB",
+        "name": "Binace Coin",
+        "price": 50.139999999999986,
+        "marketPrice": 3233796201.45,
+        "volume": 220517101.522,
+        "d": -4.449999999999999,
+        "w": 13.279999999999998
+      },
+      "id": 243
+    },
+    {
+      "currencyId": 1,
+      "currency": {
+        "id": 1,
+        "code": "BTC",
+        "name": "Bitcoin Core",
+        "price": 5746.01,
+        "marketPrice": 96996068595.9,
+        "volume": 14421089501.2,
+        "d": -2.540000000000001,
+        "w": 4.16
+      },
+      "id": 244
+    },
+    {
+      "currencyId": 4,
+      "currency": {
+        "id": 4,
+        "code": "BCH",
+        "name": "Bitcoin Cash",
+        "price": 183.52999999999997,
+        "marketPrice": 5014337183.98,
+        "volume": 1259757360.49,
+        "d": -7.6499999999999995,
+        "w": -11.23
+      },
+      "id": 245
+    },
+    {
+      "currencyId": 1,
+      "currency": {
+        "id": 1,
+        "code": "BTC",
+        "name": "Bitcoin Core",
+        "price": 5709.01,
+        "marketPrice": 96996068595.9,
+        "volume": 14421089501.2,
+        "d": -2.630000000000001,
+        "w": 4.25
+      },
+      "id": 246
+    },
+    {
+      "currencyId": 8,
+      "currency": {
+        "id": 8,
+        "code": "USDT",
+        "name": "Tether",
+        "price": 61.005700000000004,
+        "marketPrice": 2847160380.78,
+        "volume": 12978173572.2,
+        "d": 0.12000000000000004,
+        "w": -0.15000000000000002
+      },
+      "id": 247
+    },
+    {
+      "currencyId": 5,
+      "currency": {
+        "id": 5,
+        "code": "LTC",
+        "name": "Litecoin",
+        "price": 38.209999999999994,
+        "marketPrice": 4555467064.73,
+        "volume": 2672604644.57,
+        "d": -7.2299999999999995,
+        "w": -9.04
+      },
+      "id": 248
+    },
+    {
+      "currencyId": 5,
+      "currency": {
+        "id": 5,
+        "code": "LTC",
+        "name": "Litecoin",
+        "price": 68.21,
+        "marketPrice": 4555467064.73,
+        "volume": 2672604644.57,
+        "d": -7.21,
+        "w": -8.969999999999999
+      },
+      "id": 249
+    },
+    {
+      "currencyId": 2,
+      "currency": {
+        "id": 2,
+        "code": "ETH",
+        "name": "Ethereum",
+        "price": 206.83,
+        "marketPrice": 17420554092.7,
+        "volume": 6331540961.12,
+        "d": -5.46,
+        "w": -1.5999999999999999
+      },
+      "id": 250
+    },
+    {
+      "currencyId": 7,
+      "currency": {
+        "id": 7,
+        "code": "BNB",
+        "name": "Binace Coin",
+        "price": 70.13999999999999,
+        "marketPrice": 3233796201.45,
+        "volume": 220517101.522,
+        "d": -4.449999999999999,
+        "w": 13.239999999999998
+      },
+      "id": 251
+    },
+    {
+      "currencyId": 7,
+      "currency": {
+        "id": 7,
+        "code": "BNB",
+        "name": "Binace Coin",
+        "price": 62.139999999999986,
+        "marketPrice": 3233796201.45,
+        "volume": 220517101.522,
+        "d": -4.449999999999999,
+        "w": 13.329999999999998
+      },
+      "id": 252
+    },
+    {
+      "currencyId": 6,
+      "currency": {
+        "id": 6,
+        "code": "EOS",
+        "name": "EOS",
+        "price": 6.759999999999998,
+        "marketPrice": 4527848157,
+        "volume": 2473059315.05,
+        "d": -9.129999999999999,
+        "w": -12.540000000000003
+      },
+      "id": 253
+    },
+    {
+      "currencyId": 5,
+      "currency": {
+        "id": 5,
+        "code": "LTC",
+        "name": "Litecoin",
+        "price": 44.209999999999994,
+        "marketPrice": 4555467064.73,
+        "volume": 2672604644.57,
+        "d": -7.12,
+        "w": -8.999999999999998
+      },
+      "id": 254
+    },
+    {
+      "currencyId": 8,
+      "currency": {
+        "id": 8,
+        "code": "USDT",
+        "name": "Tether",
+        "price": 95.0057,
+        "marketPrice": 2847160380.78,
+        "volume": 12978173572.2,
+        "d": 0.12000000000000004,
+        "w": -0.060000000000000026
+      },
+      "id": 255
+    },
+    {
+      "currencyId": 5,
+      "currency": {
+        "id": 5,
+        "code": "LTC",
+        "name": "Litecoin",
+        "price": 76.21,
+        "marketPrice": 4555467064.73,
+        "volume": 2672604644.57,
+        "d": -7.19,
+        "w": -9.059999999999999
+      },
+      "id": 256
+    },
+    {
+      "currencyId": 6,
+      "currency": {
+        "id": 6,
+        "code": "EOS",
+        "name": "EOS",
+        "price": 45.76,
+        "marketPrice": 4527848157,
+        "volume": 2473059315.05,
+        "d": -9.04,
+        "w": -12.500000000000004
+      },
+      "id": 257
+    },
+    {
+      "currencyId": 1,
+      "currency": {
+        "id": 1,
+        "code": "BTC",
+        "name": "Bitcoin Core",
+        "price": 5701.01,
+        "marketPrice": 96996068595.9,
+        "volume": 14421089501.2,
+        "d": -2.6100000000000008,
+        "w": 4.3
+      },
+      "id": 258
+    },
+    {
+      "currencyId": 2,
+      "currency": {
+        "id": 2,
+        "code": "ETH",
+        "name": "Ethereum",
+        "price": 195.83,
+        "marketPrice": 17420554092.7,
+        "volume": 6331540961.12,
+        "d": -5.38,
+        "w": -1.69
+      },
+      "id": 259
+    },
+    {
+      "currencyId": 7,
+      "currency": {
+        "id": 7,
+        "code": "BNB",
+        "name": "Binace Coin",
+        "price": 63.139999999999986,
+        "marketPrice": 3233796201.45,
+        "volume": 220517101.522,
+        "d": -4.52,
+        "w": 13.369999999999997
+      },
+      "id": 260
+    },
+    {
+      "currencyId": 2,
+      "currency": {
+        "id": 2,
+        "code": "ETH",
+        "name": "Ethereum",
+        "price": 234.83,
+        "marketPrice": 17420554092.7,
+        "volume": 6331540961.12,
+        "d": -5.46,
+        "w": -1.78
+      },
+      "id": 261
+    },
+    {
+      "currencyId": 6,
+      "currency": {
+        "id": 6,
+        "code": "EOS",
+        "name": "EOS",
+        "price": 21.759999999999998,
+        "marketPrice": 4527848157,
+        "volume": 2473059315.05,
+        "d": -9.03,
+        "w": -12.480000000000004
+      },
+      "id": 262
+    },
+    {
+      "currencyId": 4,
+      "currency": {
+        "id": 4,
+        "code": "BCH",
+        "name": "Bitcoin Cash",
+        "price": 164.52999999999997,
+        "marketPrice": 5014337183.98,
+        "volume": 1259757360.49,
+        "d": -7.6899999999999995,
+        "w": -11.200000000000001
+      },
+      "id": 263
+    },
+    {
+      "currencyId": 2,
+      "currency": {
+        "id": 2,
+        "code": "ETH",
+        "name": "Ethereum",
+        "price": 282.83000000000004,
+        "marketPrice": 17420554092.7,
+        "volume": 6331540961.12,
+        "d": -5.49,
+        "w": -1.73
+      },
+      "id": 264
+    },
+    {
+      "currencyId": 1,
+      "currency": {
+        "id": 1,
+        "code": "BTC",
+        "name": "Bitcoin Core",
+        "price": 5684.01,
+        "marketPrice": 96996068595.9,
+        "volume": 14421089501.2,
+        "d": -2.690000000000001,
+        "w": 4.2299999999999995
+      },
+      "id": 265
+    },
+    {
+      "currencyId": 5,
+      "currency": {
+        "id": 5,
+        "code": "LTC",
+        "name": "Litecoin",
+        "price": 76.21,
+        "marketPrice": 4555467064.73,
+        "volume": 2672604644.57,
+        "d": -7.170000000000001,
+        "w": -9.069999999999999
+      },
+      "id": 266
+    },
+    {
+      "currencyId": 4,
+      "currency": {
+        "id": 4,
+        "code": "BCH",
+        "name": "Bitcoin Cash",
+        "price": 131.52999999999997,
+        "marketPrice": 5014337183.98,
+        "volume": 1259757360.49,
+        "d": -7.6899999999999995,
+        "w": -11.13
+      },
+      "id": 267
+    },
+    {
+      "currencyId": 7,
+      "currency": {
+        "id": 7,
+        "code": "BNB",
+        "name": "Binace Coin",
+        "price": 30.139999999999986,
+        "marketPrice": 3233796201.45,
+        "volume": 220517101.522,
+        "d": -4.609999999999999,
+        "w": 13.339999999999998
+      },
+      "id": 268
+    },
+    {
+      "currencyId": 8,
+      "currency": {
+        "id": 8,
+        "code": "USDT",
+        "name": "Tether",
+        "price": 71.0057,
+        "marketPrice": 2847160380.78,
+        "volume": 12978173572.2,
+        "d": 0.06000000000000004,
+        "w": -0.15000000000000002
+      },
+      "id": 269
+    },
+    {
+      "currencyId": 4,
+      "currency": {
+        "id": 4,
+        "code": "BCH",
+        "name": "Bitcoin Cash",
+        "price": 124.52999999999997,
+        "marketPrice": 5014337183.98,
+        "volume": 1259757360.49,
+        "d": -7.64,
+        "w": -11.110000000000001
+      },
+      "id": 270
+    },
+    {
+      "currencyId": 6,
+      "currency": {
+        "id": 6,
+        "code": "EOS",
+        "name": "EOS",
+        "price": 21.759999999999998,
+        "marketPrice": 4527848157,
+        "volume": 2473059315.05,
+        "d": -8.95,
+        "w": -12.450000000000005
+      },
+      "id": 271
+    },
+    {
+      "currencyId": 3,
+      "currency": {
+        "id": 3,
+        "code": "XRP",
+        "name": "XRP",
+        "price": 52.2988,
+        "marketPrice": 12726548712.1,
+        "volume": 1110116996.26,
+        "d": -7.710000000000003,
+        "w": -11.559999999999997
+      },
+      "id": 272
+    },
+    {
+      "currencyId": 2,
+      "currency": {
+        "id": 2,
+        "code": "ETH",
+        "name": "Ethereum",
+        "price": 300.83000000000004,
+        "marketPrice": 17420554092.7,
+        "volume": 6331540961.12,
+        "d": -5.49,
+        "w": -1.76
+      },
+      "id": 273
+    },
+    {
+      "currencyId": 6,
+      "currency": {
+        "id": 6,
+        "code": "EOS",
+        "name": "EOS",
+        "price": 63.76,
+        "marketPrice": 4527848157,
+        "volume": 2473059315.05,
+        "d": -8.989999999999998,
+        "w": -12.430000000000005
+      },
+      "id": 274
+    },
+    {
+      "currencyId": 6,
+      "currency": {
+        "id": 6,
+        "code": "EOS",
+        "name": "EOS",
+        "price": 74.75999999999999,
+        "marketPrice": 4527848157,
+        "volume": 2473059315.05,
+        "d": -9.019999999999998,
+        "w": -12.450000000000005
+      },
+      "id": 275
+    },
+    {
+      "currencyId": 3,
+      "currency": {
+        "id": 3,
+        "code": "XRP",
+        "name": "XRP",
+        "price": 99.2988,
+        "marketPrice": 12726548712.1,
+        "volume": 1110116996.26,
+        "d": -7.670000000000003,
+        "w": -11.479999999999997
+      },
+      "id": 276
+    },
+    {
+      "currencyId": 1,
+      "currency": {
+        "id": 1,
+        "code": "BTC",
+        "name": "Bitcoin Core",
+        "price": 5692.01,
+        "marketPrice": 96996068595.9,
+        "volume": 14421089501.2,
+        "d": -2.630000000000001,
+        "w": 4.26
+      },
+      "id": 277
+    },
+    {
+      "currencyId": 6,
+      "currency": {
+        "id": 6,
+        "code": "EOS",
+        "name": "EOS",
+        "price": 40.75999999999999,
+        "marketPrice": 4527848157,
+        "volume": 2473059315.05,
+        "d": -9.069999999999999,
+        "w": -12.490000000000004
+      },
+      "id": 278
+    },
+    {
+      "currencyId": 4,
+      "currency": {
+        "id": 4,
+        "code": "BCH",
+        "name": "Bitcoin Cash",
+        "price": 114.52999999999997,
+        "marketPrice": 5014337183.98,
+        "volume": 1259757360.49,
+        "d": -7.55,
+        "w": -11.070000000000002
+      },
+      "id": 279
+    },
+    {
+      "currencyId": 8,
+      "currency": {
+        "id": 8,
+        "code": "USDT",
+        "name": "Tether",
+        "price": 28.005700000000004,
+        "marketPrice": 2847160380.78,
+        "volume": 12978173572.2,
+        "d": 0.05000000000000004,
+        "w": -0.10000000000000002
+      },
+      "id": 280
+    },
+    {
+      "currencyId": 7,
+      "currency": {
+        "id": 7,
+        "code": "BNB",
+        "name": "Binace Coin",
+        "price": 64.13999999999999,
+        "marketPrice": 3233796201.45,
+        "volume": 220517101.522,
+        "d": -4.669999999999999,
+        "w": 13.409999999999998
+      },
+      "id": 281
+    },
+    {
+      "currencyId": 1,
+      "currency": {
+        "id": 1,
+        "code": "BTC",
+        "name": "Bitcoin Core",
+        "price": 5683.01,
+        "marketPrice": 96996068595.9,
+        "volume": 14421089501.2,
+        "d": -2.7000000000000006,
+        "w": 4.18
+      },
+      "id": 282
+    },
+    {
+      "currencyId": 6,
+      "currency": {
+        "id": 6,
+        "code": "EOS",
+        "name": "EOS",
+        "price": 40.75999999999999,
+        "marketPrice": 4527848157,
+        "volume": 2473059315.05,
+        "d": -9.059999999999999,
+        "w": -12.480000000000004
+      },
+      "id": 283
+    },
+    {
+      "currencyId": 3,
+      "currency": {
+        "id": 3,
+        "code": "XRP",
+        "name": "XRP",
+        "price": 76.2988,
+        "marketPrice": 12726548712.1,
+        "volume": 1110116996.26,
+        "d": -7.740000000000003,
+        "w": -11.549999999999997
+      },
+      "id": 284
+    },
+    {
+      "currencyId": 6,
+      "currency": {
+        "id": 6,
+        "code": "EOS",
+        "name": "EOS",
+        "price": 11.759999999999991,
+        "marketPrice": 4527848157,
+        "volume": 2473059315.05,
+        "d": -9.099999999999998,
+        "w": -12.400000000000004
+      },
+      "id": 285
+    },
+    {
+      "currencyId": 5,
+      "currency": {
+        "id": 5,
+        "code": "LTC",
+        "name": "Litecoin",
+        "price": 38.209999999999994,
+        "marketPrice": 4555467064.73,
+        "volume": 2672604644.57,
+        "d": -7.260000000000001,
+        "w": -9.079999999999998
+      },
+      "id": 286
+    },
+    {
+      "currencyId": 8,
+      "currency": {
+        "id": 8,
+        "code": "USDT",
+        "name": "Tether",
+        "price": 11.005700000000004,
+        "marketPrice": 2847160380.78,
+        "volume": 12978173572.2,
+        "d": 0.14000000000000004,
+        "w": -0.04000000000000002
+      },
+      "id": 287
+    },
+    {
+      "currencyId": 2,
+      "currency": {
+        "id": 2,
+        "code": "ETH",
+        "name": "Ethereum",
+        "price": 251.83000000000004,
+        "marketPrice": 17420554092.7,
+        "volume": 6331540961.12,
+        "d": -5.46,
+        "w": -1.81
+      },
+      "id": 288
+    },
+    {
+      "currencyId": 7,
+      "currency": {
+        "id": 7,
+        "code": "BNB",
+        "name": "Binace Coin",
+        "price": 46.139999999999986,
+        "marketPrice": 3233796201.45,
+        "volume": 220517101.522,
+        "d": -4.659999999999999,
+        "w": 13.409999999999998
+      },
+      "id": 289
+    },
+    {
+      "currencyId": 5,
+      "currency": {
+        "id": 5,
+        "code": "LTC",
+        "name": "Litecoin",
+        "price": 86.21,
+        "marketPrice": 4555467064.73,
+        "volume": 2672604644.57,
+        "d": -7.180000000000001,
+        "w": -9.049999999999999
+      },
+      "id": 290
+    },
+    {
+      "currencyId": 3,
+      "currency": {
+        "id": 3,
+        "code": "XRP",
+        "name": "XRP",
+        "price": 77.2988,
+        "marketPrice": 12726548712.1,
+        "volume": 1110116996.26,
+        "d": -7.740000000000003,
+        "w": -11.629999999999997
+      },
+      "id": 291
+    },
+    {
+      "currencyId": 6,
+      "currency": {
+        "id": 6,
+        "code": "EOS",
+        "name": "EOS",
+        "price": 8.759999999999991,
+        "marketPrice": 4527848157,
+        "volume": 2473059315.05,
+        "d": -9.039999999999997,
+        "w": -12.320000000000004
+      },
+      "id": 292
+    },
+    {
+      "currencyId": 7,
+      "currency": {
+        "id": 7,
+        "code": "BNB",
+        "name": "Binace Coin",
+        "price": 90.13999999999999,
+        "marketPrice": 3233796201.45,
+        "volume": 220517101.522,
+        "d": -4.6899999999999995,
+        "w": 13.459999999999999
+      },
+      "id": 293
+    },
+    {
+      "currencyId": 6,
+      "currency": {
+        "id": 6,
+        "code": "EOS",
+        "name": "EOS",
+        "price": 8.759999999999991,
+        "marketPrice": 4527848157,
+        "volume": 2473059315.05,
+        "d": -9.129999999999997,
+        "w": -12.250000000000004
+      },
+      "id": 294
+    },
+    {
+      "currencyId": 3,
+      "currency": {
+        "id": 3,
+        "code": "XRP",
+        "name": "XRP",
+        "price": 97.2988,
+        "marketPrice": 12726548712.1,
+        "volume": 1110116996.26,
+        "d": -7.770000000000003,
+        "w": -11.559999999999997
+      },
+      "id": 295
+    },
+    {
+      "currencyId": 8,
+      "currency": {
+        "id": 8,
+        "code": "USDT",
+        "name": "Tether",
+        "price": 11.005700000000004,
+        "marketPrice": 2847160380.78,
+        "volume": 12978173572.2,
+        "d": 0.17000000000000004,
+        "w": -0.08000000000000002
+      },
+      "id": 296
+    },
+    {
+      "currencyId": 2,
+      "currency": {
+        "id": 2,
+        "code": "ETH",
+        "name": "Ethereum",
+        "price": 279.83000000000004,
+        "marketPrice": 17420554092.7,
+        "volume": 6331540961.12,
+        "d": -5.44,
+        "w": -1.81
+      },
+      "id": 297
+    },
+    {
+      "currencyId": 5,
+      "currency": {
+        "id": 5,
+        "code": "LTC",
+        "name": "Litecoin",
+        "price": 119.21,
+        "marketPrice": 4555467064.73,
+        "volume": 2672604644.57,
+        "d": -7.260000000000001,
+        "w": -9.12
+      },
+      "id": 298
+    },
+    {
+      "currencyId": 1,
+      "currency": {
+        "id": 1,
+        "code": "BTC",
+        "name": "Bitcoin Core",
+        "price": 5642.01,
+        "marketPrice": 96996068595.9,
+        "volume": 14421089501.2,
+        "d": -2.6600000000000006,
+        "w": 4.239999999999999
+      },
+      "id": 299
+    },
+    {
+      "currencyId": 7,
+      "currency": {
+        "id": 7,
+        "code": "BNB",
+        "name": "Binace Coin",
+        "price": 114.13999999999999,
+        "marketPrice": 3233796201.45,
+        "volume": 220517101.522,
+        "d": -4.749999999999999,
+        "w": 13.479999999999999
+      },
+      "id": 300
+    },
+    {
+      "currencyId": 6,
+      "currency": {
+        "id": 6,
+        "code": "EOS",
+        "name": "EOS",
+        "price": 8.759999999999991,
+        "marketPrice": 4527848157,
+        "volume": 2473059315.05,
+        "d": -9.059999999999997,
+        "w": -12.280000000000003
+      },
+      "id": 301
+    },
+    {
+      "currencyId": 3,
+      "currency": {
+        "id": 3,
+        "code": "XRP",
+        "name": "XRP",
+        "price": 143.2988,
+        "marketPrice": 12726548712.1,
+        "volume": 1110116996.26,
+        "d": -7.790000000000003,
+        "w": -11.559999999999997
+      },
+      "id": 302
+    },
+    {
+      "currencyId": 2,
+      "currency": {
+        "id": 2,
+        "code": "ETH",
+        "name": "Ethereum",
+        "price": 254.83000000000004,
+        "marketPrice": 17420554092.7,
+        "volume": 6331540961.12,
+        "d": -5.45,
+        "w": -1.8900000000000001
+      },
+      "id": 303
+    },
+    {
+      "currencyId": 4,
+      "currency": {
+        "id": 4,
+        "code": "BCH",
+        "name": "Bitcoin Cash",
+        "price": 86.52999999999997,
+        "marketPrice": 5014337183.98,
+        "volume": 1259757360.49,
+        "d": -7.56,
+        "w": -11.070000000000002
+      },
+      "id": 304
+    },
+    {
+      "currencyId": 3,
+      "currency": {
+        "id": 3,
+        "code": "XRP",
+        "name": "XRP",
+        "price": 185.2988,
+        "marketPrice": 12726548712.1,
+        "volume": 1110116996.26,
+        "d": -7.860000000000003,
+        "w": -11.569999999999997
+      },
+      "id": 305
+    },
+    {
+      "currencyId": 5,
+      "currency": {
+        "id": 5,
+        "code": "LTC",
+        "name": "Litecoin",
+        "price": 98.21,
+        "marketPrice": 4555467064.73,
+        "volume": 2672604644.57,
+        "d": -7.28,
+        "w": -9.2
+      },
+      "id": 306
+    },
+    {
+      "currencyId": 1,
+      "currency": {
+        "id": 1,
+        "code": "BTC",
+        "name": "Bitcoin Core",
+        "price": 5657.01,
+        "marketPrice": 96996068595.9,
+        "volume": 14421089501.2,
+        "d": -2.7300000000000004,
+        "w": 4.27
+      },
+      "id": 307
+    },
+    {
+      "currencyId": 4,
+      "currency": {
+        "id": 4,
+        "code": "BCH",
+        "name": "Bitcoin Cash",
+        "price": 109.52999999999997,
+        "marketPrice": 5014337183.98,
+        "volume": 1259757360.49,
+        "d": -7.64,
+        "w": -11.130000000000003
+      },
+      "id": 308
+    },
+    {
+      "currencyId": 7,
+      "currency": {
+        "id": 7,
+        "code": "BNB",
+        "name": "Binace Coin",
+        "price": 73.13999999999999,
+        "marketPrice": 3233796201.45,
+        "volume": 220517101.522,
+        "d": -4.799999999999999,
+        "w": 13.54
+      },
+      "id": 309
+    },
+    {
+      "currencyId": 3,
+      "currency": {
+        "id": 3,
+        "code": "XRP",
+        "name": "XRP",
+        "price": 146.2988,
+        "marketPrice": 12726548712.1,
+        "volume": 1110116996.26,
+        "d": -7.870000000000003,
+        "w": -11.539999999999997
+      },
+      "id": 310
+    },
+    {
+      "currencyId": 1,
+      "currency": {
+        "id": 1,
+        "code": "BTC",
+        "name": "Bitcoin Core",
+        "price": 5697.01,
+        "marketPrice": 96996068595.9,
+        "volume": 14421089501.2,
+        "d": -2.7500000000000004,
+        "w": 4.26
+      },
+      "id": 311
+    },
+    {
+      "currencyId": 6,
+      "currency": {
+        "id": 6,
+        "code": "EOS",
+        "name": "EOS",
+        "price": 1.759999999999991,
+        "marketPrice": 4527848157,
+        "volume": 2473059315.05,
+        "d": -9.089999999999996,
+        "w": -12.280000000000003
+      },
+      "id": 312
+    },
+    {
+      "currencyId": 7,
+      "currency": {
+        "id": 7,
+        "code": "BNB",
+        "name": "Binace Coin",
+        "price": 63.139999999999986,
+        "marketPrice": 3233796201.45,
+        "volume": 220517101.522,
+        "d": -4.889999999999999,
+        "w": 13.6
+      },
+      "id": 313
+    },
+    {
+      "currencyId": 3,
+      "currency": {
+        "id": 3,
+        "code": "XRP",
+        "name": "XRP",
+        "price": 149.2988,
+        "marketPrice": 12726548712.1,
+        "volume": 1110116996.26,
+        "d": -7.8000000000000025,
+        "w": -11.499999999999998
+      },
+      "id": 314
+    },
+    {
+      "currencyId": 5,
+      "currency": {
+        "id": 5,
+        "code": "LTC",
+        "name": "Litecoin",
+        "price": 135.20999999999998,
+        "marketPrice": 4555467064.73,
+        "volume": 2672604644.57,
+        "d": -7.3100000000000005,
+        "w": -9.18
+      },
+      "id": 315
+    },
+    {
+      "currencyId": 5,
+      "currency": {
+        "id": 5,
+        "code": "LTC",
+        "name": "Litecoin",
+        "price": 110.20999999999998,
+        "marketPrice": 4555467064.73,
+        "volume": 2672604644.57,
+        "d": -7.390000000000001,
+        "w": -9.1
+      },
+      "id": 316
+    },
+    {
+      "currencyId": 8,
+      "currency": {
+        "id": 8,
+        "code": "USDT",
+        "name": "Tether",
+        "price": 5.0057000000000045,
+        "marketPrice": 2847160380.78,
+        "volume": 12978173572.2,
+        "d": 0.22000000000000003,
+        "w": -0.020000000000000018
+      },
+      "id": 317
+    },
+    {
+      "currencyId": 5,
+      "currency": {
+        "id": 5,
+        "code": "LTC",
+        "name": "Litecoin",
+        "price": 109.20999999999998,
+        "marketPrice": 4555467064.73,
+        "volume": 2672604644.57,
+        "d": -7.3100000000000005,
+        "w": -9.17
+      },
+      "id": 318
+    },
+    {
+      "currencyId": 1,
+      "currency": {
+        "id": 1,
+        "code": "BTC",
+        "name": "Bitcoin Core",
+        "price": 5685.01,
+        "marketPrice": 96996068595.9,
+        "volume": 14421089501.2,
+        "d": -2.6800000000000006,
+        "w": 4.21
+      },
+      "id": 319
+    },
+    {
+      "currencyId": 2,
+      "currency": {
+        "id": 2,
+        "code": "ETH",
+        "name": "Ethereum",
+        "price": 231.83000000000004,
+        "marketPrice": 17420554092.7,
+        "volume": 6331540961.12,
+        "d": -5.49,
+        "w": -1.83
+      },
+      "id": 320
+    },
+    {
+      "currencyId": 6,
+      "currency": {
+        "id": 6,
+        "code": "EOS",
+        "name": "EOS",
+        "price": 1.759999999999991,
+        "marketPrice": 4527848157,
+        "volume": 2473059315.05,
+        "d": -9.069999999999997,
+        "w": -12.200000000000003
+      },
+      "id": 321
+    },
+    {
+      "currencyId": 4,
+      "currency": {
+        "id": 4,
+        "code": "BCH",
+        "name": "Bitcoin Cash",
+        "price": 106.52999999999997,
+        "marketPrice": 5014337183.98,
+        "volume": 1259757360.49,
+        "d": -7.6,
+        "w": -11.070000000000002
+      },
+      "id": 322
+    },
+    {
+      "currencyId": 7,
+      "currency": {
+        "id": 7,
+        "code": "BNB",
+        "name": "Binace Coin",
+        "price": 89.13999999999999,
+        "marketPrice": 3233796201.45,
+        "volume": 220517101.522,
+        "d": -4.979999999999999,
+        "w": 13.66
+      },
+      "id": 323
+    },
+    {
+      "currencyId": 8,
+      "currency": {
+        "id": 8,
+        "code": "USDT",
+        "name": "Tether",
+        "price": 5.0057000000000045,
+        "marketPrice": 2847160380.78,
+        "volume": 12978173572.2,
+        "d": 0.14,
+        "w": -0.04000000000000002
+      },
+      "id": 324
+    },
+    {
+      "currencyId": 3,
+      "currency": {
+        "id": 3,
+        "code": "XRP",
+        "name": "XRP",
+        "price": 149.2988,
+        "marketPrice": 12726548712.1,
+        "volume": 1110116996.26,
+        "d": -7.870000000000003,
+        "w": -11.529999999999998
+      },
+      "id": 325
+    },
+    {
+      "currencyId": 4,
+      "currency": {
+        "id": 4,
+        "code": "BCH",
+        "name": "Bitcoin Cash",
+        "price": 60.52999999999997,
+        "marketPrice": 5014337183.98,
+        "volume": 1259757360.49,
+        "d": -7.6499999999999995,
+        "w": -11.120000000000003
+      },
+      "id": 326
+    },
+    {
+      "currencyId": 8,
+      "currency": {
+        "id": 8,
+        "code": "USDT",
+        "name": "Tether",
+        "price": 47.005700000000004,
+        "marketPrice": 2847160380.78,
+        "volume": 12978173572.2,
+        "d": 0.14,
+        "w": -0.050000000000000024
+      },
+      "id": 327
+    },
+    {
+      "currencyId": 1,
+      "currency": {
+        "id": 1,
+        "code": "BTC",
+        "name": "Bitcoin Core",
+        "price": 5676.01,
+        "marketPrice": 96996068595.9,
+        "volume": 14421089501.2,
+        "d": -2.7400000000000007,
+        "w": 4.21
+      },
+      "id": 328
+    },
+    {
+      "currencyId": 2,
+      "currency": {
+        "id": 2,
+        "code": "ETH",
+        "name": "Ethereum",
+        "price": 186.83000000000004,
+        "marketPrice": 17420554092.7,
+        "volume": 6331540961.12,
+        "d": -5.430000000000001,
+        "w": -1.9000000000000001
+      },
+      "id": 329
+    },
+    {
+      "currencyId": 1,
+      "currency": {
+        "id": 1,
+        "code": "BTC",
+        "name": "Bitcoin Core",
+        "price": 5686.01,
+        "marketPrice": 96996068595.9,
+        "volume": 14421089501.2,
+        "d": -2.730000000000001,
+        "w": 4.25
+      },
+      "id": 330
+    },
+    {
+      "currencyId": 2,
+      "currency": {
+        "id": 2,
+        "code": "ETH",
+        "name": "Ethereum",
+        "price": 143.83000000000004,
+        "marketPrice": 17420554092.7,
+        "volume": 6331540961.12,
+        "d": -5.380000000000001,
+        "w": -1.9000000000000001
+      },
+      "id": 331
+    },
+    {
+      "currencyId": 4,
+      "currency": {
+        "id": 4,
+        "code": "BCH",
+        "name": "Bitcoin Cash",
+        "price": 16.529999999999973,
+        "marketPrice": 5014337183.98,
+        "volume": 1259757360.49,
+        "d": -7.6,
+        "w": -11.130000000000003
+      },
+      "id": 332
+    },
+    {
+      "currencyId": 2,
+      "currency": {
+        "id": 2,
+        "code": "ETH",
+        "name": "Ethereum",
+        "price": 100.83000000000004,
+        "marketPrice": 17420554092.7,
+        "volume": 6331540961.12,
+        "d": -5.430000000000001,
+        "w": -1.9400000000000002
+      },
+      "id": 333
+    },
+    {
+      "currencyId": 3,
+      "currency": {
+        "id": 3,
+        "code": "XRP",
+        "name": "XRP",
+        "price": 113.2988,
+        "marketPrice": 12726548712.1,
+        "volume": 1110116996.26,
+        "d": -7.900000000000003,
+        "w": -11.549999999999997
+      },
+      "id": 334
+    },
+    {
+      "currencyId": 8,
+      "currency": {
+        "id": 8,
+        "code": "USDT",
+        "name": "Tether",
+        "price": 76.0057,
+        "marketPrice": 2847160380.78,
+        "volume": 12978173572.2,
+        "d": 0.2,
+        "w": -0.07000000000000002
+      },
+      "id": 335
+    },
+    {
+      "currencyId": 1,
+      "currency": {
+        "id": 1,
+        "code": "BTC",
+        "name": "Bitcoin Core",
+        "price": 5718.01,
+        "marketPrice": 96996068595.9,
+        "volume": 14421089501.2,
+        "d": -2.730000000000001,
+        "w": 4.26
+      },
+      "id": 336
+    },
+    {
+      "currencyId": 7,
+      "currency": {
+        "id": 7,
+        "code": "BNB",
+        "name": "Binace Coin",
+        "price": 138.14,
+        "marketPrice": 3233796201.45,
+        "volume": 220517101.522,
+        "d": -4.939999999999999,
+        "w": 13.67
+      },
+      "id": 337
+    },
+    {
+      "currencyId": 3,
+      "currency": {
+        "id": 3,
+        "code": "XRP",
+        "name": "XRP",
+        "price": 78.2988,
+        "marketPrice": 12726548712.1,
+        "volume": 1110116996.26,
+        "d": -7.860000000000003,
+        "w": -11.459999999999997
+      },
+      "id": 338
+    },
+    {
+      "currencyId": 6,
+      "currency": {
+        "id": 6,
+        "code": "EOS",
+        "name": "EOS",
+        "price": 1.759999999999991,
+        "marketPrice": 4527848157,
+        "volume": 2473059315.05,
+        "d": -9.159999999999997,
+        "w": -12.150000000000002
+      },
+      "id": 339
+    },
+    {
+      "currencyId": 2,
+      "currency": {
+        "id": 2,
+        "code": "ETH",
+        "name": "Ethereum",
+        "price": 74.83000000000004,
+        "marketPrice": 17420554092.7,
+        "volume": 6331540961.12,
+        "d": -5.340000000000001,
+        "w": -1.9100000000000001
+      },
+      "id": 340
+    },
+    {
+      "currencyId": 8,
+      "currency": {
+        "id": 8,
+        "code": "USDT",
+        "name": "Tether",
+        "price": 104.0057,
+        "marketPrice": 2847160380.78,
+        "volume": 12978173572.2,
+        "d": 0.16,
+        "w": -0.10000000000000002
+      },
+      "id": 341
+    },
+    {
+      "currencyId": 2,
+      "currency": {
+        "id": 2,
+        "code": "ETH",
+        "name": "Ethereum",
+        "price": 53.83000000000004,
+        "marketPrice": 17420554092.7,
+        "volume": 6331540961.12,
+        "d": -5.410000000000001,
+        "w": -1.9700000000000002
+      },
+      "id": 342
+    },
+    {
+      "currencyId": 5,
+      "currency": {
+        "id": 5,
+        "code": "LTC",
+        "name": "Litecoin",
+        "price": 65.20999999999998,
+        "marketPrice": 4555467064.73,
+        "volume": 2672604644.57,
+        "d": -7.340000000000001,
+        "w": -9.22
+      },
+      "id": 343
+    },
+    {
+      "currencyId": 1,
+      "currency": {
+        "id": 1,
+        "code": "BTC",
+        "name": "Bitcoin Core",
+        "price": 5695.01,
+        "marketPrice": 96996068595.9,
+        "volume": 14421089501.2,
+        "d": -2.640000000000001,
+        "w": 4.26
+      },
+      "id": 344
+    },
+    {
+      "currencyId": 3,
+      "currency": {
+        "id": 3,
+        "code": "XRP",
+        "name": "XRP",
+        "price": 97.2988,
+        "marketPrice": 12726548712.1,
+        "volume": 1110116996.26,
+        "d": -7.800000000000003,
+        "w": -11.399999999999997
+      },
+      "id": 345
+    },
+    {
+      "currencyId": 5,
+      "currency": {
+        "id": 5,
+        "code": "LTC",
+        "name": "Litecoin",
+        "price": 45.20999999999998,
+        "marketPrice": 4555467064.73,
+        "volume": 2672604644.57,
+        "d": -7.420000000000001,
+        "w": -9.15
+      },
+      "id": 346
+    },
+    {
+      "currencyId": 1,
+      "currency": {
+        "id": 1,
+        "code": "BTC",
+        "name": "Bitcoin Core",
+        "price": 5728.01,
+        "marketPrice": 96996068595.9,
+        "volume": 14421089501.2,
+        "d": -2.620000000000001,
+        "w": 4.35
+      },
+      "id": 347
+    },
+    {
+      "currencyId": 8,
+      "currency": {
+        "id": 8,
+        "code": "USDT",
+        "name": "Tether",
+        "price": 84.0057,
+        "marketPrice": 2847160380.78,
+        "volume": 12978173572.2,
+        "d": 0.22,
+        "w": -0.08000000000000002
+      },
+      "id": 348
+    },
+    {
+      "currencyId": 5,
+      "currency": {
+        "id": 5,
+        "code": "LTC",
+        "name": "Litecoin",
+        "price": 79.20999999999998,
+        "marketPrice": 4555467064.73,
+        "volume": 2672604644.57,
+        "d": -7.460000000000001,
+        "w": -9.16
+      },
+      "id": 349
+    },
+    {
+      "currencyId": 2,
+      "currency": {
+        "id": 2,
+        "code": "ETH",
+        "name": "Ethereum",
+        "price": 12.830000000000041,
+        "marketPrice": 17420554092.7,
+        "volume": 6331540961.12,
+        "d": -5.490000000000001,
+        "w": -1.9100000000000001
+      },
+      "id": 350
+    },
+    {
+      "currencyId": 5,
+      "currency": {
+        "id": 5,
+        "code": "LTC",
+        "name": "Litecoin",
+        "price": 115.20999999999998,
+        "marketPrice": 4555467064.73,
+        "volume": 2672604644.57,
+        "d": -7.5200000000000005,
+        "w": -9.07
+      },
+      "id": 351
+    },
+    {
+      "currencyId": 6,
+      "currency": {
+        "id": 6,
+        "code": "EOS",
+        "name": "EOS",
+        "price": 29.75999999999999,
+        "marketPrice": 4527848157,
+        "volume": 2473059315.05,
+        "d": -9.229999999999997,
+        "w": -12.170000000000002
+      },
+      "id": 352
+    },
+    {
+      "currencyId": 7,
+      "currency": {
+        "id": 7,
+        "code": "BNB",
+        "name": "Binace Coin",
+        "price": 101.13999999999999,
+        "marketPrice": 3233796201.45,
+        "volume": 220517101.522,
+        "d": -5.0299999999999985,
+        "w": 13.74
+      },
+      "id": 353
+    },
+    {
+      "currencyId": 1,
+      "currency": {
+        "id": 1,
+        "code": "BTC",
+        "name": "Bitcoin Core",
+        "price": 5758.01,
+        "marketPrice": 96996068595.9,
+        "volume": 14421089501.2,
+        "d": -2.640000000000001,
+        "w": 4.29
+      },
+      "id": 354
+    },
+    {
+      "currencyId": 4,
+      "currency": {
+        "id": 4,
+        "code": "BCH",
+        "name": "Bitcoin Cash",
+        "price": 47.52999999999997,
+        "marketPrice": 5014337183.98,
+        "volume": 1259757360.49,
+        "d": -7.59,
+        "w": -11.060000000000002
+      },
+      "id": 355
+    },
+    {
+      "currencyId": 5,
+      "currency": {
+        "id": 5,
+        "code": "LTC",
+        "name": "Litecoin",
+        "price": 71.20999999999998,
+        "marketPrice": 4555467064.73,
+        "volume": 2672604644.57,
+        "d": -7.45,
+        "w": -9.15
+      },
+      "id": 356
+    },
+    {
+      "currencyId": 8,
+      "currency": {
+        "id": 8,
+        "code": "USDT",
+        "name": "Tether",
+        "price": 53.005700000000004,
+        "marketPrice": 2847160380.78,
+        "volume": 12978173572.2,
+        "d": 0.22,
+        "w": -0.13
+      },
+      "id": 357
+    },
+    {
+      "currencyId": 2,
+      "currency": {
+        "id": 2,
+        "code": "ETH",
+        "name": "Ethereum",
+        "price": 42.83000000000004,
+        "marketPrice": 17420554092.7,
+        "volume": 6331540961.12,
+        "d": -5.560000000000001,
+        "w": -1.9500000000000002
+      },
+      "id": 358
+    },
+    {
+      "currencyId": 5,
+      "currency": {
+        "id": 5,
+        "code": "LTC",
+        "name": "Litecoin",
+        "price": 31.20999999999998,
+        "marketPrice": 4555467064.73,
+        "volume": 2672604644.57,
+        "d": -7.42,
+        "w": -9.14
+      },
+      "id": 359
+    },
+    {
+      "currencyId": 4,
+      "currency": {
+        "id": 4,
+        "code": "BCH",
+        "name": "Bitcoin Cash",
+        "price": 60.52999999999997,
+        "marketPrice": 5014337183.98,
+        "volume": 1259757360.49,
+        "d": -7.55,
+        "w": -11.120000000000003
+      },
+      "id": 360
+    },
+    {
+      "currencyId": 7,
+      "currency": {
+        "id": 7,
+        "code": "BNB",
+        "name": "Binace Coin",
+        "price": 110.13999999999999,
+        "marketPrice": 3233796201.45,
+        "volume": 220517101.522,
+        "d": -5.019999999999999,
+        "w": 13.72
+      },
+      "id": 361
+    },
+    {
+      "currencyId": 3,
+      "currency": {
+        "id": 3,
+        "code": "XRP",
+        "name": "XRP",
+        "price": 80.2988,
+        "marketPrice": 12726548712.1,
+        "volume": 1110116996.26,
+        "d": -7.830000000000004,
+        "w": -11.419999999999996
+      },
+      "id": 362
+    },
+    {
+      "currencyId": 6,
+      "currency": {
+        "id": 6,
+        "code": "EOS",
+        "name": "EOS",
+        "price": 67.75999999999999,
+        "marketPrice": 4527848157,
+        "volume": 2473059315.05,
+        "d": -9.279999999999998,
+        "w": -12.110000000000001
+      },
+      "id": 363
+    },
+    {
+      "currencyId": 5,
+      "currency": {
+        "id": 5,
+        "code": "LTC",
+        "name": "Litecoin",
+        "price": 3.2099999999999795,
+        "marketPrice": 4555467064.73,
+        "volume": 2672604644.57,
+        "d": -7.37,
+        "w": -9.100000000000001
+      },
+      "id": 364
+    },
+    {
+      "currencyId": 2,
+      "currency": {
+        "id": 2,
+        "code": "ETH",
+        "name": "Ethereum",
+        "price": 55.83000000000004,
+        "marketPrice": 17420554092.7,
+        "volume": 6331540961.12,
+        "d": -5.590000000000002,
+        "w": -1.86
+      },
+      "id": 365
+    },
+    {
+      "currencyId": 4,
+      "currency": {
+        "id": 4,
+        "code": "BCH",
+        "name": "Bitcoin Cash",
+        "price": 34.52999999999997,
+        "marketPrice": 5014337183.98,
+        "volume": 1259757360.49,
+        "d": -7.53,
+        "w": -11.030000000000003
+      },
+      "id": 366
+    },
+    {
+      "currencyId": 1,
+      "currency": {
+        "id": 1,
+        "code": "BTC",
+        "name": "Bitcoin Core",
+        "price": 5733.01,
+        "marketPrice": 96996068595.9,
+        "volume": 14421089501.2,
+        "d": -2.660000000000001,
+        "w": 4.31
+      },
+      "id": 367
+    },
+    {
+      "currencyId": 1,
+      "currency": {
+        "id": 1,
+        "code": "BTC",
+        "name": "Bitcoin Core",
+        "price": 5717.01,
+        "marketPrice": 96996068595.9,
+        "volume": 14421089501.2,
+        "d": -2.610000000000001,
+        "w": 4.329999999999999
+      },
+      "id": 368
+    },
+    {
+      "currencyId": 5,
+      "currency": {
+        "id": 5,
+        "code": "LTC",
+        "name": "Litecoin",
+        "price": 29.20999999999998,
+        "marketPrice": 4555467064.73,
+        "volume": 2672604644.57,
+        "d": -7.38,
+        "w": -9.040000000000001
+      },
+      "id": 369
+    },
+    {
+      "currencyId": 8,
+      "currency": {
+        "id": 8,
+        "code": "USDT",
+        "name": "Tether",
+        "price": 92.0057,
+        "marketPrice": 2847160380.78,
+        "volume": 12978173572.2,
+        "d": 0.29000000000000004,
+        "w": -0.18
+      },
+      "id": 370
+    },
+    {
+      "currencyId": 5,
+      "currency": {
+        "id": 5,
+        "code": "LTC",
+        "name": "Litecoin",
+        "price": 29.20999999999998,
+        "marketPrice": 4555467064.73,
+        "volume": 2672604644.57,
+        "d": -7.37,
+        "w": -8.99
+      },
+      "id": 371
+    },
+    {
+      "currencyId": 6,
+      "currency": {
+        "id": 6,
+        "code": "EOS",
+        "name": "EOS",
+        "price": 64.75999999999999,
+        "marketPrice": 4527848157,
+        "volume": 2473059315.05,
+        "d": -9.339999999999998,
+        "w": -12.030000000000001
+      },
+      "id": 372
+    },
+    {
+      "currencyId": 3,
+      "currency": {
+        "id": 3,
+        "code": "XRP",
+        "name": "XRP",
+        "price": 42.2988,
+        "marketPrice": 12726548712.1,
+        "volume": 1110116996.26,
+        "d": -7.840000000000003,
+        "w": -11.439999999999996
+      },
+      "id": 373
+    },
+    {
+      "currencyId": 8,
+      "currency": {
+        "id": 8,
+        "code": "USDT",
+        "name": "Tether",
+        "price": 49.005700000000004,
+        "marketPrice": 2847160380.78,
+        "volume": 12978173572.2,
+        "d": 0.20000000000000004,
+        "w": -0.19999999999999998
+      },
+      "id": 374
+    },
+    {
+      "currencyId": 1,
+      "currency": {
+        "id": 1,
+        "code": "BTC",
+        "name": "Bitcoin Core",
+        "price": 5683.01,
+        "marketPrice": 96996068595.9,
+        "volume": 14421089501.2,
+        "d": -2.6000000000000014,
+        "w": 4.389999999999999
+      },
+      "id": 375
+    },
+    {
+      "currencyId": 6,
+      "currency": {
+        "id": 6,
+        "code": "EOS",
+        "name": "EOS",
+        "price": 111.75999999999999,
+        "marketPrice": 4527848157,
+        "volume": 2473059315.05,
+        "d": -9.289999999999997,
+        "w": -11.940000000000001
+      },
+      "id": 376
+    },
+    {
+      "currencyId": 3,
+      "currency": {
+        "id": 3,
+        "code": "XRP",
+        "name": "XRP",
+        "price": 62.2988,
+        "marketPrice": 12726548712.1,
+        "volume": 1110116996.26,
+        "d": -7.8800000000000034,
+        "w": -11.389999999999995
+      },
+      "id": 377
+    },
+    {
+      "currencyId": 4,
+      "currency": {
+        "id": 4,
+        "code": "BCH",
+        "name": "Bitcoin Cash",
+        "price": 50.52999999999997,
+        "marketPrice": 5014337183.98,
+        "volume": 1259757360.49,
+        "d": -7.510000000000001,
+        "w": -11.030000000000003
+      },
+      "id": 378
+    },
+    {
+      "currencyId": 1,
+      "currency": {
+        "id": 1,
+        "code": "BTC",
+        "name": "Bitcoin Core",
+        "price": 5656.01,
+        "marketPrice": 96996068595.9,
+        "volume": 14421089501.2,
+        "d": -2.6900000000000013,
+        "w": 4.3599999999999985
+      },
+      "id": 379
+    },
+    {
+      "currencyId": 2,
+      "currency": {
+        "id": 2,
+        "code": "ETH",
+        "name": "Ethereum",
+        "price": 98.83000000000004,
+        "marketPrice": 17420554092.7,
+        "volume": 6331540961.12,
+        "d": -5.6400000000000015,
+        "w": -1.8
+      },
+      "id": 380
+    },
+    {
+      "currencyId": 3,
+      "currency": {
+        "id": 3,
+        "code": "XRP",
+        "name": "XRP",
+        "price": 36.2988,
+        "marketPrice": 12726548712.1,
+        "volume": 1110116996.26,
+        "d": -7.820000000000004,
+        "w": -11.379999999999995
+      },
+      "id": 381
+    },
+    {
+      "currencyId": 8,
+      "currency": {
+        "id": 8,
+        "code": "USDT",
+        "name": "Tether",
+        "price": 48.005700000000004,
+        "marketPrice": 2847160380.78,
+        "volume": 12978173572.2,
+        "d": 0.29000000000000004,
+        "w": -0.18
+      },
+      "id": 382
+    },
+    {
+      "currencyId": 4,
+      "currency": {
+        "id": 4,
+        "code": "BCH",
+        "name": "Bitcoin Cash",
+        "price": 60.52999999999997,
+        "marketPrice": 5014337183.98,
+        "volume": 1259757360.49,
+        "d": -7.5200000000000005,
+        "w": -10.970000000000002
+      },
+      "id": 383
+    },
+    {
+      "currencyId": 5,
+      "currency": {
+        "id": 5,
+        "code": "LTC",
+        "name": "Litecoin",
+        "price": 45.20999999999998,
+        "marketPrice": 4555467064.73,
+        "volume": 2672604644.57,
+        "d": -7.38,
+        "w": -8.94
+      },
+      "id": 384
+    },
+    {
+      "currencyId": 4,
+      "currency": {
+        "id": 4,
+        "code": "BCH",
+        "name": "Bitcoin Cash",
+        "price": 71.52999999999997,
+        "marketPrice": 5014337183.98,
+        "volume": 1259757360.49,
+        "d": -7.5200000000000005,
+        "w": -11.030000000000003
+      },
+      "id": 385
+    },
+    {
+      "currencyId": 7,
+      "currency": {
+        "id": 7,
+        "code": "BNB",
+        "name": "Binace Coin",
+        "price": 64.13999999999999,
+        "marketPrice": 3233796201.45,
+        "volume": 220517101.522,
+        "d": -5.1099999999999985,
+        "w": 13.690000000000001
+      },
+      "id": 386
+    },
+    {
+      "currencyId": 3,
+      "currency": {
+        "id": 3,
+        "code": "XRP",
+        "name": "XRP",
+        "price": 3.2988,
+        "marketPrice": 12726548712.1,
+        "volume": 1110116996.26,
+        "d": -7.820000000000004,
+        "w": -11.399999999999995
+      },
+      "id": 387
+    },
+    {
+      "currencyId": 2,
+      "currency": {
+        "id": 2,
+        "code": "ETH",
+        "name": "Ethereum",
+        "price": 79.83000000000004,
+        "marketPrice": 17420554092.7,
+        "volume": 6331540961.12,
+        "d": -5.670000000000002,
+        "w": -1.79
+      },
+      "id": 388
+    },
+    {
+      "currencyId": 1,
+      "currency": {
+        "id": 1,
+        "code": "BTC",
+        "name": "Bitcoin Core",
+        "price": 5659.01,
+        "marketPrice": 96996068595.9,
+        "volume": 14421089501.2,
+        "d": -2.6900000000000013,
+        "w": 4.439999999999999
+      },
+      "id": 389
+    },
+    {
+      "currencyId": 7,
+      "currency": {
+        "id": 7,
+        "code": "BNB",
+        "name": "Binace Coin",
+        "price": 82.13999999999999,
+        "marketPrice": 3233796201.45,
+        "volume": 220517101.522,
+        "d": -5.119999999999998,
+        "w": 13.780000000000001
+      },
+      "id": 390
+    },
+    {
+      "currencyId": 4,
+      "currency": {
+        "id": 4,
+        "code": "BCH",
+        "name": "Bitcoin Cash",
+        "price": 60.52999999999997,
+        "marketPrice": 5014337183.98,
+        "volume": 1259757360.49,
+        "d": -7.44,
+        "w": -11.080000000000004
+      },
+      "id": 391
+    },
+    {
+      "currencyId": 1,
+      "currency": {
+        "id": 1,
+        "code": "BTC",
+        "name": "Bitcoin Core",
+        "price": 5707.01,
+        "marketPrice": 96996068595.9,
+        "volume": 14421089501.2,
+        "d": -2.6900000000000013,
+        "w": 4.409999999999998
+      },
+      "id": 392
+    },
+    {
+      "currencyId": 6,
+      "currency": {
+        "id": 6,
+        "code": "EOS",
+        "name": "EOS",
+        "price": 144.76,
+        "marketPrice": 4527848157,
+        "volume": 2473059315.05,
+        "d": -9.269999999999998,
+        "w": -11.98
+      },
+      "id": 393
+    },
+    {
+      "currencyId": 1,
+      "currency": {
+        "id": 1,
+        "code": "BTC",
+        "name": "Bitcoin Core",
+        "price": 5724.01,
+        "marketPrice": 96996068595.9,
+        "volume": 14421089501.2,
+        "d": -2.700000000000001,
+        "w": 4.399999999999999
+      },
+      "id": 394
+    },
+    {
+      "currencyId": 6,
+      "currency": {
+        "id": 6,
+        "code": "EOS",
+        "name": "EOS",
+        "price": 115.75999999999999,
+        "marketPrice": 4527848157,
+        "volume": 2473059315.05,
+        "d": -9.259999999999998,
+        "w": -11.89
+      },
+      "id": 395
+    },
+    {
+      "currencyId": 4,
+      "currency": {
+        "id": 4,
+        "code": "BCH",
+        "name": "Bitcoin Cash",
+        "price": 108.52999999999997,
+        "marketPrice": 5014337183.98,
+        "volume": 1259757360.49,
+        "d": -7.44,
+        "w": -11.020000000000003
+      },
+      "id": 396
+    },
+    {
+      "currencyId": 8,
+      "currency": {
+        "id": 8,
+        "code": "USDT",
+        "name": "Tether",
+        "price": 35.005700000000004,
+        "marketPrice": 2847160380.78,
+        "volume": 12978173572.2,
+        "d": 0.21000000000000002,
+        "w": -0.10999999999999999
+      },
+      "id": 397
+    },
+    {
+      "currencyId": 1,
+      "currency": {
+        "id": 1,
+        "code": "BTC",
+        "name": "Bitcoin Core",
+        "price": 5727.01,
+        "marketPrice": 96996068595.9,
+        "volume": 14421089501.2,
+        "d": -2.720000000000001,
+        "w": 4.429999999999999
+      },
+      "id": 398
+    },
+    {
+      "currencyId": 2,
+      "currency": {
+        "id": 2,
+        "code": "ETH",
+        "name": "Ethereum",
+        "price": 84.83000000000004,
+        "marketPrice": 17420554092.7,
+        "volume": 6331540961.12,
+        "d": -5.630000000000002,
+        "w": -1.81
+      },
+      "id": 399
+    },
+    {
+      "currencyId": 1,
+      "currency": {
+        "id": 1,
+        "code": "BTC",
+        "name": "Bitcoin Core",
+        "price": 5741.01,
+        "marketPrice": 96996068595.9,
+        "volume": 14421089501.2,
+        "d": -2.780000000000001,
+        "w": 4.399999999999999
+      },
+      "id": 400
+    },
+    {
+      "currencyId": 3,
+      "currency": {
+        "id": 3,
+        "code": "XRP",
+        "name": "XRP",
+        "price": 38.2988,
+        "marketPrice": 12726548712.1,
+        "volume": 1110116996.26,
+        "d": -7.890000000000004,
+        "w": -11.469999999999995
+      },
+      "id": 401
+    },
+    {
+      "currencyId": 7,
+      "currency": {
+        "id": 7,
+        "code": "BNB",
+        "name": "Binace Coin",
+        "price": 45.139999999999986,
+        "marketPrice": 3233796201.45,
+        "volume": 220517101.522,
+        "d": -5.119999999999998,
+        "w": 13.780000000000001
+      },
+      "id": 402
+    },
+    {
+      "currencyId": 8,
+      "currency": {
+        "id": 8,
+        "code": "USDT",
+        "name": "Tether",
+        "price": 56.005700000000004,
+        "marketPrice": 2847160380.78,
+        "volume": 12978173572.2,
+        "d": 0.22000000000000003,
+        "w": -0.16999999999999998
+      },
+      "id": 403
+    },
+    {
+      "currencyId": 6,
+      "currency": {
+        "id": 6,
+        "code": "EOS",
+        "name": "EOS",
+        "price": 135.76,
+        "marketPrice": 4527848157,
+        "volume": 2473059315.05,
+        "d": -9.189999999999998,
+        "w": -11.81
+      },
+      "id": 404
+    },
+    {
+      "currencyId": 8,
+      "currency": {
+        "id": 8,
+        "code": "USDT",
+        "name": "Tether",
+        "price": 37.005700000000004,
+        "marketPrice": 2847160380.78,
+        "volume": 12978173572.2,
+        "d": 0.16000000000000003,
+        "w": -0.18
+      },
+      "id": 405
+    },
+    {
+      "currencyId": 2,
+      "currency": {
+        "id": 2,
+        "code": "ETH",
+        "name": "Ethereum",
+        "price": 73.83000000000004,
+        "marketPrice": 17420554092.7,
+        "volume": 6331540961.12,
+        "d": -5.630000000000002,
+        "w": -1.86
+      },
+      "id": 406
+    },
+    {
+      "currencyId": 3,
+      "currency": {
+        "id": 3,
+        "code": "XRP",
+        "name": "XRP",
+        "price": 78.2988,
+        "marketPrice": 12726548712.1,
+        "volume": 1110116996.26,
+        "d": -7.800000000000004,
+        "w": -11.539999999999996
+      },
+      "id": 407
+    },
+    {
+      "currencyId": 5,
+      "currency": {
+        "id": 5,
+        "code": "LTC",
+        "name": "Litecoin",
+        "price": 73.20999999999998,
+        "marketPrice": 4555467064.73,
+        "volume": 2672604644.57,
+        "d": -7.33,
+        "w": -8.969999999999999
+      },
+      "id": 408
+    },
+    {
+      "currencyId": 1,
+      "currency": {
+        "id": 1,
+        "code": "BTC",
+        "name": "Bitcoin Core",
+        "price": 5730.01,
+        "marketPrice": 96996068595.9,
+        "volume": 14421089501.2,
+        "d": -2.7300000000000013,
+        "w": 4.429999999999999
+      },
+      "id": 409
+    },
+    {
+      "currencyId": 8,
+      "currency": {
+        "id": 8,
+        "code": "USDT",
+        "name": "Tether",
+        "price": 54.005700000000004,
+        "marketPrice": 2847160380.78,
+        "volume": 12978173572.2,
+        "d": 0.13000000000000003,
+        "w": -0.18
+      },
+      "id": 410
+    },
+    {
+      "currencyId": 6,
+      "currency": {
+        "id": 6,
+        "code": "EOS",
+        "name": "EOS",
+        "price": 141.76,
+        "marketPrice": 4527848157,
+        "volume": 2473059315.05,
+        "d": -9.219999999999997,
+        "w": -11.72
+      },
+      "id": 411
+    },
+    {
+      "currencyId": 7,
+      "currency": {
+        "id": 7,
+        "code": "BNB",
+        "name": "Binace Coin",
+        "price": 63.139999999999986,
+        "marketPrice": 3233796201.45,
+        "volume": 220517101.522,
+        "d": -5.059999999999999,
+        "w": 13.850000000000001
+      },
+      "id": 412
+    },
+    {
+      "currencyId": 1,
+      "currency": {
+        "id": 1,
+        "code": "BTC",
+        "name": "Bitcoin Core",
+        "price": 5688.01,
+        "marketPrice": 96996068595.9,
+        "volume": 14421089501.2,
+        "d": -2.6700000000000013,
+        "w": 4.409999999999999
+      },
+      "id": 413
+    },
+    {
+      "currencyId": 5,
+      "currency": {
+        "id": 5,
+        "code": "LTC",
+        "name": "Litecoin",
+        "price": 52.20999999999998,
+        "marketPrice": 4555467064.73,
+        "volume": 2672604644.57,
+        "d": -7.32,
+        "w": -9.059999999999999
+      },
+      "id": 414
+    },
+    {
+      "currencyId": 2,
+      "currency": {
+        "id": 2,
+        "code": "ETH",
+        "name": "Ethereum",
+        "price": 70.83000000000004,
+        "marketPrice": 17420554092.7,
+        "volume": 6331540961.12,
+        "d": -5.630000000000002,
+        "w": -1.8800000000000001
+      },
+      "id": 415
+    },
+    {
+      "currencyId": 4,
+      "currency": {
+        "id": 4,
+        "code": "BCH",
+        "name": "Bitcoin Cash",
+        "price": 66.52999999999997,
+        "marketPrice": 5014337183.98,
+        "volume": 1259757360.49,
+        "d": -7.430000000000001,
+        "w": -10.990000000000004
+      },
+      "id": 416
+    },
+    {
+      "currencyId": 7,
+      "currency": {
+        "id": 7,
+        "code": "BNB",
+        "name": "Binace Coin",
+        "price": 96.13999999999999,
+        "marketPrice": 3233796201.45,
+        "volume": 220517101.522,
+        "d": -4.989999999999998,
+        "w": 13.780000000000001
+      },
+      "id": 417
+    },
+    {
+      "currencyId": 5,
+      "currency": {
+        "id": 5,
+        "code": "LTC",
+        "name": "Litecoin",
+        "price": 58.20999999999998,
+        "marketPrice": 4555467064.73,
+        "volume": 2672604644.57,
+        "d": -7.28,
+        "w": -9.049999999999999
+      },
+      "id": 418
+    },
+    {
+      "currencyId": 4,
+      "currency": {
+        "id": 4,
+        "code": "BCH",
+        "name": "Bitcoin Cash",
+        "price": 103.52999999999997,
+        "marketPrice": 5014337183.98,
+        "volume": 1259757360.49,
+        "d": -7.340000000000001,
+        "w": -10.920000000000003
+      },
+      "id": 419
+    },
+    {
+      "currencyId": 6,
+      "currency": {
+        "id": 6,
+        "code": "EOS",
+        "name": "EOS",
+        "price": 131.76,
+        "marketPrice": 4527848157,
+        "volume": 2473059315.05,
+        "d": -9.149999999999997,
+        "w": -11.690000000000001
+      },
+      "id": 420
+    },
+    {
+      "currencyId": 5,
+      "currency": {
+        "id": 5,
+        "code": "LTC",
+        "name": "Litecoin",
+        "price": 24.20999999999998,
+        "marketPrice": 4555467064.73,
+        "volume": 2672604644.57,
+        "d": -7.33,
+        "w": -9.04
+      },
+      "id": 421
+    },
+    {
+      "currencyId": 2,
+      "currency": {
+        "id": 2,
+        "code": "ETH",
+        "name": "Ethereum",
+        "price": 95.83000000000004,
+        "marketPrice": 17420554092.7,
+        "volume": 6331540961.12,
+        "d": -5.570000000000002,
+        "w": -1.8
+      },
+      "id": 422
+    },
+    {
+      "currencyId": 3,
+      "currency": {
+        "id": 3,
+        "code": "XRP",
+        "name": "XRP",
+        "price": 55.2988,
+        "marketPrice": 12726548712.1,
+        "volume": 1110116996.26,
+        "d": -7.890000000000004,
+        "w": -11.539999999999996
+      },
+      "id": 423
+    },
+    {
+      "currencyId": 8,
+      "currency": {
+        "id": 8,
+        "code": "USDT",
+        "name": "Tether",
+        "price": 6.0057000000000045,
+        "marketPrice": 2847160380.78,
+        "volume": 12978173572.2,
+        "d": 0.17000000000000004,
+        "w": -0.27
+      },
+      "id": 424
+    },
+    {
+      "currencyId": 8,
+      "currency": {
+        "id": 8,
+        "code": "USDT",
+        "name": "Tether",
+        "price": 6.0057000000000045,
+        "marketPrice": 2847160380.78,
+        "volume": 12978173572.2,
+        "d": 0.26,
+        "w": -0.21000000000000002
+      },
+      "id": 425
+    },
+    {
+      "currencyId": 5,
+      "currency": {
+        "id": 5,
+        "code": "LTC",
+        "name": "Litecoin",
+        "price": 24.20999999999998,
+        "marketPrice": 4555467064.73,
+        "volume": 2672604644.57,
+        "d": -7.36,
+        "w": -8.95
+      },
+      "id": 426
+    },
+    {
+      "currencyId": 2,
+      "currency": {
+        "id": 2,
+        "code": "ETH",
+        "name": "Ethereum",
+        "price": 106.83000000000004,
+        "marketPrice": 17420554092.7,
+        "volume": 6331540961.12,
+        "d": -5.570000000000002,
+        "w": -1.75
+      },
+      "id": 427
+    },
+    {
+      "currencyId": 4,
+      "currency": {
+        "id": 4,
+        "code": "BCH",
+        "name": "Bitcoin Cash",
+        "price": 102.52999999999997,
+        "marketPrice": 5014337183.98,
+        "volume": 1259757360.49,
+        "d": -7.2700000000000005,
+        "w": -10.830000000000004
+      },
+      "id": 428
+    },
+    {
+      "currencyId": 7,
+      "currency": {
+        "id": 7,
+        "code": "BNB",
+        "name": "Binace Coin",
+        "price": 107.13999999999999,
+        "marketPrice": 3233796201.45,
+        "volume": 220517101.522,
+        "d": -5.049999999999998,
+        "w": 13.860000000000001
+      },
+      "id": 429
+    },
+    {
+      "currencyId": 7,
+      "currency": {
+        "id": 7,
+        "code": "BNB",
+        "name": "Binace Coin",
+        "price": 64.13999999999999,
+        "marketPrice": 3233796201.45,
+        "volume": 220517101.522,
+        "d": -4.999999999999998,
+        "w": 13.860000000000001
+      },
+      "id": 430
+    },
+    {
+      "currencyId": 2,
+      "currency": {
+        "id": 2,
+        "code": "ETH",
+        "name": "Ethereum",
+        "price": 144.83000000000004,
+        "marketPrice": 17420554092.7,
+        "volume": 6331540961.12,
+        "d": -5.530000000000002,
+        "w": -1.66
+      },
+      "id": 431
+    },
+    {
+      "currencyId": 1,
+      "currency": {
+        "id": 1,
+        "code": "BTC",
+        "name": "Bitcoin Core",
+        "price": 5731.01,
+        "marketPrice": 96996068595.9,
+        "volume": 14421089501.2,
+        "d": -2.740000000000001,
+        "w": 4.459999999999999
+      },
+      "id": 432
+    },
+    {
+      "currencyId": 4,
+      "currency": {
+        "id": 4,
+        "code": "BCH",
+        "name": "Bitcoin Cash",
+        "price": 58.52999999999997,
+        "marketPrice": 5014337183.98,
+        "volume": 1259757360.49,
+        "d": -7.340000000000001,
+        "w": -10.740000000000004
+      },
+      "id": 433
+    },
+    {
+      "currencyId": 7,
+      "currency": {
+        "id": 7,
+        "code": "BNB",
+        "name": "Binace Coin",
+        "price": 30.139999999999986,
+        "marketPrice": 3233796201.45,
+        "volume": 220517101.522,
+        "d": -5.0699999999999985,
+        "w": 13.770000000000001
+      },
+      "id": 434
+    },
+    {
+      "currencyId": 8,
+      "currency": {
+        "id": 8,
+        "code": "USDT",
+        "name": "Tether",
+        "price": 6.0057000000000045,
+        "marketPrice": 2847160380.78,
+        "volume": 12978173572.2,
+        "d": 0.27,
+        "w": -0.16000000000000003
+      },
+      "id": 435
+    },
+    {
+      "currencyId": 2,
+      "currency": {
+        "id": 2,
+        "code": "ETH",
+        "name": "Ethereum",
+        "price": 191.83000000000004,
+        "marketPrice": 17420554092.7,
+        "volume": 6331540961.12,
+        "d": -5.540000000000002,
+        "w": -1.66
+      },
+      "id": 436
+    },
+    {
+      "currencyId": 5,
+      "currency": {
+        "id": 5,
+        "code": "LTC",
+        "name": "Litecoin",
+        "price": 45.20999999999998,
+        "marketPrice": 4555467064.73,
+        "volume": 2672604644.57,
+        "d": -7.340000000000001,
+        "w": -9.01
+      },
+      "id": 437
+    },
+    {
+      "currencyId": 6,
+      "currency": {
+        "id": 6,
+        "code": "EOS",
+        "name": "EOS",
+        "price": 148.76,
+        "marketPrice": 4527848157,
+        "volume": 2473059315.05,
+        "d": -9.069999999999997,
+        "w": -11.690000000000001
+      },
+      "id": 438
+    },
+    {
+      "currencyId": 5,
+      "currency": {
+        "id": 5,
+        "code": "LTC",
+        "name": "Litecoin",
+        "price": 20.20999999999998,
+        "marketPrice": 4555467064.73,
+        "volume": 2672604644.57,
+        "d": -7.320000000000001,
+        "w": -9.1
+      },
+      "id": 439
+    },
+    {
+      "currencyId": 1,
+      "currency": {
+        "id": 1,
+        "code": "BTC",
+        "name": "Bitcoin Core",
+        "price": 5702.01,
+        "marketPrice": 96996068595.9,
+        "volume": 14421089501.2,
+        "d": -2.740000000000001,
+        "w": 4.539999999999999
+      },
+      "id": 440
+    },
+    {
+      "currencyId": 6,
+      "currency": {
+        "id": 6,
+        "code": "EOS",
+        "name": "EOS",
+        "price": 188.76,
+        "marketPrice": 4527848157,
+        "volume": 2473059315.05,
+        "d": -9.159999999999997,
+        "w": -11.71
+      },
+      "id": 441
+    },
+    {
+      "currencyId": 8,
+      "currency": {
+        "id": 8,
+        "code": "USDT",
+        "name": "Tether",
+        "price": 44.005700000000004,
+        "marketPrice": 2847160380.78,
+        "volume": 12978173572.2,
+        "d": 0.24000000000000002,
+        "w": -0.19000000000000003
+      },
+      "id": 442
+    },
+    {
+      "currencyId": 5,
+      "currency": {
+        "id": 5,
+        "code": "LTC",
+        "name": "Litecoin",
+        "price": 57.20999999999998,
+        "marketPrice": 4555467064.73,
+        "volume": 2672604644.57,
+        "d": -7.360000000000001,
+        "w": -9.08
+      },
+      "id": 443
+    },
+    {
+      "currencyId": 3,
+      "currency": {
+        "id": 3,
+        "code": "XRP",
+        "name": "XRP",
+        "price": 27.2988,
+        "marketPrice": 12726548712.1,
+        "volume": 1110116996.26,
+        "d": -7.960000000000004,
+        "w": -11.579999999999995
+      },
+      "id": 444
+    },
+    {
+      "currencyId": 6,
+      "currency": {
+        "id": 6,
+        "code": "EOS",
+        "name": "EOS",
+        "price": 164.76,
+        "marketPrice": 4527848157,
+        "volume": 2473059315.05,
+        "d": -9.179999999999996,
+        "w": -11.760000000000002
+      },
+      "id": 445
+    },
+    {
+      "currencyId": 2,
+      "currency": {
+        "id": 2,
+        "code": "ETH",
+        "name": "Ethereum",
+        "price": 180.83000000000004,
+        "marketPrice": 17420554092.7,
+        "volume": 6331540961.12,
+        "d": -5.510000000000002,
+        "w": -1.69
+      },
+      "id": 446
+    },
+    {
+      "currencyId": 2,
+      "currency": {
+        "id": 2,
+        "code": "ETH",
+        "name": "Ethereum",
+        "price": 171.83000000000004,
+        "marketPrice": 17420554092.7,
+        "volume": 6331540961.12,
+        "d": -5.490000000000002,
+        "w": -1.73
+      },
+      "id": 447
+    },
+    {
+      "currencyId": 7,
+      "currency": {
+        "id": 7,
+        "code": "BNB",
+        "name": "Binace Coin",
+        "price": 30.139999999999986,
+        "marketPrice": 3233796201.45,
+        "volume": 220517101.522,
+        "d": -5.159999999999998,
+        "w": 13.700000000000001
+      },
+      "id": 448
+    },
+    {
+      "currencyId": 4,
+      "currency": {
+        "id": 4,
+        "code": "BCH",
+        "name": "Bitcoin Cash",
+        "price": 21.529999999999973,
+        "marketPrice": 5014337183.98,
+        "volume": 1259757360.49,
+        "d": -7.280000000000001,
+        "w": -10.770000000000003
+      },
+      "id": 449
+    },
+    {
+      "currencyId": 6,
+      "currency": {
+        "id": 6,
+        "code": "EOS",
+        "name": "EOS",
+        "price": 201.76,
+        "marketPrice": 4527848157,
+        "volume": 2473059315.05,
+        "d": -9.249999999999996,
+        "w": -11.770000000000001
+      },
+      "id": 450
+    },
+    {
+      "currencyId": 1,
+      "currency": {
+        "id": 1,
+        "code": "BTC",
+        "name": "Bitcoin Core",
+        "price": 5708.01,
+        "marketPrice": 96996068595.9,
+        "volume": 14421089501.2,
+        "d": -2.790000000000001,
+        "w": 4.4799999999999995
+      },
+      "id": 451
+    },
+    {
+      "currencyId": 8,
+      "currency": {
+        "id": 8,
+        "code": "USDT",
+        "name": "Tether",
+        "price": 36.005700000000004,
+        "marketPrice": 2847160380.78,
+        "volume": 12978173572.2,
+        "d": 0.16000000000000003,
+        "w": -0.24000000000000005
+      },
+      "id": 452
+    },
+    {
+      "currencyId": 4,
+      "currency": {
+        "id": 4,
+        "code": "BCH",
+        "name": "Bitcoin Cash",
+        "price": 6.529999999999973,
+        "marketPrice": 5014337183.98,
+        "volume": 1259757360.49,
+        "d": -7.270000000000001,
+        "w": -10.860000000000003
+      },
+      "id": 453
+    },
+    {
+      "currencyId": 2,
+      "currency": {
+        "id": 2,
+        "code": "ETH",
+        "name": "Ethereum",
+        "price": 198.83000000000004,
+        "marketPrice": 17420554092.7,
+        "volume": 6331540961.12,
+        "d": -5.490000000000002,
+        "w": -1.76
+      },
+      "id": 454
+    },
+    {
+      "currencyId": 5,
+      "currency": {
+        "id": 5,
+        "code": "LTC",
+        "name": "Litecoin",
+        "price": 95.20999999999998,
+        "marketPrice": 4555467064.73,
+        "volume": 2672604644.57,
+        "d": -7.440000000000001,
+        "w": -9.03
+      },
+      "id": 455
+    },
+    {
+      "currencyId": 2,
+      "currency": {
+        "id": 2,
+        "code": "ETH",
+        "name": "Ethereum",
+        "price": 221.83000000000004,
+        "marketPrice": 17420554092.7,
+        "volume": 6331540961.12,
+        "d": -5.510000000000002,
+        "w": -1.68
+      },
+      "id": 456
+    },
+    {
+      "currencyId": 6,
+      "currency": {
+        "id": 6,
+        "code": "EOS",
+        "name": "EOS",
+        "price": 239.76,
+        "marketPrice": 4527848157,
+        "volume": 2473059315.05,
+        "d": -9.299999999999997,
+        "w": -11.860000000000001
+      },
+      "id": 457
+    },
+    {
+      "currencyId": 5,
+      "currency": {
+        "id": 5,
+        "code": "LTC",
+        "name": "Litecoin",
+        "price": 52.20999999999998,
+        "marketPrice": 4555467064.73,
+        "volume": 2672604644.57,
+        "d": -7.400000000000001,
+        "w": -9.09
+      },
+      "id": 458
+    },
+    {
+      "currencyId": 1,
+      "currency": {
+        "id": 1,
+        "code": "BTC",
+        "name": "Bitcoin Core",
+        "price": 5670.01,
+        "marketPrice": 96996068595.9,
+        "volume": 14421089501.2,
+        "d": -2.790000000000001,
+        "w": 4.4799999999999995
+      },
+      "id": 459
+    },
+    {
+      "currencyId": 7,
+      "currency": {
+        "id": 7,
+        "code": "BNB",
+        "name": "Binace Coin",
+        "price": 30.139999999999986,
+        "marketPrice": 3233796201.45,
+        "volume": 220517101.522,
+        "d": -5.129999999999998,
+        "w": 13.700000000000001
+      },
+      "id": 460
+    },
+    {
+      "currencyId": 2,
+      "currency": {
+        "id": 2,
+        "code": "ETH",
+        "name": "Ethereum",
+        "price": 247.83000000000004,
+        "marketPrice": 17420554092.7,
+        "volume": 6331540961.12,
+        "d": -5.550000000000002,
+        "w": -1.5899999999999999
+      },
+      "id": 461
+    },
+    {
+      "currencyId": 8,
+      "currency": {
+        "id": 8,
+        "code": "USDT",
+        "name": "Tether",
+        "price": 31.005700000000004,
+        "marketPrice": 2847160380.78,
+        "volume": 12978173572.2,
+        "d": 0.18000000000000002,
+        "w": -0.16000000000000003
+      },
+      "id": 462
+    },
+    {
+      "currencyId": 5,
+      "currency": {
+        "id": 5,
+        "code": "LTC",
+        "name": "Litecoin",
+        "price": 98.20999999999998,
+        "marketPrice": 4555467064.73,
+        "volume": 2672604644.57,
+        "d": -7.350000000000001,
+        "w": -9.11
+      },
+      "id": 463
     }
   ]
 }
