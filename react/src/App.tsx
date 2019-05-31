@@ -1,25 +1,36 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
+import './style/App.css';
+import 'bootstrap/dist/css/bootstrap.css';
+import NavbarComponent from './components/NavbarComponent';
+import { BrowserRouter as Router, Route, Link, Redirect } from "react-router-dom";
+import HomeComponent from './components/HomeComponent';
+import { Container } from 'react-bootstrap';
+import LoginComponent from './components/LoginComponent';
+import Cookies from 'universal-cookie';
 
 const App: React.FC = () => {
+
+  let loggedIn = () => {
+    console.log("loggedIn");
+    const cookies = new Cookies();
+    let cookie = cookies.get('logedIn');
+    console.log(cookie);
+    return cookie != null;
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Route exact path="/" render={() => (
+        loggedIn() ? (
+          <HomeComponent />
+        ) : (
+            <Redirect to="/login" />
+          )
+      )}>
+      </Route>
+      <Route path="/login" component={LoginComponent}></Route>
+    </Router>
   );
 }
 
