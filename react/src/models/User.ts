@@ -1,5 +1,9 @@
+import {Log} from "./Log";
+
 export interface User{
-    userId:number;
+    id?:number;
     username:string;
     password:string;
+    logs? : Log[];
+    admin:boolean;
 }

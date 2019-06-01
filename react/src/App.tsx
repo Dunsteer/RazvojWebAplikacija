@@ -8,6 +8,7 @@ import HomeComponent from './components/HomeComponent';
 import { Container } from 'react-bootstrap';
 import LoginComponent from './components/LoginComponent';
 import Cookies from 'universal-cookie';
+import UserComponent from './components/UserComponent';
 
 const App: React.FC = () => {
 
@@ -29,6 +30,7 @@ const App: React.FC = () => {
           )
       )}>
       </Route>
+      <Route path="/users" component={UserComponent}></Route>
       <Route path="/login" component={LoginComponent}></Route>
     </Router>
   );

@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import NavbarComponent from './NavbarComponent';
 import { Container } from 'react-bootstrap';
 import UserComponent from './UserComponent';
+import ShiftComponent from './ShiftComponent';
 
 class HomeComponent extends Component {
     render() {
@@ -9,11 +10,9 @@ class HomeComponent extends Component {
             <div>
                 <NavbarComponent></NavbarComponent>
                 <Container>
-                    <div>
-                        Home
-                    </div>
-                    <UserComponent></UserComponent>
+                    <ShiftComponent></ShiftComponent>
                 </Container>
+
             </div>
         )
     }

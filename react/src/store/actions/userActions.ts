@@ -1,4 +1,4 @@
-import { FETCH_USERS,FETCH_USER, NEW_USER,CHANGE_STATE } from './types';
+import { FETCH_USERS,FETCH_USER, NEW_USER,CHANGE_STATE, NEW_USER_SUCCESS, FETCH_USER_USERNAME, CURRENT_USER, PATCH_USER, PATCH_USER_SUCCESS } from './types';
 import { Action } from 'redux';
 import { User } from '../../models/User';
 
@@ -15,18 +15,21 @@ export interface GetUser extends Action {
     id: number
 }
 
-export function getUser(id: number): GetUser {
-    return {
-        type: FETCH_USER,
-        id: id
-    };
-}
-export interface AddUsers extends Action {
+export interface AddUser extends Action {
+    user:User
 }
 
-export function addUsers(): AddUsers {
+export function addUserToStore(user:User): AddUser {
     return {
-        type: NEW_USER
+        type: NEW_USER,
+        user: user
+    };
+}
+
+export function addUserToStoreSuccess(user:User): AddUser {
+    return {
+        type: NEW_USER_SUCCESS,
+        user: user
     };
 }
 
@@ -37,34 +40,33 @@ export interface ChangeState extends Action {
 export function changeState(users: User[]): ChangeState {
     return {
         type: CHANGE_STATE,
-        users
+        users:users
     }
 }
 
-// export const fetchUsers = () => (dispatch: any) => {
-//     fetch('https://jsonplaceholder.typicode.com/posts')
-//         .then(res => res.json())
-//         .then(users =>
-//             dispatch({
-//                 type: FETCH_USERS,
-//                 payload: users
-//             })
-//         );
-// };
+export interface CurrentUser extends Action {
+}
 
-// export const createUser = (userData: any) => (dispatch: any) => {
-//     fetch('https://jsonplaceholder.typicode.com/posts', {
-//         method: 'POST',
-//         headers: {
-//             'content-type': 'application/json'
-//         },
-//         body: JSON.stringify(userData)
-//     })
-//         .then(res => res.json())
-//         .then(user =>
-//             dispatch({
-//                 type: NEW_USER,
-//                 payload: user
-//             })
-//         );
-// };
+export function getCurrentUser(): CurrentUser {
+    return {
+        type: CURRENT_USER
+    };
+}
+
+export interface PatchUser extends Action{
+    user:User
+}
+
+export function updateUser(user:User): PatchUser {
+    return {
+        type: PATCH_USER,
+        user:user
+    };
+}
+
+export function updateUserSuccess(user:User): PatchUser {
+    return {
+        type: PATCH_USER_SUCCESS,
+        user: user
+    };
+}

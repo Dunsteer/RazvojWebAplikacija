@@ -2,8 +2,16 @@ import React, { Component } from 'react'
 import { FormGroup, FormControl, Button, Form } from 'react-bootstrap';
 import Cookies from 'universal-cookie';
 import { Redirect } from 'react-router-dom';
+import { connect } from 'react-redux';
+import { AppState } from '../store/store';
+import { getUsers } from '../store/actions/userActions';
+import { Dispatch, Action } from 'redux';
+import { User } from '../models/User';
 
 interface Props {
+    currentUser: User;
+    fetchUsers:Function;
+    users:User[];
 }
 
 interface State {
@@ -21,6 +29,10 @@ class LoginComponent extends Component<Props, any> {
         };
     }
 
+    componentWillMount = () => {
+        this.props.fetchUsers();
+    }
+
     validateForm() {
         return this.state.username.length > 0 && this.state.password.length > 0;
     }
@@ -33,18 +45,40 @@ class LoginComponent extends Component<Props, any> {
 
     handleSubmit = (event: any) => {
         event.preventDefault();
+        let users = this.props.users.filter(x=>x.username == this.state.username);
+        if(users.length>0){
+            let user = users.pop();
 
-        const cookies = new Cookies();
-        cookies.set('logedIn', this.state.username, { path: '/' });
+            if (user.password === this.state.password) {
+                const cookies = new Cookies();
+                cookies.set('logedIn', this.state.username, { path: '/' });
+    
+                this.setState({
+                    redirect: true
+                });
+                return;
+            }
+        }
 
         this.setState({
-            redirect: true
-        })
+            password:"",
+            error:"Invalid username or password."
+        });
     }
 
     renderRedirect() {
         if (this.state.redirect) {
             return <Redirect to='/' />
+        }
+    }
+
+    renderErrorMessage(){
+        if(this.state.error!=null){
+            return (
+                <small className="text-danger">
+                    {this.state.error}
+                </small>
+            )
         }
     }
 
@@ -70,6 +104,7 @@ class LoginComponent extends Component<Props, any> {
                             onChange={this.handleChange}
                             type="password"
                         />
+                        {this.renderErrorMessage()}
                     </Form.Group>
                     <Button
                         block
@@ -77,11 +112,23 @@ class LoginComponent extends Component<Props, any> {
                         type="submit"
                     >
                         Login
-              </Button>
+                    </Button>
                 </Form>
             </div>
         );
     }
 }
 
-export default LoginComponent;
+function mapDispatchToProps(dispatch: Dispatch<Action>) {
+    return {
+        fetchUsers: () => dispatch(getUsers())
+    }
+}
+function mapStateToProps(state: AppState) {
+    return {
+        users: state.users.users,
+        currentUser: state.users.user
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(LoginComponent);

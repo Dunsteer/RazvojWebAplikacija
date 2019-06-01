@@ -1,15 +1,10 @@
 import { createStore, applyMiddleware, compose } from 'redux';
 import rootReducer from './reducers';
 import createSagaMiddleware from 'redux-saga';
-import { all, takeEvery } from '@redux-saga/core/effects';
-import { FETCH_USERS } from './actions/types';
-import { fetchUsers } from './saga';
-
-declare global {
-    interface Window { __REDUX_DEVTOOLS_EXTENSION__: any; }
-}
-
-window.__REDUX_DEVTOOLS_EXTENSION__ = window.__REDUX_DEVTOOLS_EXTENSION__;
+import { all, takeEvery, takeLatest, fork } from '@redux-saga/core/effects';
+import { FETCH_USERS, NEW_USER, PATCH_USER } from './actions/types';
+import { fetchUsers, postUserWatcher, patchUserWatcher } from './saga';
+import {composeWithDevTools} from 'redux-devtools-extension';
 
 export interface AppState {
     users: any
@@ -17,19 +12,19 @@ export interface AppState {
 
 function configureStore() {
     const sagaMiddleware = createSagaMiddleware();
+    const middlewares = applyMiddleware(sagaMiddleware);
     const store = createStore(
         rootReducer,
-        applyMiddleware(sagaMiddleware)
+        composeWithDevTools(middlewares)
     );
-
     sagaMiddleware.run(rootSaga);
     return store;
 }
 
 export function* rootSaga() {
-    yield all([
-        takeEvery(FETCH_USERS, fetchUsers)
-    ]);
+    yield takeEvery(FETCH_USERS, fetchUsers);
+    yield takeLatest(NEW_USER, postUserWatcher);
+    yield takeLatest(PATCH_USER, patchUserWatcher);
 }
 
 export default configureStore();
