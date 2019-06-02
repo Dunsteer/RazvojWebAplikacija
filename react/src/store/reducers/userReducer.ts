@@ -47,8 +47,6 @@ export default function (state = initialState, action: Action) {
         ...state,
         user: state.users.filter((user: User) => user.username === username).pop()
       };
-
-      //return state.filter(x=>x.username===username).pop();
     }
 
     case PATCH_USER_SUCCESS:{

@@ -10,7 +10,7 @@ import { User } from '../models/User';
 
 interface Props {
     currentUser: User;
-    fetchUsers:Function;
+    fetchUsers: ()=>void;
     users:User[];
 }
 

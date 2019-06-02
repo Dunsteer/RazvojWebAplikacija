@@ -4,7 +4,15 @@ import UserTableComponent from './UserTableComponent';
 import { Container } from 'react-bootstrap';
 import NavbarComponent from './NavbarComponent';
 
-export default class UserComponent extends Component {
+interface Props{
+
+}
+
+interface State{
+
+}
+
+export default class UserComponent extends Component<Props,State> {
     render() {
         return (
         <div>

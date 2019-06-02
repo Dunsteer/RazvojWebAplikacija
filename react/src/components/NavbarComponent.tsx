@@ -7,15 +7,20 @@ import { Dispatch, Action } from 'redux';
 import {  getUsers, getCurrentUser } from '../store/actions/userActions';
 import { AppState } from '../store/store';
 import { connect } from 'react-redux';
+import { User } from '../models/User';
 
 interface Props {
+    fetchUsers:()=>void;
+    getCurrentUser:()=>void;
+
+    currentUser:User;
 }
 
 interface State {
     redirect: boolean;
 }
 
-class NavbarComponent extends Component<any, State> {
+class NavbarComponent extends Component<Props, State> {
     constructor(props: Props) {
         super(props);
         this.state = {

@@ -7,6 +7,7 @@ import { connect } from 'react-redux';
 import { User } from '../models/User';
 
 interface Props {
+    addUser:(user:User)=>void;
 }
 
 interface State {
@@ -14,9 +15,9 @@ interface State {
     password: string;
 }
 
-class AddUserComponent extends Component<any, any> {
+class AddUserComponent extends Component<Props, any> {
 
-    constructor(props: any) {
+    constructor(props: Props) {
         super(props);
         this.state = {
             username: "",

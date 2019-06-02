@@ -6,15 +6,19 @@ interface Props {
   logs: Log[]
 }
 
-export default class ActivityComponent extends Component<Props, any> {
-  constructor(props: any) {
+interface State {
+
+}
+
+export default class ActivityComponent extends Component<Props, State> {
+  constructor(props: Props) {
     super(props);
   }
 
   filterForToday() {
     return this.props.logs.filter((log) => {
       let res = true;
-      res = res && new Date(log.timestamp).getDay() === new Date().getDay();
+      res = res && new Date(log.timestamp).getDate() === new Date().getDate();
       res = res && new Date(log.timestamp).getMonth() === new Date().getMonth();
       return res;
     })
@@ -56,11 +60,15 @@ export default class ActivityComponent extends Component<Props, any> {
 
     let format = `${hh}:${mm}:${ss}`;
 
-    return format.split('.').shift();
+    return (
+      <h4>
+        {format.split('.').shift()}
+      </h4>
+    );
   }
 
   renderLogs() {
-    if (this.props.logs.length > 0) {
+    if (this.props.logs && this.props.logs.length > 0) {
       let percentage = this.calculateTodayPercentage();
 
       let style = {
@@ -79,7 +87,9 @@ export default class ActivityComponent extends Component<Props, any> {
           <div style={style}>
             <div style={innerStyle}></div>
           </div>
-          {this.displayTime(percentage.total)}
+          <div className="d-flex justify-content-center my-2 display-4">
+            {this.displayTime(percentage.total)}
+          </div>
         </div>
       )
     }

@@ -7,7 +7,19 @@ import { connect } from 'react-redux';
 import { User } from '../models/User';
 import { LogType } from '../models/Log';
 
-class ShiftComponent extends Component<any, any> {
+interface Props{
+    fetchUsers:()=>void;
+    getCurrentUser:()=>void;
+
+    updateUser:(user:User)=>void;
+    currentUser:User;
+}
+
+interface State{
+    state:number
+}
+
+class ShiftComponent extends Component<Props, State> {
 
     constructor(props) {
         super(props);
@@ -183,7 +195,6 @@ function mapDispatchToProps(dispatch: Dispatch<Action>) {
 
 function mapStateToProps(state: AppState) {
     return {
-        users: state.users.users,
         currentUser: state.users.user
     }
 }
