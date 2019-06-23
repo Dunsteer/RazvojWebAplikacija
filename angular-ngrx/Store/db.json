@@ -1,0 +1,35 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "test",
+      "password": "testic",
+      "admin": true,
+      "orders": []
+    },
+    {
+      "id": 2,
+      "username": "test2",
+      "password": "testic",
+      "admin": false,
+      "orders": []
+    },
+    {
+      "id": 3,
+      "username": "test3",
+      "password": "testic",
+      "admin": false,
+      "orders": []
+    }
+  ],
+  "orders": [],
+  "articles": [
+    {
+      "id": 1,
+      "name": "testArticle",
+      "price": 100,
+      "image": "",
+      "count": 10
+    }
+  ]
+}
