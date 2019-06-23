@@ -64,7 +64,7 @@ export function reducer( state = initialState,action: UserActions): State {
   }
 }
 
-export const selectUserState = createFeatureSelector<State>('User');
+export const selectUserState = createFeatureSelector<State>('user');
 
 export const {
   selectIds,

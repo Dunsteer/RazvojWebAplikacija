@@ -3,17 +3,21 @@ export interface Article {
     name: string;
     price: number;
     image: string;
-    count:number;
+    count: number;
+    checked: boolean;
+    selectedNumber: number;
 }
 
 export function createArticle(
-    id: number = 0, name: string = "default", price: number = 0.0, image: string = "",count :number = 0
+    id: number = 0, name: string = "default", price: number = 0.0, image: string = "", count: number = 0, checked: boolean = false, selectedNumber: number = 0
 ): Article {
     return {
         id,
         name,
         price,
         image,
-        count
+        count,
+        checked,
+        selectedNumber
     };
 }

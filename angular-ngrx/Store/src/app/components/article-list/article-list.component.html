@@ -1,0 +1,22 @@
+<div class="container">
+  <div>
+    <div *ngFor="let article of (articles$ | async)">
+      <div *ngIf="article.checked">{{article.name}} {{article.selectedNumber}}</div>
+    </div>
+    <div>Sum: {{calculateArticleSum()}}</div>
+    <button mat-button>Submit order</button>
+  </div>
+  <div class="row p-2" *ngIf="(hasArticles$ | async)">
+
+    <div class="col-lg-2 col-md-3 col-sm-6" *ngFor="let article of (articles$ | async)">
+      <app-article-list-item [article]="article" (added)="addArticleToCart($event)">
+
+      </app-article-list-item>
+    </div>
+  </div>
+  <ng-container *ngIf="!(hasArticles$ | async)">
+    <mat-card>
+      <mat-card-title>Nothing found with this filter</mat-card-title>
+    </mat-card>
+  </ng-container>
+</div>

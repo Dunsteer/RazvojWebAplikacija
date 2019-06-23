@@ -7,6 +7,5 @@ export const selectFilter = createSelector(fromUser.selectUserState, state => st
 export const selectItemById = (id: number) => createSelector(fromUser.selectEntities, entities => entities[id]);
 
 export const selectFilteredItems = createSelector(fromUser.selectAll, selectFilter, (items, filter) => {
-  debugger;
   return filterData(items, filter);
 });

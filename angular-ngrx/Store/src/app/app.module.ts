@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,12 +17,26 @@ import { HttpClientModule } from '@angular/common/http';
 import { EffectsModule } from '@ngrx/effects';
 import { UserEffects } from './statemanagement/user/user.effects';
 import { UserService } from './service/user.service';
+import { HomeComponent } from './components/home/home.component';
+import { ArticleListComponent } from './components/article-list/article-list.component';
+import { ArticleListItemComponent } from './components/article-list-item/article-list-item.component';
+import { ARTICLE_STORAGE } from './service/article-storage';
+import { ArticleStorageNgrxService } from './statemanagement/article/article-storage-ngrx.service';
+import { ArticleEffects } from './statemanagement/article/article.effects';
+import { BaseComponentComponent } from './components/base-component/base-component.component';
+import { OrderEffects } from './statemanagement/order/order.effects';
+import { ORDER_STORAGE } from './service/order-storage';
+import { OrderStorageNgrxService } from './statemanagement/order/order-storage-ngrx.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserTableComponent,
-    UserTableItemComponent
+    UserTableItemComponent,
+    HomeComponent,
+    ArticleListComponent,
+    ArticleListItemComponent,
+    BaseComponentComponent
   ],
   imports: [
     BrowserModule,
@@ -29,11 +44,14 @@ import { UserService } from './service/user.service';
     MaterialModule,
     StoreModule.forRoot(reducers),
     !environment.production ? StoreDevtoolsModule.instrument() : [],
-    EffectsModule.forRoot([UserEffects]),
-    HttpClientModule
+    EffectsModule.forRoot([UserEffects, ArticleEffects, OrderEffects]),
+    HttpClientModule,
+    CommonModule
   ],
   providers: [
     { provide: USER_STORAGE, useClass: UserStorageNgrxService },
+    { provide: ARTICLE_STORAGE, useClass: ArticleStorageNgrxService },
+    { provide:ORDER_STORAGE, useClass:OrderStorageNgrxService},
     UserService
   ],
   bootstrap: [AppComponent]

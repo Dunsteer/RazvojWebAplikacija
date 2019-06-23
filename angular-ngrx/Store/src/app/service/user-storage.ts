@@ -3,6 +3,7 @@ import { Observable } from 'rxjs';
 import { UserFilter } from '../models/user.filter';
 //import { UserSort } from '../model/user-sort';
 import { User } from '../models/user';
+import { Article } from '../models/article';
 
 export interface UserStorage {
 
@@ -16,6 +17,8 @@ export interface UserStorage {
   removeItem(id: number): void;
   setSortField(field: string): void;
   setFilter(filter: UserFilter): void;
+
+  addToCart(article: Article): void;
 }
 
 export const USER_STORAGE = new InjectionToken<UserStorage>('user.storage');

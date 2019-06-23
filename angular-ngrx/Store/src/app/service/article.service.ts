@@ -1,25 +1,24 @@
 import { Inject, Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
-// import { UserFilter } from '../model/user-filter.enum';
-// import { UserSort } from '../model/user-sort';
-import { User } from '../models/user';
-import { UserStorage, USER_STORAGE } from './user-storage';
-import { Article } from '../models/article';
+// import { ArticleFilter } from '../model/Article-filter.enum';
+// import { ArticleSort } from '../model/Article-sort';
+import { Article } from '../models/Article';
+import { ArticleStorage, ARTICLE_STORAGE} from './article-storage';
 
 @Injectable({
   providedIn: 'root'
 })
-export class UserService {
+export class ArticleService {
 
-  users$: Observable<User[]> = this.storage.allItems$;
-  //sort$: Observable<UserSort> = this.storage.sort$;
+  articles$: Observable<Article[]> = this.storage.allItems$;
+  //sort$: Observable<ArticleSort> = this.storage.sort$;
   filter$: Observable<string> = this.storage.filter$.pipe(map(
-    filter => filter.username
+    filter => filter.name
   ));
 
   constructor(
-    @Inject(USER_STORAGE) private storage: UserStorage
+    @Inject(ARTICLE_STORAGE) private storage: ArticleStorage
   ) { }
 
   loadItems(): void {
@@ -27,11 +26,11 @@ export class UserService {
     return this.storage.loadItems();
   }
 
-  getItem(id: number): Observable<User> {
+  getItem(id: number): Observable<Article> {
     return this.storage.getItem(id);
   }
 
-  addItem(item: Partial<User>) {
+  addItem(item: Partial<Article>) {
     this.storage.addItem(item);
   }
 
@@ -47,11 +46,8 @@ export class UserService {
     switch (stringValue) {
       case 'all':
       default:
-        this.storage.setFilter({username:stringValue});
+        this.storage.setFilter({name:stringValue});
         break;
     }
-  }
-  addToCart(article:Article){
-    this.storage.addToCart(article);
   }
 }

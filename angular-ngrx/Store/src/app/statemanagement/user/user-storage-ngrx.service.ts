@@ -8,7 +8,7 @@ import { User } from '../../models/user';
 import { UserStorage } from '../../service/user-storage';
 import { SetFilter } from './user-filter.actions';
 import { selectFilter, selectFilteredItems, selectItemById } from './user-storage-selectors';
-import { AddUser, DeleteUser, FetchUsers, UpdateUser } from './user.actions';
+import { AddUser, DeleteUser, FetchUsers, UpdateUser, AddToCart } from './user.actions';
 import * as fromUser from './user.reducer';
 import { UserFilter } from 'src/app/models/user.filter';
 import { SetSort } from './user-sort.actions';
@@ -16,9 +16,10 @@ import { SetSort } from './user-sort.actions';
 @Injectable({
   providedIn: 'root'
 })
-export class UserStorageNgrxService implements UserStorage  {
-  filter$: Observable<UserFilter>= this.store.select(selectFilter);
-  allItems$: Observable<User[]>= this.store.select(fromUser.selectAll);
+export class UserStorageNgrxService implements UserStorage {
+
+  filter$: Observable<UserFilter> = this.store.select(selectFilter);
+  allItems$: Observable<User[]> = this.store.select(selectFilteredItems);
   constructor(
     private backend: UserService,
     private store: Store<fromUser.State>,
@@ -26,7 +27,7 @@ export class UserStorageNgrxService implements UserStorage  {
   }
 
   loadItems(): void {
-    debugger;
+    //debugger;
     return this.store.dispatch(new FetchUsers());
   }
   getItem(id: number): Observable<User> {
@@ -47,5 +48,9 @@ export class UserStorageNgrxService implements UserStorage  {
   }
   setFilter(filter: UserFilter): void {
     this.store.dispatch(new SetFilter({ filter }));
+  }
+
+  addToCart(article: import("../article/article.model").Article): void {
+    this.store.dispatch(new AddToCart({article}));
   }
 }

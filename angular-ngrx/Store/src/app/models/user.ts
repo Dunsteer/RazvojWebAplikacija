@@ -6,16 +6,18 @@ export interface User {
   password: string;
   admin: boolean;
   orders: Order[];
+  cart:Order[];
 }
 
 export function createUser(
-  id: number = 0, username: string = '', password: string = '', admin: boolean=false, orders: Order[] =[]
+  id: number = 0, username: string = '', password: string = '', admin: boolean=false, orders: Order[] =[],cart:Order[] = []
 ): User {
   return {
     id,
     username,
     password,
     admin,
-    orders
+    orders,
+    cart
   };
 }
