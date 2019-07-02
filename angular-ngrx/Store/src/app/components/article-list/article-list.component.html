@@ -1,10 +1,17 @@
 <div class="container">
   <div>
-    <div *ngFor="let article of (articles$ | async)">
-      <div *ngIf="article.checked">{{article.name}} {{article.selectedNumber}}</div>
+    <div *ngFor="let article of cart" class="d-flex align-items-center">
+      <div class="mx-1">{{article.name}}</div>
+      <button class="btn btn-sm btn-outline-dark mx-1 rounded-0" [disabled]="article.selectedNumber >= count" (click)="addOneToArticle(article)">
+        <i class="fas fa-plus"></i>
+      </button>
+      <input class="mx-1" [(ngModel)]="article.selectedNumber">
+      <button class="btn btn-sm btn-outline-dark mx-1 rounded-0" [disabled]="article.selectedNumber <= 0" (click)="removeOneToArticle(article)">
+        <i class="fas fa-minus"></i>
+      </button>
     </div>
     <div>Sum: {{calculateArticleSum()}}</div>
-    <button mat-button>Submit order</button>
+    <button (click)="submitOrder()" class="btn btn-outline-success">Submit order</button>
   </div>
   <div class="row p-2" *ngIf="(hasArticles$ | async)">
 

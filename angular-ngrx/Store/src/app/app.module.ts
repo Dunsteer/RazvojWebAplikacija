@@ -23,10 +23,10 @@ import { ArticleListItemComponent } from './components/article-list-item/article
 import { ARTICLE_STORAGE } from './service/article-storage';
 import { ArticleStorageNgrxService } from './statemanagement/article/article-storage-ngrx.service';
 import { ArticleEffects } from './statemanagement/article/article.effects';
-import { BaseComponentComponent } from './components/base-component/base-component.component';
 import { OrderEffects } from './statemanagement/order/order.effects';
 import { ORDER_STORAGE } from './service/order-storage';
 import { OrderStorageNgrxService } from './statemanagement/order/order-storage-ngrx.service';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -35,8 +35,7 @@ import { OrderStorageNgrxService } from './statemanagement/order/order-storage-n
     UserTableItemComponent,
     HomeComponent,
     ArticleListComponent,
-    ArticleListItemComponent,
-    BaseComponentComponent
+    ArticleListItemComponent
   ],
   imports: [
     BrowserModule,
@@ -46,7 +45,8 @@ import { OrderStorageNgrxService } from './statemanagement/order/order-storage-n
     !environment.production ? StoreDevtoolsModule.instrument() : [],
     EffectsModule.forRoot([UserEffects, ArticleEffects, OrderEffects]),
     HttpClientModule,
-    CommonModule
+    CommonModule,
+    FormsModule
   ],
   providers: [
     { provide: USER_STORAGE, useClass: UserStorageNgrxService },

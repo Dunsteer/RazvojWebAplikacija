@@ -31,7 +31,12 @@ export class UserStorageNgrxService implements UserStorage {
     return this.store.dispatch(new FetchUsers());
   }
   getItem(id: number): Observable<User> {
-    return this.store.select(selectItemById(id));
+    return Observable.create(sub => {
+      this.store.select(selectItemById(id)).subscribe(res => {
+        sub.next(res);
+        sub.complete();
+      });
+    });
   }
   addItem(item: Partial<User>): void {
     this.backend.addOne(item).subscribe(addedItem => {
@@ -51,6 +56,6 @@ export class UserStorageNgrxService implements UserStorage {
   }
 
   addToCart(article: import("../article/article.model").Article): void {
-    this.store.dispatch(new AddToCart({article}));
+    this.store.dispatch(new AddToCart({ article }));
   }
 }

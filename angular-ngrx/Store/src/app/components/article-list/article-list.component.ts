@@ -3,24 +3,32 @@ import { Article } from 'src/app/models/article';
 import { Observable } from 'rxjs';
 import { ArticleService } from '../../service/article.service';
 import { map } from 'rxjs/operators';
+import { Store } from '@ngrx/store';
+import * as fromOrderReducer from '../../statemanagement/order/order.reducer';
+import * as fromOrderActions from '../../statemanagement/order/order.actions';
+import { Order } from 'src/app/models/order';
+import { BaseComponent } from '../base-component/base.component';
+import { UserService } from 'src/app/service/user.service';
 
 @Component({
   selector: 'app-article-list',
   templateUrl: './article-list.component.html',
   styleUrls: ['./article-list.component.sass']
 })
-export class ArticleListComponent implements OnInit {
+export class ArticleListComponent extends BaseComponent implements OnInit {
 
-  articles$: Observable<Article[]> = this.service.articles$;
+  articles$: Observable<Article[]> = this.articleService.articles$;
   hasArticles$: Observable<boolean> = this.articles$.pipe(map(items => items.length > 0));
-  filter$: Observable<string> = this.service.filter$;
+  filter$: Observable<string> = this.articleService.filter$;
 
   cart: Article[] = [];
 
-  constructor(private service: ArticleService) { }
+  constructor(private articleService: ArticleService, private _store: Store<fromOrderReducer.State>,private _userService :UserService) {
+    super(_userService);
+   }
 
   ngOnInit() {
-    this.service.loadItems();
+    this.articleService.loadItems();
   }
 
   calculateArticleSum() {
@@ -35,6 +43,33 @@ export class ArticleListComponent implements OnInit {
     else {
       this.cart.push(article);
     }
-    console.log(this.cart);
+  }
+  addOneToArticle(article: Article) {
+    if (article && article.selectedNumber < article.count) {
+      article.selectedNumber++;
+    }
+  }
+  removeOneToArticle(article: Article) {
+    if (article) {
+      if (article.selectedNumber > 1) {
+        article.selectedNumber--;
+      }
+      else {
+        this.cart = this.cart.filter(x => x.id != article.id);
+      }
+    } else {
+
+    }
+  }
+
+  async submitOrder() {
+    debugger;
+
+    const order: Order = {
+      articles: this.cart,
+      userId: (await this.currentUser()).id
+    }
+    
+    this._store.dispatch(new fromOrderActions.AddOrder({ order }));
   }
 }

@@ -22,7 +22,6 @@ export class ArticleService {
   ) { }
 
   loadItems(): void {
-    console.log("s");
     return this.storage.loadItems();
   }
 

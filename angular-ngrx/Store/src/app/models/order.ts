@@ -1,16 +1,18 @@
 import { Article } from './article';
 
 export interface Order {
-  id: string;
-  articles:Article[]
+  id?: number;
+  articles: Article[]
 
+  userId: number;
 }
 
 export function createOrder(
-  id: string = null, articles:Article[] = []
+  id: number = null, articles: Article[] = [], userId: number = null
 ): Order {
   return {
     id,
-    articles
+    articles,
+    userId
   };
 }
