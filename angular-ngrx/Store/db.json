@@ -4,45 +4,77 @@
       "id": 1,
       "username": "test",
       "password": "testic",
-      "admin": true,
-      "orders": []
+      "admin": true
     },
     {
       "id": 2,
       "username": "test2",
       "password": "testic",
-      "admin": false,
-      "orders": []
+      "admin": false
     },
     {
       "id": 3,
       "username": "test3",
       "password": "testic",
-      "admin": false,
-      "orders": []
+      "admin": false
     }
   ],
-  "orders": [],
+  "orders": [
+    {
+      "id": 1,
+      "articles": [
+        {
+          "id": 1,
+          "name": "testArticle",
+          "price": 99,
+          "image": "https://dictionary.cambridge.org/fr/images/thumb/book_noun_001_01679.jpg?version=4.0.82",
+          "count": 100,
+          "selectedNumber": 9
+        },
+        {
+          "id": 2,
+          "name": "testArticleasdasd",
+          "price": 199,
+          "image": "https://s0emmi.multimedija.rs/media/catalog/product/350x350/682/08/6820869.jpg",
+          "count": 100,
+          "selectedNumber": 12
+        },
+        {
+          "id": 3,
+          "name": "testArticlesa mnogo dugackim imenom",
+          "price": 299,
+          "image": "https://s0emmi.multimedija.rs/media/catalog/product/350x350/864/29/8642959.jpg",
+          "count": 100,
+          "selectedNumber": 10
+        }
+      ],
+      "userId": 1
+    }
+  ],
   "articles": [
     {
       "id": 1,
       "name": "testArticle",
-      "price": 100,
+      "price": 99,
       "image": "https://dictionary.cambridge.org/fr/images/thumb/book_noun_001_01679.jpg?version=4.0.82",
-      "count": 10
-    },{
+      "count": 91,
+      "selectedNumber": 9
+    },
+    {
       "id": 2,
-      "name": "testArticle",
-      "price": 100,
-      "image": "",
-      "count": 10
+      "name": "testArticleasdasd",
+      "price": 199,
+      "image": "https://s0emmi.multimedija.rs/media/catalog/product/350x350/682/08/6820869.jpg",
+      "count": 88,
+      "selectedNumber": 12
     },
     {
       "id": 3,
-      "name": "testArticle",
-      "price": 100,
-      "image": "",
-      "count": 10
+      "name": "testArticle sa mnogo dugackim imenom",
+      "price": 299,
+      "image": "https://s0emmi.multimedija.rs/media/catalog/product/350x350/864/29/8642959.jpg",
+      "count": 90,
+      "selectedNumber": 10
     }
   ]
 }

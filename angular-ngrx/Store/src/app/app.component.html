@@ -1,8 +1,31 @@
 <mat-toolbar color="primary">
-  <span>My Application</span>
+  <span routerLink="/">My Application</span>
+  <button mat-button routerLink="/orders" *ngIf="currentUser && currentUser.admin">All Orders</button>
   <span class="fill-remaining-space"></span>
-  <button mat-button *ngIf="!loggedIn()">Login</button>
-  <button mat-button *ngIf="loggedIn()">Logout</button>
+  <small *ngIf="currentUser">{{currentUser.username}}</small>
+  <button mat-button routerLink="/login" *ngIf="!loggedIn()">Login</button>
+  <button mat-button (click)="logout()" *ngIf="loggedIn()">Logout</button>
 </mat-toolbar>
+
+<!-- <nav class="navbar navbar-dark bg-primary">
+  <a class="navbar-brand " routerLink="/" routerLinkActive="active"><span
+      class="d-none d-md-inline-block">Order.me</span></a>
+  <div class="mr-2 d-flex justify-content-center align-items-center" ngIf="currentUser && currentUser.admin">
+    <button class="btn btn-info btn-sm rounded-0" routerLink="/post/new" routerLinkActive="active"><span
+        class="mr-2">All Orders</button>
+  </div>
+  <span class="fill-remaining-space"></span>
+  <span *ngIf="currentUser">{{currentUser.username}}</span>
+  <button class="navbar-nav" *ngIf="!loggedIn()">Login</button>
+  <button class="navbar-nav" *ngIf="loggedIn()">Logout</button>
+
+  <div class="mr-2 d-flex justify-content-center align-items-center" *ngIf="!isLoggedIn"><button
+      class="btn btn-success rounded-0" routerLink="/login" routerLinkActive="active">Login</button>
+  </div>
+  <div class="d-flex justify-content-center align-items-center" *ngIf="!isLoggedIn">
+    <buttonclass="btn btn-info rounded-0" routerLink="/register" routerLinkActive="active">Logout
+    </button>
+  </div>
+</nav> -->
 
 <router-outlet></router-outlet>

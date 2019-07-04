@@ -17,12 +17,12 @@ export const adapter: EntityAdapter<Article> = createEntityAdapter<Article>();
 export const initialState: State = adapter.getInitialState({
   //additional entity state properties
   filter: {
-    name:null
+    name: null
   },
   // sort: {field: 'name', ascending: true },
 });
 
-export function reducer( state = initialState,action: ArticleActions): State {
+export function reducer(state = initialState, action: ArticleActions): State {
   switch (action.type) {
     case ArticleActionTypes.AddArticle: {
       return adapter.addOne(action.payload.article, state);
@@ -37,7 +37,10 @@ export function reducer( state = initialState,action: ArticleActions): State {
     }
 
     case ArticleActionTypes.LoadArticles: {
-      return adapter.addAll(action.payload.articles, state);
+      return adapter.addAll(action.payload.articles.map(x => {
+        x.selectedNumber = 0
+        return x;
+      }), state);
     }
 
     case FilterActionTypes.SetFilter: {

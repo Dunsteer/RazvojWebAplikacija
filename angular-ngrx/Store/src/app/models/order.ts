@@ -5,14 +5,16 @@ export interface Order {
   articles: Article[]
 
   userId: number;
+  delivered:boolean;
 }
 
 export function createOrder(
-  id: number = null, articles: Article[] = [], userId: number = null
+  id: number = null, articles: Article[] = [], userId: number = null,delivered:boolean =false
 ): Order {
   return {
     id,
     articles,
-    userId
+    userId,
+    delivered
   };
 }

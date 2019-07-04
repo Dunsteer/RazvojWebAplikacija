@@ -6,6 +6,7 @@ import { map } from 'rxjs/operators';
 import { Store } from '@ngrx/store';
 import * as fromOrderReducer from '../../statemanagement/order/order.reducer';
 import * as fromOrderActions from '../../statemanagement/order/order.actions';
+import * as fromArticleActions from '../../statemanagement/article/article.actions';
 import { Order } from 'src/app/models/order';
 import { BaseComponent } from '../base-component/base.component';
 import { UserService } from 'src/app/service/user.service';
@@ -23,9 +24,9 @@ export class ArticleListComponent extends BaseComponent implements OnInit {
 
   cart: Article[] = [];
 
-  constructor(private articleService: ArticleService, private _store: Store<fromOrderReducer.State>,private _userService :UserService) {
+  constructor(private articleService: ArticleService, private _store: Store<fromOrderReducer.State>, private _userService: UserService) {
     super(_userService);
-   }
+  }
 
   ngOnInit() {
     this.articleService.loadItems();
@@ -63,13 +64,18 @@ export class ArticleListComponent extends BaseComponent implements OnInit {
   }
 
   async submitOrder() {
-    debugger;
-
     const order: Order = {
       articles: this.cart,
-      userId: (await this.currentUser()).id
+      userId: BaseComponent.currentUser.id,
+      delivered: false
     }
-    
+
     this._store.dispatch(new fromOrderActions.AddOrder({ order }));
+
+    this.cart.forEach(article => {
+      this.articleService.updateItem({ ...article, count: article.count - article.selectedNumber });
+    })
+
+    this.cart = [];
   }
 }

@@ -7,7 +7,7 @@ import { OrderService } from '../../data/Order.service';
 import { Order } from '../../models/Order';
 import { SetFilter } from './order-filter.actions';
 import { selectFilter, selectFilteredItems, selectItemById } from './order-storage-selectors';
-import { AddOrder, DeleteOrder, FetchOrders, UpdateOrder } from './order.actions';
+import { AddOrder, DeleteOrder, FetchOrders, UpdateOrder, AddOrderSuccessfull } from './order.actions';
 import * as fromOrder from './order.reducer';
 import { OrderFilter } from '../../models/order.filter';
 import { SetSort } from './order-sort.actions';
@@ -34,7 +34,8 @@ export class OrderStorageNgrxService implements OrderStorage {
   }
   addItem(item: Partial<Order>): void {
     this.backend.addOne(item).subscribe(addedItem => {
-      this.store.dispatch(new AddOrder({ order: addedItem }));
+      console.log(addedItem);
+      this.store.dispatch(new AddOrderSuccessfull({ order: addedItem }));
     });
   }
   removeItem(id: number): void {

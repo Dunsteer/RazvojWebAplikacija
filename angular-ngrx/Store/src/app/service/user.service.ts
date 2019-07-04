@@ -23,7 +23,6 @@ export class UserService {
   ) { }
 
   loadItems(): void {
-    console.log("s");
     return this.storage.loadItems();
   }
 

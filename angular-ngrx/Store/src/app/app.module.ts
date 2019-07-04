@@ -27,6 +27,7 @@ import { OrderEffects } from './statemanagement/order/order.effects';
 import { ORDER_STORAGE } from './service/order-storage';
 import { OrderStorageNgrxService } from './statemanagement/order/order-storage-ngrx.service';
 import { FormsModule } from '@angular/forms';
+import { OrdersListComponent } from './components/orders-list/orders-list.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { FormsModule } from '@angular/forms';
     UserTableItemComponent,
     HomeComponent,
     ArticleListComponent,
-    ArticleListItemComponent
+    ArticleListItemComponent,
+    OrdersListComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,33 @@
+<div class="container" *ngIf="(hasOrders$ | async)">
+  <table>
+    <thead>
+      <th>
+        OrderId
+      </th>
+      <th>
+        Articles
+      </th>
+      <th>
+        User
+      </th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let order of (orders$ | async)">
+        <th>{{order.id}}</th>
+        <th>{{order.articles|json}}</th>
+        <th>{{order.userId}}</th>
+      </tr>
+    </tbody>
+  </table>
+  <div class="row p-2">
+    <div class="col-lg-2 col-md-3 col-sm-6" *ngFor="let order of (orders$ | async)">
+      {{order|json}}
+    </div>
+  </div>
+</div>
+
+<ng-container *ngIf="!(hasOrders$ | async)">
+  <mat-card>
+    <mat-card-title>Nothing found with this filter</mat-card-title>
+  </mat-card>
+</ng-container>

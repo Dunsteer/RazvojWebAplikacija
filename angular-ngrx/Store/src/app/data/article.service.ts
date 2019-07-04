@@ -35,7 +35,7 @@ export class ArticleService {
   updateOne(id: number, item: Partial<Article>): Observable<Article> {
     console.log('ArticleService: PUT One');
 
-    return this._http.put<Article>(this.environmentUrl,{...item,id});
+    return this._http.put<Article>(`${this.environmentUrl}/${id}`,{...item,id});
   }
 
   removeOne(id: number): Observable<Article> {

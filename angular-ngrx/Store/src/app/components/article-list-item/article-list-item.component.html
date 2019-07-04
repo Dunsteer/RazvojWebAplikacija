@@ -1,4 +1,4 @@
-<mat-card >
+<mat-card>
   <mat-card-header>
     <mat-card-title>
       {{article.name}}
@@ -6,9 +6,12 @@
   </mat-card-header>
   <img mat-card-image src="{{article.image}}">
   <mat-card-content>
-
+    <div >Price: ${{article.price}}</div>
+    <div *ngIf="article.count-article.selectedNumber >0"> In Stock: {{article.count-article.selectedNumber}} </div>
+    <div *ngIf="article.count-article.selectedNumber <=0"> Out of stock</div>
   </mat-card-content>
   <mat-card-actions>
-    <button mat-button (click)="addToCartHandler()" >Add to cart</button>
+    <button class="btn btn-outline-success" (click)="addToCartHandler()"
+      [disabled]="article.count-article.selectedNumber <=0">Add to cart</button>
   </mat-card-actions>
 </mat-card>

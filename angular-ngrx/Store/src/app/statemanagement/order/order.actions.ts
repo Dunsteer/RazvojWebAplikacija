@@ -7,6 +7,7 @@ import { Order } from './order.model';
 export enum OrderActionTypes {
   LoadOrders = '[Order] Load Orders',
   AddOrder = '[Order] Add Order',
+  AddOrderSuccessfull = '[Order] Add Order Successfull',
   UpdateOrder = '[Order] Update Order',
   DeleteOrder = '[Order] Delete Order',
   FetchOrders = '[Order] Fetch Orders',
@@ -20,6 +21,12 @@ export class LoadOrders implements Action {
 
 export class AddOrder implements Action {
   readonly type = OrderActionTypes.AddOrder;
+
+  constructor(public payload: { order: Order }) {}
+}
+
+export class AddOrderSuccessfull implements Action {
+  readonly type = OrderActionTypes.AddOrderSuccessfull;
 
   constructor(public payload: { order: Order }) {}
 }
@@ -47,4 +54,5 @@ export type OrderActions =
  | DeleteOrder
  | FetchOrders
  | SortActions
- | FilterActions;
+ | FilterActions
+ | AddOrderSuccessfull;

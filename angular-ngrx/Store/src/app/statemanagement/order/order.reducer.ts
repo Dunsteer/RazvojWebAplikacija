@@ -24,7 +24,7 @@ export const initialState: State = adapter.getInitialState({
 
 export function reducer( state = initialState,action: OrderActions): State {
   switch (action.type) {
-    case OrderActionTypes.AddOrder: {
+    case OrderActionTypes.AddOrderSuccessfull: {
       return adapter.addOne(action.payload.order, state);
     }
 

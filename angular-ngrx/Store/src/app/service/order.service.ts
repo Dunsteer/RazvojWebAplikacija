@@ -4,14 +4,14 @@ import { map } from 'rxjs/operators';
 // import { OrderFilter } from '../model/Order-filter.enum';
 // import { OrderSort } from '../model/Order-sort';
 import { Order } from '../models/order';
-import { OrderStorage, ORDER_STORAGE} from './Order-storage';
+import { OrderStorage, ORDER_STORAGE} from './order-storage';
 
 @Injectable({
   providedIn: 'root'
 })
 export class OrderService {
 
-  Orders$: Observable<Order[]> = this.storage.allItems$;
+  orders$: Observable<Order[]> = this.storage.allItems$;
   //sort$: Observable<OrderSort> = this.storage.sort$;
   // filter$: Observable<string> = this.storage.filter$.pipe(map(
   //   filter => filter

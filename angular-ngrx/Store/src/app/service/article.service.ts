@@ -33,6 +33,10 @@ export class ArticleService {
     this.storage.addItem(item);
   }
 
+  updateItem(item: Partial<Article>): void {
+    this.storage.updateItem(item);
+  }
+
   removeItem(id: number) {
     this.storage.removeItem(id);
   }

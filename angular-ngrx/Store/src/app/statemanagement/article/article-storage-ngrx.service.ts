@@ -17,6 +17,7 @@ import { ArticleStorage } from 'src/app/service/article-storage';
   providedIn: 'root'
 })
 export class ArticleStorageNgrxService implements ArticleStorage {
+  
   filter$: Observable<ArticleFilter> = this.store.select(selectFilter);
   allItems$: Observable<Article[]> = this.store.select(selectFilteredItems);
   constructor(
@@ -35,6 +36,16 @@ export class ArticleStorageNgrxService implements ArticleStorage {
   addItem(item: Partial<Article>): void {
     this.backend.addOne(item).subscribe(addedItem => {
       this.store.dispatch(new AddArticle({ article: addedItem }));
+    });
+  }
+  updateItem(item: Partial<Article>): void {
+    this.backend.updateOne(item.id,item).subscribe(updatedItem => {
+      this.store.dispatch(new UpdateArticle({
+        article: {
+          id: updatedItem.id,
+          changes: { ...updatedItem, selectedNumber: 0 }
+        }
+      }));
     });
   }
   removeItem(id: number): void {

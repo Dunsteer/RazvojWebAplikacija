@@ -13,6 +13,7 @@ export interface ArticleStorage {
   loadItems(): void;
   getItem(id: number): Observable<Article>;
   addItem(item: Partial<Article>): void;
+  updateItem(item:Partial<Article>):void;
   removeItem(id: number): void;
   setSortField(field: string): void;
   setFilter(filter: ArticleFilter): void;

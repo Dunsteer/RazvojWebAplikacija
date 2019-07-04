@@ -1,29 +1,35 @@
-<div class="container">
-  <div>
-    <div *ngFor="let article of cart" class="d-flex align-items-center">
+<div class="d-flex">
+  <div style="flex-grow: 0.25">
+    <div class="m-1">Sum: {{calculateArticleSum()}}</div>
+    <button (click)="submitOrder()" class="btn btn-outline-primary m-1">Submit order</button>
+    <div *ngFor="let article of cart" >
       <div class="mx-1">{{article.name}}</div>
-      <button class="btn btn-sm btn-outline-dark mx-1 rounded-0" [disabled]="article.selectedNumber >= count" (click)="addOneToArticle(article)">
-        <i class="fas fa-plus"></i>
-      </button>
-      <input class="mx-1" [(ngModel)]="article.selectedNumber">
-      <button class="btn btn-sm btn-outline-dark mx-1 rounded-0" [disabled]="article.selectedNumber <= 0" (click)="removeOneToArticle(article)">
-        <i class="fas fa-minus"></i>
-      </button>
-    </div>
-    <div>Sum: {{calculateArticleSum()}}</div>
-    <button (click)="submitOrder()" class="btn btn-outline-success">Submit order</button>
-  </div>
-  <div class="row p-2" *ngIf="(hasArticles$ | async)">
-
-    <div class="col-lg-2 col-md-3 col-sm-6" *ngFor="let article of (articles$ | async)">
-      <app-article-list-item [article]="article" (added)="addArticleToCart($event)">
-
-      </app-article-list-item>
+      <div class="d-flex align-items-center ">
+        <button class="btn btn-sm btn-outline-dark mx-1 rounded-0" [disabled]="article.selectedNumber >= count"
+          (click)="addOneToArticle(article)">
+          <i class="fas fa-plus"></i>
+        </button>
+        <input class="mx-1" [(ngModel)]="article.selectedNumber">
+        <button class="btn btn-sm btn-outline-dark mx-1 rounded-0" [disabled]="article.selectedNumber <= 0"
+          (click)="removeOneToArticle(article)">
+          <i class="fas fa-minus"></i>
+        </button>
+      </div>
     </div>
   </div>
-  <ng-container *ngIf="!(hasArticles$ | async)">
-    <mat-card>
-      <mat-card-title>Nothing found with this filter</mat-card-title>
-    </mat-card>
-  </ng-container>
+  <div style="flex-grow: 0.75">
+    <div class="row p-2" *ngIf="(hasArticles$ | async)">
+
+      <div class="col-lg-2 col-md-3 col-sm-6" *ngFor="let article of (articles$ | async)">
+        <app-article-list-item [article]="article" (added)="addArticleToCart($event)">
+
+        </app-article-list-item>
+      </div>
+    </div>
+    <ng-container *ngIf="!(hasArticles$ | async)">
+      <mat-card>
+        <mat-card-title>Nothing found with this filter</mat-card-title>
+      </mat-card>
+    </ng-container>
+  </div>
 </div>
