@@ -18,12 +18,12 @@ export class OrdersListComponent extends BaseComponent implements OnInit {
   orders$: Observable<Order[]> = this.orderService.orders$.pipe(map(items=>items.filter(x=>!x.delivered)));
   hasOrders$: Observable<boolean> = this.orders$.pipe(map(items => items.length > 0));
 
-  constructor(private orderService: OrderService, private _store: Store<fromOrderReducer.State>, private _userService: UserService) {
-    super(_userService);
+  constructor(private orderService: OrderService, private _store: Store<fromOrderReducer.State>) {
+    super();
     this.orderService.loadItems();
   }
 
   ngOnInit() {
-    
+
   }
 }

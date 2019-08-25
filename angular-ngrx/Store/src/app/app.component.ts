@@ -9,7 +9,7 @@ import { UserService } from './service/user.service';
 })
 export class AppComponent extends BaseComponent {
 
-  constructor(private _userService:UserService){
-    super(_userService);
+  constructor(){
+    super();
   }
 }

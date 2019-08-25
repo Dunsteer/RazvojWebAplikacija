@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, Injector } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -28,6 +28,11 @@ import { ORDER_STORAGE } from './service/order-storage';
 import { OrderStorageNgrxService } from './statemanagement/order/order-storage-ngrx.service';
 import { FormsModule } from '@angular/forms';
 import { OrdersListComponent } from './components/orders-list/orders-list.component';
+import { LoginComponent } from './components/login/login.component';
+import { LoginEffects } from './components/login/login.effects';
+import { LoginModule } from './components/login/login.module';
+import { ToastrModule } from 'ngx-toastr';
+import { injectorProvider } from '@shared/services/injector.service';
 
 @NgModule({
   declarations: [
@@ -45,10 +50,21 @@ import { OrdersListComponent } from './components/orders-list/orders-list.compon
     MaterialModule,
     StoreModule.forRoot(reducers),
     !environment.production ? StoreDevtoolsModule.instrument() : [],
-    EffectsModule.forRoot([UserEffects, ArticleEffects, OrderEffects]),
+    EffectsModule.forRoot([
+      UserEffects,
+      ArticleEffects,
+      OrderEffects,
+      LoginEffects
+    ]),
     HttpClientModule,
     CommonModule,
-    FormsModule
+    FormsModule,
+    LoginModule,
+    ToastrModule.forRoot({
+      progressBar:true,
+      progressAnimation:"increasing",
+
+    }),
   ],
   providers: [
     { provide: USER_STORAGE, useClass: UserStorageNgrxService },
@@ -58,4 +74,8 @@ import { OrdersListComponent } from './components/orders-list/orders-list.compon
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor(injector: Injector) {
+    injectorProvider(injector);
+  }
+}

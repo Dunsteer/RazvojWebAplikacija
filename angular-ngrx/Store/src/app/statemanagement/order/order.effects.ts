@@ -21,9 +21,7 @@ export class OrderEffects {
   addOrder$ = this.actions$.pipe(
     ofType(OrderActionTypes.AddOrder),
     take(1),
-    switchMap((action:AddOrder) => {
-      return this.backend.addOne(action.payload.order);
-    }),
+    switchMap((action:AddOrder) => this.backend.addOne(action.payload.order)),
     map(order=> new AddOrderSuccessfull({order}))
   );
 

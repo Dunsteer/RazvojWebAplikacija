@@ -1,12 +1,12 @@
 import { Order } from './order';
 
 export interface User {
-  id: number;
-  username: string;
-  password: string;
-  admin: boolean;
-  orders: Order[];
-  cart:Order[];
+  id?: number;
+  username?: string;
+  password?: string;
+  admin?: boolean;
+  orders?: Order[];
+  cart?:Order[];
 }
 
 export function createUser(

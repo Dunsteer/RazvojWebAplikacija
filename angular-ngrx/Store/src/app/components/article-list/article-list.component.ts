@@ -24,8 +24,8 @@ export class ArticleListComponent extends BaseComponent implements OnInit {
 
   cart: Article[] = [];
 
-  constructor(private articleService: ArticleService, private _store: Store<fromOrderReducer.State>, private _userService: UserService) {
-    super(_userService);
+  constructor(private articleService: ArticleService, private _store: Store<fromOrderReducer.State>) {
+    super();
   }
 
   ngOnInit() {
