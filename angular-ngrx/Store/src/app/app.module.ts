@@ -33,6 +33,9 @@ import { LoginEffects } from './components/login/login.effects';
 import { LoginModule } from './components/login/login.module';
 import { ToastrModule } from 'ngx-toastr';
 import { injectorProvider } from '@shared/services/injector.service';
+import { Delivered } from './components/orders-list/delivered.pipe';
+import { LoginAuthGuardService } from '@shared/services/login-auth-guard.service';
+import { OtherAuthGuardService } from '@shared/services/other-auth-guard.service';
 
 @NgModule({
   declarations: [
@@ -42,7 +45,8 @@ import { injectorProvider } from '@shared/services/injector.service';
     HomeComponent,
     ArticleListComponent,
     ArticleListItemComponent,
-    OrdersListComponent
+    OrdersListComponent,
+    Delivered
   ],
   imports: [
     BrowserModule,
@@ -70,9 +74,14 @@ import { injectorProvider } from '@shared/services/injector.service';
     { provide: USER_STORAGE, useClass: UserStorageNgrxService },
     { provide: ARTICLE_STORAGE, useClass: ArticleStorageNgrxService },
     { provide:ORDER_STORAGE, useClass:OrderStorageNgrxService},
-    UserService
+    UserService,
+    OtherAuthGuardService,
+    LoginAuthGuardService
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  exports:[
+    Delivered
+  ]
 })
 export class AppModule {
   constructor(injector: Injector) {

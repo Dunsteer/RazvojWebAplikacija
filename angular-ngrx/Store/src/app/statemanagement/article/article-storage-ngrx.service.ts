@@ -17,7 +17,7 @@ import { ArticleStorage } from 'src/app/service/article-storage';
   providedIn: 'root'
 })
 export class ArticleStorageNgrxService implements ArticleStorage {
-  
+
   filter$: Observable<ArticleFilter> = this.store.select(selectFilter);
   allItems$: Observable<Article[]> = this.store.select(selectFilteredItems);
   constructor(

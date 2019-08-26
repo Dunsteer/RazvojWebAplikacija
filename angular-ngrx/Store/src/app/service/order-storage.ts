@@ -13,6 +13,7 @@ export interface OrderStorage {
   loadItems(): void;
   getItem(id: number): Observable<Order>;
   addItem(item: Partial<Order>): void;
+  updateItem(item: Partial<Order>): void;
   removeItem(id: number): void;
   setSortField(field: string): void;
 }

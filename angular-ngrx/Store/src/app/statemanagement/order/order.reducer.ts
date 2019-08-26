@@ -28,7 +28,7 @@ export function reducer( state = initialState,action: OrderActions): State {
       return adapter.addOne(action.payload.order, state);
     }
 
-    case OrderActionTypes.UpdateOrder: {
+    case OrderActionTypes.UpdateOrderSuccessfull: {
       return adapter.updateOne(action.payload.order, state);
     }
 

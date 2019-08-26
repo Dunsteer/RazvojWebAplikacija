@@ -1,10 +1,30 @@
-<mat-toolbar color="primary">
-  <span routerLink="/">My Application</span>
-  <button mat-button routerLink="/orders" *ngIf="currentUser && currentUser.admin">All Orders</button>
+<mat-toolbar color="primary" *ngIf="loggedIn">
+  <span routerLink="/">Store</span>
+  <button
+    mat-button
+    routerLink="/orders"
+    *ngIf="currentUser && currentUser.admin"
+  >
+    All Orders
+  </button>
+  <button
+    mat-button
+    routerLink="/users"
+    *ngIf="currentUser && currentUser.admin"
+  >
+    Users
+  </button>
+  <button
+    mat-button
+    routerLink="/orders"
+    *ngIf="currentUser && !currentUser.admin"
+  >
+    My Orders
+  </button>
   <span class="fill-remaining-space"></span>
-  <small *ngIf="currentUser">{{currentUser.username}}</small>
-  <button mat-button routerLink="/login" *ngIf="!loggedIn()">Login</button>
-  <button mat-button (click)="logout()" *ngIf="loggedIn()">Logout</button>
+  <small *ngIf="currentUser">{{ currentUser.username }}</small>
+  <button mat-button routerLink="/login" *ngIf="!loggedIn">Login</button>
+  <button mat-button (click)="logout()" *ngIf="loggedIn">Logout</button>
 </mat-toolbar>
 
 <!-- <nav class="navbar navbar-dark bg-primary">

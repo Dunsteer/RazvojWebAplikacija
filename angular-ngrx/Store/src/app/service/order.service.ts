@@ -22,7 +22,6 @@ export class OrderService {
   ) { }
 
   loadItems(): void {
-    console.log("s");
     return this.storage.loadItems();
   }
 
@@ -40,6 +39,10 @@ export class OrderService {
 
   setSortField(field: string) {
     this.storage.setSortField(field);
+  }
+
+  updateItem(item:Partial<Order>){
+    this.storage.updateItem(item);
   }
 
   // setFilterString(stringValue: string) {

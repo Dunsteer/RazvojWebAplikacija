@@ -4,23 +4,29 @@ import { UserTableComponent } from './components/user-table/user-table.component
 import { HomeComponent } from './components/home/home.component';
 import { OrdersListComponent } from './components/orders-list/orders-list.component';
 import { LoginComponent } from './components/login/login.component';
+import { OtherAuthGuardService } from '@shared/services/other-auth-guard.service';
+import { LoginAuthGuardService } from '@shared/services/login-auth-guard.service';
 
 const routes: Routes = [
   {
     path: "",
-    component: HomeComponent
+    component: HomeComponent,
+    canActivate:[OtherAuthGuardService]
   },
   {
     path: "users",
-    component: UserTableComponent
+    component: UserTableComponent,
+    canActivate:[OtherAuthGuardService]
   },
   {
     path:"orders",
-    component:OrdersListComponent
+    component:OrdersListComponent,
+    canActivate:[OtherAuthGuardService]
   },
   {
     path:"login",
-    component:LoginComponent
+    component:LoginComponent,
+    canActivate:[LoginAuthGuardService]
   }
 ];
 

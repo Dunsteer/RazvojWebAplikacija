@@ -32,7 +32,7 @@ export class OrderService {
   updateOne(id: number, item: Partial<Order>): Observable<Order> {
     console.log('OrderService: PUT One');
 
-    return this._http.put<Order>(this.environmentUrl,{...item,id});
+    return this._http.patch<Order>(`${this.environmentUrl}/${id}`,{...item,id});
   }
 
   removeOne(id: number): Observable<Order> {

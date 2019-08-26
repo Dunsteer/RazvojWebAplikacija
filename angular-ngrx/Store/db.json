@@ -33,7 +33,7 @@
         },
         {
           "id": 2,
-          "name": "testArticleasdasd",
+          "name": "testArticle asd a s d",
           "price": 199,
           "image": "https://s0emmi.multimedija.rs/media/catalog/product/350x350/682/08/6820869.jpg",
           "count": 100,
@@ -48,7 +48,184 @@
           "selectedNumber": 10
         }
       ],
-      "userId": 1
+      "userId": 1,
+      "delivered": true
+    },
+    {
+      "id": 2,
+      "articles": [
+        {
+          "id": 1,
+          "name": "testArticle",
+          "price": 99,
+          "image": "https://dictionary.cambridge.org/fr/images/thumb/book_noun_001_01679.jpg?version=4.0.82",
+          "count": 91,
+          "selectedNumber": 1
+        },
+        {
+          "id": 2,
+          "name": "testArticleasdasd",
+          "price": 199,
+          "image": "https://s0emmi.multimedija.rs/media/catalog/product/350x350/682/08/6820869.jpg",
+          "count": 88,
+          "selectedNumber": 1
+        },
+        {
+          "id": 3,
+          "name": "testArticle sa mnogo dugackim imenom",
+          "price": 299,
+          "image": "https://s0emmi.multimedija.rs/media/catalog/product/350x350/864/29/8642959.jpg",
+          "count": 90,
+          "selectedNumber": 1
+        }
+      ],
+      "userId": 1,
+      "delivered": false
+    },
+    {
+      "id": 3,
+      "articles": [
+        {
+          "id": 1,
+          "name": "testArticle",
+          "price": 99,
+          "image": "https://dictionary.cambridge.org/fr/images/thumb/book_noun_001_01679.jpg?version=4.0.82",
+          "count": 90,
+          "selectedNumber": 1
+        },
+        {
+          "id": 2,
+          "name": "testArticleasdasd",
+          "price": 199,
+          "image": "https://s0emmi.multimedija.rs/media/catalog/product/350x350/682/08/6820869.jpg",
+          "count": 87,
+          "selectedNumber": 1
+        },
+        {
+          "id": 3,
+          "name": "testArticle sa mnogo dugackim imenom",
+          "price": 299,
+          "image": "https://s0emmi.multimedija.rs/media/catalog/product/350x350/864/29/8642959.jpg",
+          "count": 89,
+          "selectedNumber": 1
+        }
+      ],
+      "userId": 1,
+      "delivered": false
+    },
+    {
+      "id": 4,
+      "articles": [
+        {
+          "id": 1,
+          "name": "testArticle",
+          "price": 99,
+          "image": "https://dictionary.cambridge.org/fr/images/thumb/book_noun_001_01679.jpg?version=4.0.82",
+          "count": 89,
+          "selectedNumber": 6
+        }
+      ],
+      "userId": 1,
+      "delivered": false
+    },
+    {
+      "id": 5,
+      "articles": [
+        {
+          "id": 1,
+          "name": "testArticle",
+          "price": 99,
+          "image": "https://dictionary.cambridge.org/fr/images/thumb/book_noun_001_01679.jpg?version=4.0.82",
+          "count": 83,
+          "selectedNumber": 1
+        },
+        {
+          "id": 2,
+          "name": "testArticleasdasd",
+          "price": 199,
+          "image": "https://s0emmi.multimedija.rs/media/catalog/product/350x350/682/08/6820869.jpg",
+          "count": 86,
+          "selectedNumber": 1
+        }
+      ],
+      "userId": 3,
+      "delivered": true
+    },
+    {
+      "id": 6,
+      "articles": [
+        {
+          "id": 1,
+          "name": "testArticle",
+          "price": 99,
+          "image": "https://dictionary.cambridge.org/fr/images/thumb/book_noun_001_01679.jpg?version=4.0.82",
+          "count": 82,
+          "selectedNumber": 3
+        },
+        {
+          "id": 2,
+          "name": "testArticleasdasd",
+          "price": 199,
+          "image": "https://s0emmi.multimedija.rs/media/catalog/product/350x350/682/08/6820869.jpg",
+          "count": 85,
+          "selectedNumber": 1
+        }
+      ],
+      "userId": 1,
+      "delivered": false
+    },
+    {
+      "id": 7,
+      "articles": [
+        {
+          "id": 1,
+          "name": "testArticle",
+          "price": 99,
+          "image": "https://dictionary.cambridge.org/fr/images/thumb/book_noun_001_01679.jpg?version=4.0.82",
+          "count": 79,
+          "selectedNumber": 1
+        },
+        {
+          "id": 2,
+          "name": "testArticle asdasd",
+          "price": 199,
+          "image": "https://s0emmi.multimedija.rs/media/catalog/product/350x350/682/08/6820869.jpg",
+          "count": 84,
+          "selectedNumber": 1
+        }
+      ],
+      "userId": 1,
+      "delivered": false
+    },
+    {
+      "id": 8,
+      "articles": [
+        {
+          "id": 1,
+          "name": "testArticle",
+          "price": 99,
+          "image": "https://dictionary.cambridge.org/fr/images/thumb/book_noun_001_01679.jpg?version=4.0.82",
+          "count": 78,
+          "selectedNumber": 1
+        }
+      ],
+      "userId": 1,
+      "delivered": false
+    },
+    {
+      "id": 9,
+      "articles": [
+        {
+          "id": 1,
+          "name": "testArticle",
+          "price": 99,
+          "image": "https://dictionary.cambridge.org/fr/images/thumb/book_noun_001_01679.jpg?version=4.0.82",
+          "count": 77,
+          "selectedNumber": 1
+        }
+      ],
+      "userId": 1,
+      "delivered": false
     }
   ],
   "articles": [
@@ -57,24 +234,24 @@
       "name": "testArticle",
       "price": 99,
       "image": "https://dictionary.cambridge.org/fr/images/thumb/book_noun_001_01679.jpg?version=4.0.82",
-      "count": 91,
-      "selectedNumber": 9
+      "count": 76,
+      "selectedNumber": 1
     },
     {
       "id": 2,
-      "name": "testArticleasdasd",
+      "name": "testArticle asdasd",
       "price": 199,
       "image": "https://s0emmi.multimedija.rs/media/catalog/product/350x350/682/08/6820869.jpg",
-      "count": 88,
-      "selectedNumber": 12
+      "count": 83,
+      "selectedNumber": 1
     },
     {
       "id": 3,
       "name": "testArticle sa mnogo dugackim imenom",
       "price": 299,
       "image": "https://s0emmi.multimedija.rs/media/catalog/product/350x350/864/29/8642959.jpg",
-      "count": 90,
-      "selectedNumber": 10
+      "count": 88,
+      "selectedNumber": 1
     }
   ]
 }

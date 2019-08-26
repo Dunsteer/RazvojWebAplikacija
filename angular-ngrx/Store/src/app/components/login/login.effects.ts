@@ -66,4 +66,13 @@ export class LoginEffects {
       //return new LoginActions.GetCurrentSuccess(action.user as User);
     })
   );
+
+  @Effect({ dispatch: false })
+  logout: Observable<void> = this._actions.pipe(
+    ofType<LoginActions.Login>(LoginActions.LOGOUT),
+    map(action => {
+      if (localStorage.getItem("id")) localStorage.removeItem("id");
+      this._router.navigate(["/login"]);
+    })
+  );
 }

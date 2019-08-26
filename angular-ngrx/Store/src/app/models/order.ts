@@ -1,4 +1,5 @@
 import { Article } from './article';
+import { User } from './user';
 
 export interface Order {
   id?: number;
@@ -6,6 +7,7 @@ export interface Order {
 
   userId: number;
   delivered:boolean;
+  user?: User;
 }
 
 export function createOrder(
