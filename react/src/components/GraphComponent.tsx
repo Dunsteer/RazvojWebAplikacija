@@ -64,6 +64,10 @@ export default class GraphComponent extends Component<Props, State> {
         };
     }
 
+    convertDateToString(date:Date){
+        return `${date.getDate()}-${date.getMonth()}-${date.getUTCFullYear()}`;
+    }
+
     renderChart() {
         if (this.chartRef.current) {
             let sortedLogs = this.filterByCurrentMonth();
@@ -77,6 +81,25 @@ export default class GraphComponent extends Component<Props, State> {
             let pauses = values.map(x => x.total * x.percentage/ 3600/1000);
 
             let xAxis = values.map(x=>x.timestamp);
+
+            const numberOfDaysInThisMonth = new Date((new Date().getFullYear()),(new Date()).getMonth(),0).getDate();
+            for(let i=1;i<=numberOfDaysInThisMonth;i++){
+                if(!totals[i]){
+                    totals[i]=0;
+                }
+                if(!pauses[i]){
+                    pauses[i]=0;
+                }
+
+                const currentDate = new Date((new Date().getFullYear()),(new Date()).getMonth(),i);
+                if(!xAxis[i]){
+                    xAxis[i] = this.convertDateToString(currentDate);
+                }
+            }
+
+            totals.shift();
+            pauses.shift();
+            xAxis.shift();
 
             console.log(values,totals, pauses,xAxis);
 

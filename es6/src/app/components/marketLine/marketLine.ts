@@ -71,9 +71,11 @@ export class MarketLineComponent extends Component {
             this.normaliezeCurrency();
 
             this.reloadBinds();
-            const stat = new StatisticsModel();
-            stat.currencyId= this.currency.id;
-            stat.currency = this.currency;
+
+            //Uncomment to save all changes in db.json
+            // const stat = new StatisticsModel();
+            // stat.currencyId= this.currency.id;
+            // stat.currency = this.currency;
 
             //this._marketService.postStatistics(stat).subscribe(x=>console.log(x));
         }

@@ -25,7 +25,6 @@ export class Component {
 
         this.loadBinds();
         this.loadEvents();
-        this.loadChildren();
     }
 
     private loadBinds() {
@@ -68,10 +67,6 @@ export class Component {
         this._dom.innerHTML = inner;
 
         this._variables = this._dom.querySelectorAll('app-variable');
-    }
-
-    private loadChildren() {
-
     }
 
     protected reloadBinds() {
@@ -118,14 +113,5 @@ export class Component {
                 }
             })
         }
-    }
-
-    private parseString(value: string): HTMLElement {
-        const html = new DOMParser().parseFromString(value, 'text/html').body;
-        html.childNodes.forEach(element => {
-
-        });
-
-        return html;
     }
 }
